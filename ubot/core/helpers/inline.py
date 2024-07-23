@@ -13,7 +13,7 @@ class Button:
         button = [
             [
                 InlineKeyboardButton(
-                    text="Tutup",
+                    text="ᴛᴜᴛᴜᴘ",
                     callback_data=f"alv_cls {int(get_id[1])} {int(get_id[2])}",
                 )
             ]
@@ -33,12 +33,12 @@ class Button:
         buttons.add(*keyboard)
         buttons.row(
             InlineKeyboardButton(
-                "Link Akun", callback_data=f"profil {user_id}"
+                "ʟɪɴᴋ ᴀᴋᴜɴ", callback_data=f"profil {user_id}"
             )
         )
         buttons.row(
             InlineKeyboardButton(
-                "Tolak Pembayaran", callback_data=f"failed {user_id}"
+                "ᴛᴏʟᴀᴋ ᴘᴇᴍʙᴀʏᴀʀᴀɴ", callback_data=f"failed {user_id}"
             )
         )
         return buttons
@@ -47,11 +47,11 @@ class Button:
         button = [
             [
                 InlineKeyboardButton(
-                    "⬅️ Kembali ",
+                    "ᴋᴇᴍʙᴀʟɪ",
                     callback_data=f"prev_ub {int(count)}",
                 ),
                 InlineKeyboardButton(
-                    "Setujui ✅", callback_data=f"deak_akun {int(count)}"
+                    "ᴛᴇʀɪᴍᴀ", callback_data=f"deak_akun {int(count)}"
                 ),
             ],
         ]
@@ -71,28 +71,28 @@ class Button:
     def start(message):
         if message.from_user.id not in USER_ID:
             button = [
-                [InlineKeyboardButton("📌 Buat Userbot", callback_data="bahan")],
+                [InlineKeyboardButton("💎 ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ", callback_data="bahan")],
                 [
-                    InlineKeyboardButton("💬 Penjelasan", callback_data="informasi"),
+                    InlineKeyboardButton("🤖 ᴛᴇɴᴛᴀɴɢ ʙᴏᴛ", callback_data="informasi"),
                     InlineKeyboardButton("☎️ Admin", callback_data="cb_tutor"),
                 ],
                 [
-                    InlineKeyboardButton("⚡ Support", callback_data="diskusi"),
-                    InlineKeyboardButton("⏳ Status Akun", callback_data="start_profile"),
+                    InlineKeyboardButton("📢 sᴜᴘᴘᴏʀᴛ", callback_data="diskusi"),
+                    InlineKeyboardButton("🛑 sᴛᴀᴛᴜs ᴀᴋᴜɴ", callback_data="start_profile"),
                 ],
             ]
         else:
             button = [
                 [
-                    InlineKeyboardButton("📌 Buat Userbot", callback_data="bahan"),
+                    InlineKeyboardButton("💎 ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ", callback_data="bahan"),
                 ],
                 [
-                    InlineKeyboardButton("Update", callback_data="gitpull"),
-                    InlineKeyboardButton("Restart", callback_data="restart"),
+                    InlineKeyboardButton("🧧 ᴜᴘᴅᴀᴛᴇ", callback_data="gitpull"),
+                    InlineKeyboardButton("🎮 ʀᴇsᴛᴀʀᴛ", callback_data="restart"),
                 ],
                 [
-                    InlineKeyboardButton("⏳ Status Akun", callback_data="start_profile"),
-                    InlineKeyboardButton("Hosting", callback_data="host"),
+                    InlineKeyboardButton("🛑sᴛᴀᴛᴜs ᴀᴋᴜɴ", callback_data="start_profile"),
+                    InlineKeyboardButton("ʜᴏsᴛ", callback_data="host"),
                 ],
             ]
         return button
@@ -101,15 +101,15 @@ class Button:
         button = [
             [
                 InlineKeyboardButton(
-                    "-1",
+                    "-𝟷",
                     callback_data=f"kurang {query}",
                 ),
                 InlineKeyboardButton(
-                    "+1",
+                    "+𝟷",
                     callback_data=f"tambah {query}",
                 ),
             ],
-            [InlineKeyboardButton("Konfirmasi", callback_data="confirm")],
+            [InlineKeyboardButton("ᴋᴏɴғɪʀᴍᴀsɪ", callback_data="confirm")],
             [InlineKeyboardButton("Batalkan", callback_data=f"home {user_id}")],
         ]
         return button
