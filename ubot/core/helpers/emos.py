@@ -24,7 +24,7 @@ class Emo:
             monggo.get_var(self.user_id, "emo_owner") or "6183961455436498818"
         )
         self.emo_owner = (
-            self.ownee_var if isinstance(self.owner_var, int) else str(self.owner_var)
+            self.owner_var if isinstance(self.owner_var, int) else str(self.owner_var)
         )
 
         self.proses_var = (
