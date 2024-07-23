@@ -39,12 +39,12 @@ async def profile_command(client, message):
     )
     await message.reply_text(
         f"""
-<b>Apoco-Userbot</b>
-    <b>Status Ubot:</b> <code>{status2}</code>
-      <b>Status Pengguna:</b> <i>{status}</i>
-      <b>Prefixes :</b> <code>{prefix[0]}</code>
-      <b>Tanggal Kedaluwarsa:</b> <code>{habis}</code>
-      <b>Uptime Ubot:</b> <code>{uptime}</code>
+<b>ʀᴇᴢᴀᴅᴇᴠx-ᴜʙᴏᴛ</b>
+    <b>ᴜsᴇʀʙᴏᴛ sᴛᴀᴛᴜs :</b> <code>{status2}</code>
+      <b>ᴜsᴇʀ sᴛᴀᴛᴜs :</b> <i>{status}</i>
+      <b>ᴜsᴇʀ ᴘʀᴇғɪxᴇs :</b> <code>{prefix[0]}</code>
+      <b>ᴇxᴘɪʀᴇᴅ ᴅᴀᴛᴇ :</b> <code>{habis}</code>
+      <b>ʀᴜɴɪɴɢ ᴛɪᴍᴇ ᴜsᴇʀʙᴏᴛ :</b> <code>{uptime}</code>
 """,
         reply_markup=b,
     )
@@ -95,20 +95,20 @@ async def ewdsfgj(client, callback_query):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="Kembali", callback_data="start0"),
-                    InlineKeyboardButton(text="Tutup", callback_data="0_cls"),
+                    InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="start0"),
+                    InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="0_cls"),
                 ],
             ]
         )
 
     await callback_query.edit_message_text(
         f"""
-<b>Apoco-Userbot</b>
-    <b>Status Ubot:</b> <code>{status2}</code>
-      <b>Status Pengguna:</b> <i>{status}</i>
-      <b>Prefixes :</b> <code>{prefix[0]}</code>
-      <b>Tanggal Kedaluwarsa:</b> <code>{habis}</code>
-      <b>Uptime Ubot:</b> <code>{uptime}</code>
+<b>ʀᴇᴢᴀᴅᴇᴠx-ᴜʙᴏᴛ</b>
+    <b>ᴜsᴇʀʙᴏᴛ sᴛᴀᴛᴜs :</b> <code>{status2}</code>
+      <b>ᴜsᴇʀ sᴛᴀᴛᴜs :</b> <i>{status}</i>
+      <b>ᴜsᴇʀ ᴘʀᴇғɪxᴇs :</b> <code>{prefix[0]}</code>
+      <b>ᴇxᴘɪʀᴇᴅ ᴅᴀᴛᴇ :</b> <code>{habis}</code>
+      <b>ʀᴜɴɪɴɢ ᴛɪᴍᴇ ᴜsᴇʀʙᴏᴛ :</b> <code>{uptime}</code>
 """,
         reply_markup=keyboard,
     )
