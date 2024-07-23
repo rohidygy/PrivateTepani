@@ -11,11 +11,11 @@ async def cb_tutor(client, callback_query):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("☎️ Admin", url="https://t.me/ySebut"),
-                    InlineKeyboardButton("📮 Tanya disini", callback_data="support"),
+                    InlineKeyboardButton("🥷 ᴏᴡɴᴇʀ", url="https://t.me/rezadevx"),
+                    InlineKeyboardButton("📬 ᴋᴏᴛᴀᴋ ᴘᴇsᴀɴ", callback_data="support"),
                 ],
                 [
-                    InlineKeyboardButton(text="Kembali", callback_data="start0"),
+                    InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="start0"),
                 ],
             ]
         ),
@@ -27,7 +27,7 @@ async def diskusi(client, callback_query):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="🔊 Channel", url="https://t.me/rekber_apoco"),
+                    InlineKeyboardButton(text="🔊 Channel", url="https://t.me/xCodee1"),
                 ],
                 [
                     InlineKeyboardButton(text="Kembali", callback_data="start0"),
@@ -92,11 +92,9 @@ async def asdksd(client, callback_query):
             ],
           ]
     msg = f"""
-<b>👋🏻 ʜᴀʟᴏ {callback_query.from_user.first_name} !!
+<b>👋🏻 ʜᴀʟᴏ {callback_query.from_user.first_name} !!
 
-💬 ᴘᴇʀᴋᴇɴᴀʟᴋᴀɴ ꜱᴀʏᴀ @apocouserbot ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ᴅɪ ᴀᴋᴜɴ ᴀɴᴅᴀ
-
-💁🏻 ᴀᴘᴀ ᴀᴅᴀ ʏᴀɴɢ ʙɪꜱᴀ ꜱᴀʏᴀ ʙᴀɴᴛᴜ ? ᴊɪᴋᴀ ᴋᴀᴍᴜ ꜱᴜᴅᴀʜ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ꜱɪʟᴀᴋᴀɴ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ.</b>
+💎 ᴀᴘᴀ ᴀᴅᴀ ʏᴀɴɢ ʙɪꜱᴀ ꜱᴀʏᴀ ʙᴀɴᴛᴜ ? ᴊɪᴋᴀ ᴋᴀᴍᴜ ꜱᴜᴅᴀʜ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ꜱɪʟᴀᴋᴀɴ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ.</b>
 """
     await callback_query.edit_message_text(msg, reply_markup=InlineKeyboardMarkup(buttons))
     monggo.add_served_user(callback_query.from_user.id)
