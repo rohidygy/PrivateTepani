@@ -50,7 +50,7 @@ async def ping_cmd(client, message):
 **{emo.pong} `{str(delta_ping).replace('.', ',')}ᴍs`**
 **{emo.owner}ᴏᴡɴᴇʀ : <a href=tg://user?id={client.me.id}>{client.me.first_name} {client.me.last_name or ''}</a>**
 """
-      await message.reply(_ping)
+   await message.reply(_ping)
 
 
 async def start_cmd(client, message):
