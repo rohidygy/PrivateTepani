@@ -178,7 +178,7 @@ async def set_emoji(client, message):
                         break
                 if emoji_id:
                    monggo.set_var(client.me.id, "emo_owner", emoji_id)
-                await jing.edit(
+                   await jing.edit(
                         f"{emo.sukses} <b>Emoji owner diset ke :</b> <emoji id={emoji_id}>{value}</emoji>"
                     )
         elif gua == False:
