@@ -74,7 +74,7 @@ class Button:
                 [InlineKeyboardButton("💎 ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ", callback_data="bahan")],
                 [
                     InlineKeyboardButton("🤖 ᴛᴇɴᴛᴀɴɢ ʙᴏᴛ", callback_data="informasi"),
-                    InlineKeyboardButton("☎️ Admin", callback_data="cb_tutor"),
+                    InlineKeyboardButton("🥷 ᴏᴡɴᴇʀ", callback_data="cb_tutor"),
                 ],
                 [
                     InlineKeyboardButton("📢 sᴜᴘᴘᴏʀᴛ", callback_data="diskusi"),
