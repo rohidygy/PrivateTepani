@@ -176,7 +176,6 @@ async def set_emoji(client, message):
                     if entity.custom_emoji_id:
                         emoji_id = entity.custom_emoji_id
                         break
-                
                    if emoji_id:
                    monggo.set_var(client.me.id, "emo_sukses", emoji_id)
                     await jing.edit(
