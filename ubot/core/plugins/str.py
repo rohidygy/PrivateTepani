@@ -43,7 +43,7 @@ async def ping_cmd(client, message):
     start = datetime.now()
     await client.invoke(Ping(ping_id=0))
     end = datetime.now()
-    delta_ping = (end - start).microseconds / 1000
+    delta_ping = round((end - start).microseconds / 100000, 2)
     _ping = f"""
 **{emo.ping} Pong !!**
 **{emo.pong} `{str(delta_ping).replace('.', ',')}ms`**"""
