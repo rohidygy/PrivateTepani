@@ -176,23 +176,7 @@ async def set_emoji(client, message):
                     if entity.custom_emoji_id:
                         emoji_id = entity.custom_emoji_id
                         break
-                if emoji_id:
-           
-monggo.set_var(client.me.id, "emo_owner", emoji_id)
-
-                    await jing.edit(
-                        f"{emo.sukses} <b>Emoji owner diset ke :</b> <emoji id={emoji_id}>{value}</emoji>"
-                    )
-        elif gua == False:
-            monggo.set_var(client.me.id, "emo_owner", value)
-            await jing.edit(f"{emo.sukses} <b>Emoji pong diset ke :</b> {value}")
-    elif variable.lower() == "proses":
-        if gua == True:
-            if message.entities:
-                for entity in message.entities:
-                    if entity.custom_emoji_id:
-                        emoji_id = entity.custom_emoji_id
-                        break
+                
                    if emoji_id:
                    monggo.set_var(client.me.id, "emo_sukses", emoji_id)
                     await jing.edit(
