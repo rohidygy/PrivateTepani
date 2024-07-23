@@ -194,7 +194,7 @@ monggo.set_var(client.me.id, "emo_owner", emoji_id)
                         emoji_id = entity.custom_emoji_id
                         break
                    if emoji_id:
-                    monggo.set_var(client.me.id, "emo_sukses", emoji_id)
+                   monggo.set_var(client.me.id, "emo_sukses", emoji_id)
                     await jing.edit(
                         f"{emo.sukses} <b>Emoji sukses diset ke :</b> <emoji id={emoji_id}>{value}</emoji>"
                     )
