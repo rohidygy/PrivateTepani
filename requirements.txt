@@ -1,4 +1,4 @@
-git+https://github.com/naya1503/mypyrogram
+git+https://github.com/naya1503/mypyrogram@dev
 tgcrypto
 pytz
 psutil
