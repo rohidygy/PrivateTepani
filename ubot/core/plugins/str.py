@@ -9,6 +9,7 @@ from ubot import *
 
 PING = "🏓"
 PONG = "🗿"
+OWNER = "🧸"
 
 
 async def send_msg_to_owner(client, message):
@@ -45,8 +46,9 @@ async def ping_cmd(client, message):
     end = datetime.now()
     delta_ping = round((end - start).microseconds / 100000, 2)
     _ping = f"""
-**{emo.ping} Pong !!**
-**{emo.pong} `{str(delta_ping).replace('.', ',')}ms`**"""
+**{emo.ping} ᴘᴏɴɢ**
+**{emo.pong} `{str(delta_ping).replace('.', ',')} ᴍs`**
+**{emo.owner} """
     await message.reply(_ping)
 
 
