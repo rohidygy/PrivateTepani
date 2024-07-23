@@ -82,6 +82,14 @@ class Emo:
         else:
             return f"{self.emo_pong}"
 
+
+    @property
+    def pong(self):
+        if isinstance(self.emo_owner, int):
+            return f"<emoji id={self.emo_owner}>🧸</emoji>"
+        else:
+            return f"{self.emo_owner}"
+
     @property
     def proses(self):
         if isinstance(self.emo_proses, int):
