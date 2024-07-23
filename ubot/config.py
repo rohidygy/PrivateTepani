@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 DEVS = [
-    1911749519,
-    5089916692,
-    1938616056,
+    isi,
+    isi,
+    isi,
 ]
 
 FKM = list(
@@ -24,9 +24,9 @@ API_ID = int(os.getenv("API_ID", "1634450"))
 
 API_HASH = os.getenv("API_HASH", "1a42e816cae8d86e71a4c466bba19b8c")
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "7361885133:AAGvmDuIHRxM1toqIsQe0zJ4LrMIpZZttyk")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 
-OWNER_ID = int(os.getenv("OWNER_ID", "1911749519"))
+OWNER_ID = int(os.getenv("OWNER_ID", ""))
 
 FKM_ID = list(map(int,os.getenv("FKM_ID", "5089916692 1938616056 1911749519",).split(),))
 
@@ -40,9 +40,9 @@ USER_ID = list(
     )
 )
 
-LOG_UBOT = int(os.getenv("LOG_UBOT", "-1002239916164"))
+LOG_UBOT = int(os.getenv("LOG_UBOT", ""))
 
-LOG_SELLER = int(os.getenv("LOG_SELLER", "-1002239916164"))
+LOG_SELLER = int(os.getenv("LOG_SELLER", ""))
 
 BLACKLIST_CHAT = list(
     map(
@@ -65,7 +65,7 @@ OPENAI_KEY = os.getenv(
 
 MONGO_URL = os.getenv(
     "MONGO_URL",
-    "mongodb+srv://apoco:apoco@cluster0.ashexud.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "",
 )
 
-DB_NAME = os.getenv("DB_NAME", "fkmubot")
+DB_NAME = os.getenv("DB_NAME", "")
