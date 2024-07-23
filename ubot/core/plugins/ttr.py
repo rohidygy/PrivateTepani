@@ -92,8 +92,7 @@ async def asdksd(client, callback_query):
             ],
           ]
     msg = f"""
-<b>👋🏻 ʜᴀʟᴏ {callback_query.from_user.first_name} !!
-
+<b>👋🏻 ʜᴀʟᴏ {callback_query.from_user.first_name} !!
 💎 ᴀᴘᴀ ᴀᴅᴀ ʏᴀɴɢ ʙɪꜱᴀ ꜱᴀʏᴀ ʙᴀɴᴛᴜ ? ᴊɪᴋᴀ ᴋᴀᴍᴜ ꜱᴜᴅᴀʜ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ꜱɪʟᴀᴋᴀɴ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ.</b>
 """
     await callback_query.edit_message_text(msg, reply_markup=InlineKeyboardMarkup(buttons))
