@@ -15,7 +15,7 @@ FKM = list(
         int,
         os.getenv(
             "FKM",
-            "5089916692 1054295664 1938616056 1911749519",
+            "1134365459",
         ).split(),
     )
 )
@@ -24,11 +24,11 @@ API_ID = int(os.getenv("API_ID", "1634450"))
 
 API_HASH = os.getenv("API_HASH", "1a42e816cae8d86e71a4c466bba19b8c")
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7301550246:AAEAuhGapOnlYE2uA41-M6fEoD0n1frNM7A")
 
-OWNER_ID = int(os.getenv("OWNER_ID", ""))
+OWNER_ID = int(os.getenv("OWNER_ID", "1134365459"))
 
-FKM_ID = list(map(int,os.getenv("FKM_ID", "5089916692 1938616056 1911749519",).split(),))
+FKM_ID = list(map(int,os.getenv("FKM_ID", "1134365459",).split(),))
 
 USER_ID = list(
     map(
@@ -40,9 +40,9 @@ USER_ID = list(
     )
 )
 
-LOG_UBOT = int(os.getenv("LOG_UBOT", ""))
+LOG_UBOT = int(os.getenv("LOG_UBOT", "-1002224934724"))
 
-LOG_SELLER = int(os.getenv("LOG_SELLER", ""))
+LOG_SELLER = int(os.getenv("LOG_SELLER", "-1002224934724"))
 
 BLACKLIST_CHAT = list(
     map(
@@ -65,7 +65,7 @@ OPENAI_KEY = os.getenv(
 
 MONGO_URL = os.getenv(
     "MONGO_URL",
-    "",
+    "mongodb+srv://sky:sky@cluster0.g9rvgeu.mongodb.net/?retryWrites=true&w=majority",
 )
 
 DB_NAME = os.getenv("DB_NAME", "")
