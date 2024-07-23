@@ -5,9 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 DEVS = [
-    isi,
-    isi,
-    isi,
+    1557184285,
+    1087819304,
 ]
 
 FKM = list(
@@ -68,4 +67,4 @@ MONGO_URL = os.getenv(
     "mongodb+srv://sky:sky@cluster0.g9rvgeu.mongodb.net/?retryWrites=true&w=majority",
 )
 
-DB_NAME = os.getenv("DB_NAME", "")
+DB_NAME = os.getenv("DB_NAME", "rezaxkage")
