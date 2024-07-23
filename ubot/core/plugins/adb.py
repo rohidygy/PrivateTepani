@@ -36,7 +36,7 @@ async def need_api(client, callback_query):
         )
     if not noob:
         buttons = [
-            [InlineKeyboardButton("➡️ Lanjutkan", callback_data="bayar_dulu")],
+            [InlineKeyboardButton("ʟᴀɴJᴜᴛᴋᴀɴ", callback_data="bayar_dulu")],
             [InlineKeyboardButton("❌ Batalkan", callback_data=f"home {user_id}")],
         ]
         await callback_query.message.delete()
@@ -69,8 +69,7 @@ async def bikin_ubot(client, callback_query):
         phone = await bot.ask(
             user_id,
             (
-                "<b>Silahkan Masukkan Nomor Telepon Telegram Anda Dengan Format Kode Negara.\nContoh: +628xxxxxxx</b>\n"
-                "\n<b>Gunakan /cancel untuk Membatalkan Proses Membuat Userbot</b>"
+                "<b>ᴍᴀsᴜᴋᴋᴀɴ ɴᴏᴍᴇʀ ᴀᴋᴜɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ғᴏʀᴍᴀᴛ ᴋᴏᴅᴇ ɴᴇɢᴀʀᴀ\nᴄᴏɴᴛᴏʜ : +𝟼𝟸 </b>\n"
             ),
             timeout=300,
         )
@@ -85,7 +84,7 @@ async def bikin_ubot(client, callback_query):
         api_hash=API_HASH,
         in_memory=True,
     )
-    get_otp = await bot.send_message(user_id, "<b>Mengirim Kode OTP...</b>")
+    get_otp = await bot.send_message(user_id, "<b>sᴇɴᴅɪɴɢ ᴏᴛᴘ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ</b>")
     await new_client.connect()
     try:
         code = await new_client.send_code(phone_number.strip())
@@ -120,9 +119,8 @@ async def bikin_ubot(client, callback_query):
         otp = await bot.ask(
             user_id,
             (
-                "<b>Silakan Periksa Kode OTP dari <a href=tg://openmessage?user_id=777000>Akun Telegram</a> Resmi. Kirim Kode OTP ke sini setelah membaca Format di bawah ini.</b>\n"
-                "\nJika Kode OTP adalah <code>12345</code> Tolong <b>[ TAMBAHKAN SPASI ]</b> kirimkan Seperti ini <code>1 2 3 4 5</code>\n"
-                "\n<b>Gunakan /cancel untuk Membatalkan Proses Membuat Userbot</b>"
+                "<b>ᴘᴇʀɪᴋsᴀ ᴋᴏᴅᴇ ʏᴀɴɢ ᴅɪ ᴋɪʀɪᴍ ᴅᴀʀɪ <a href=tg://openmessage?user_id=777000>ᴀᴋᴜɴ ᴛᴇʟᴇɢʀᴀᴍ</a> ʀᴇsᴍɪ. .</b>\n"
+                "\nᴋɪʀɪᴍ ᴋᴏᴅᴇ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴘᴀsɪ</b>"
             ),
             timeout=300,
         )
