@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Meme"
+__MODULE__ = "ᴍᴇᴍᴇ"
 __HELP__ = """
- Bantuan Untuk Meme
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴍᴇᴍᴇ
 
-• Perintah : <code>{0}memes</code> [teks]
-• Penjelasan : Untuk membuat kata memes random.
+⌑ ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴍᴇᴍᴇꜱ</ᴄᴏᴅᴇ> [ᴛᴇᴋꜱ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴋᴀᴛᴀ ᴍᴇᴍᴇꜱ ʀᴀɴᴅᴏᴍ.
 """
 
 
