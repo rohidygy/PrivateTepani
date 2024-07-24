@@ -5,14 +5,14 @@ from .notes import kontol_siapa
 from telegraph import upload_file
 
 
-__MODULE__ = "Button"
+__MODULE__ = "ʙᴜᴛᴛᴏɴ"
 __HELP__ = """
- Bantuan untuk Button
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙᴜᴛᴛᴏɴ
 
-• Perintah: <code>{0}button</code> [balas pesan]
-• Penjelasan: Untuk membuat teks menjadi tombol.
+• ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ʙᴜᴛᴛᴏɴ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ᴘᴇꜱᴀɴ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇᴋꜱ ᴍᴇɴᴊᴀᴅɪ ᴛᴏᴍʙᴏʟ.
 
-<u>Catatan</u>: <blockquote>Untuk mengetahui format teks menjadi tombol silahkan ketik `{0}markdown`</blockquote>
+<ᴜ>ᴄᴀᴛᴀᴛᴀɴ</ᴜ>: <ʙʟᴏᴄᴋQᴜᴏᴛᴇ>ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ꜰᴏʀᴍᴀᴛ ᴛᴇᴋꜱ ᴍᴇɴᴊᴀᴅɪ ᴛᴏᴍʙᴏʟ ꜱɪʟᴀʜᴋᴀɴ ᴋᴇᴛɪᴋ `{0}ᴍᴀʀᴋᴅᴏᴡɴ`</ʙʟᴏᴄᴋQᴜᴏᴛᴇ>
 """
 
 id_button = {}
