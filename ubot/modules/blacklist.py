@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Blacklist"
+__MODULE__ = "ᴀɴᴛɪɢᴄᴀꜱᴛ"
 __HELP__ = """
- Bantuan Untuk Blacklist
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀɴᴛɪɢᴄᴀꜱᴛ
 
-• Perintah : <code>{0}rallbl</code>
-• Penjelasan : Menghapus semua anti gcast
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴀᴄᴛɪᴠᴇ</ᴄᴏᴅᴇ>
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇɴɢʜᴀᴘᴜꜱ ꜱᴇᴍᴜᴀ ᴀɴᴛɪ ɢᴄᴀꜱᴛ
 
 • Perintah : <code>{0}addbl</code>
 • Penjelasan : Menambahkan grup kedalam anti Gcast.
@@ -29,7 +29,7 @@ async def _(client, message):
     await del_blacklist(client, message)
 
 
-@PY.UBOT("rallbl", sudo=True)
+@PY.UBOT("active", sudo=True)
 async def _(client, message):
     await rem_all_blacklist(client, message)
 
