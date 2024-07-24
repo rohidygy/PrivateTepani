@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Font"
+__MODULE__ = "ꜰᴏɴᴛ"
 __HELP__ = """
- Bantuan Untuk Font
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜰᴏɴᴛ
 
-• Perintah : <code>{0}font</code> [balas pesan/berikan teks]
-• Penjelasan : Untuk merubah teks dengan costum font.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ꜰᴏɴᴛ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ᴘᴇꜱᴀɴ/ʙᴇʀɪᴋᴀɴ ᴛᴇᴋꜱ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇʀᴜʙᴀʜ ᴛᴇᴋꜱ ᴅᴇɴɢᴀɴ ᴄᴏꜱᴛᴜᴍ ꜰᴏɴᴛ.
 """
 
 
