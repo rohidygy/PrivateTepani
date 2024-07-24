@@ -50,7 +50,7 @@ async def ping_cmd(client, message):
 **<blockqoute> {emo.pong} `{str(delta_ping).replace('.', ',')}ᴍs`</blockqoute>**
 **<blockqoute> <b>ᴏᴡɴᴇʀ :</b> <a href=tg://user?id={client.me.id}>{client.me.first_name} {client.me.last_name or ''}</a></blockqoute>**
 """
-    await message.reply(_ping)
+    await message.reply(_pong)
 
 async def start_cmd(client, message):
     monggo.add_served_user(message.from_user.id)
