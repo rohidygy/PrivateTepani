@@ -1,20 +1,20 @@
 from ubot import *
 
-__MODULE__ = "Image"
+__MODULE__ = "ɪᴍᴀɢᴇ"
 __HELP__ = """
- Bantuan Untuk Image
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɪᴍᴀɢᴇ
 
-• Perintah : <code>{0}rbg</code> [balas foto]
-• Penjelasan : Untuk menghapus latar belakang gambar.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ʀʙɢ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ꜰᴏᴛᴏ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴀᴘᴜꜱ ʟᴀᴛᴀʀ ʙᴇʟᴀᴋᴀɴɢ ɢᴀᴍʙᴀʀ.
 
-• Perintah : <code>{0}blur</code> [balas foto]
-• Penjelasan : Untuk memberikan efek blur ke gambar.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ʙʟᴜʀ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ꜰᴏᴛᴏ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴇʀɪᴋᴀɴ ᴇꜰᴇᴋ ʙʟᴜʀ ᴋᴇ ɢᴀᴍʙᴀʀ.
 
-• Perintah : <code>{0}miror</code> [balas foto]
-• Penjelasan : Untuk memberikan efek cermin ke gambar.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴍɪʀᴏʀ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ꜰᴏᴛᴏ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴇʀɪᴋᴀɴ ᴇꜰᴇᴋ ᴄᴇʀᴍɪɴ ᴋᴇ ɢᴀᴍʙᴀʀ.
 
-• Perintah : <code>{0}negative</code> [balas foto]
-• Penjelasan : Untuk memberikan efek negative ke gambar.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ɴᴇɢᴀᴛɪᴠᴇ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ꜰᴏᴛᴏ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴇʀɪᴋᴀɴ ᴇꜰᴇᴋ ɴᴇɢᴀᴛɪᴠᴇ ᴋᴇ ɢᴀᴍʙᴀʀ.
 """
 
 
