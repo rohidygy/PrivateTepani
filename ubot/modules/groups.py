@@ -1,35 +1,35 @@
 from ubot import *
 
-__MODULE__ = "Group"
+__MODULE__ = "ɢʀᴏᴜᴘ"
 __HELP__ = """
- Bantuan Untuk Group
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɢʀᴏᴜᴘ
 
-• Perintah : <code>{0}zombies</code>
-• Penjelasan : Untuk mencari akun terhapus dalam grup kemudian mengeluarkan nya.(admin required)
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴢᴏᴍʙɪᴇꜱ</ᴄᴏᴅᴇ>
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ᴀᴋᴜɴ ᴛᴇʀʜᴀᴘᴜꜱ ᴅᴀʟᴀᴍ ɢʀᴜᴘ ᴋᴇᴍᴜᴅɪᴀɴ ᴍᴇɴɢᴇʟᴜᴀʀᴋᴀɴ ɴʏᴀ.(ᴀᴅᴍɪɴ ʀᴇQᴜɪʀᴇᴅ)
 
-• Perintah : <code>{0}pin</code> or <code>{0}upin</code> [reply message]
-• Penjelasan : Untuk menyematkan dan melepas sematan.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴘɪɴ</ᴄᴏᴅᴇ> ᴏʀ <ᴄᴏᴅᴇ>{0}ᴜᴘɪɴ</ᴄᴏᴅᴇ> [ʀᴇᴘʟʏ ᴍᴇꜱꜱᴀɢᴇ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴʏᴇᴍᴀᴛᴋᴀɴ ᴅᴀɴ ᴍᴇʟᴇᴘᴀꜱ ꜱᴇᴍᴀᴛᴀɴ.
 
-• Perintah : <code>{0}getlink</code>
-• Penjelasan : Untuk mengambil tautan link grup (admin required)
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ɢᴇᴛʟɪɴᴋ</ᴄᴏᴅᴇ>
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴍʙɪʟ ᴛᴀᴜᴛᴀɴ ʟɪɴᴋ ɢʀᴜᴘ (ᴀᴅᴍɪɴ ʀᴇQᴜɪʀᴇᴅ)>{0}ᴜᴘɪɴ</ᴄᴏᴅᴇ> [ʀᴇᴘʟʏ ᴍᴇꜱꜱᴀɢᴇ]
 
-• Perintah : <code>{0}promote</code> [user_id/username/reply user]
-• Penjelasan : Untuk mengangkatkan anggota menjadi admin di grup dengan izin terbatas.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴘʀᴏᴍᴏᴛᴇ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀ_ɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ/ʀᴇᴘʟʏ ᴜꜱᴇʀ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀɴɢᴋᴀᴛᴋᴀɴ ᴀɴɢɢᴏᴛᴀ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ ᴅɪ ɢʀᴜᴘ ᴅᴇɴɢᴀɴ ɪᴢɪɴ ᴛᴇʀʙᴀᴛᴀꜱ.
 
-• Perintah : <code>{0}fullpromote</code> [user_id/username/reply user]
-• Penjelasan : Untuk mengangkatk anggota menjadi admin di grup dengan izin wakil pendiri.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ꜰᴜʟʟᴘʀᴏᴍᴏᴛᴇ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀ_ɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ/ʀᴇᴘʟʏ ᴜꜱᴇʀ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀɴɢᴋᴀᴛᴋ ᴀɴɢɢᴏᴛᴀ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ ᴅɪ ɢʀᴜᴘ ᴅᴇɴɢᴀɴ ɪᴢɪɴ ᴡᴀᴋɪʟ ᴘᴇɴᴅɪʀɪ.
 
-• Perintah : <code>{0}demote</code> [user_id/username/reply user]
-• Penjelasan : Untuk menurunkan anggota dari admin grup.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴅᴇᴍᴏᴛᴇ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀ_ɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ/ʀᴇᴘʟʏ ᴜꜱᴇʀ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴᴜʀᴜɴᴋᴀɴ ᴀɴɢɢᴏᴛᴀ ᴅᴀʀɪ ᴀᴅᴍɪɴ ɢʀᴜᴘ.
 
-• Perintah : <code>gctitle</code> [teks or reply teks]
-• Penjelasan : Untuk mengubah nama grup.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>ɢᴄᴛɪᴛʟᴇ</ᴄᴏᴅᴇ> [ᴛᴇᴋꜱ ᴏʀ ʀᴇᴘʟʏ ᴛᴇᴋꜱ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ɴᴀᴍᴀ ɢʀᴜᴘ.
 
-• Perintah : <code>gcdes</code> [teks or reply teks]
-• Penjelasan : Untuk mengubah nama deskripsi grup.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>ɢᴄᴅᴇꜱ</ᴄᴏᴅᴇ> [ᴛᴇᴋꜱ ᴏʀ ʀᴇᴘʟʏ ᴛᴇᴋꜱ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ɴᴀᴍᴀ ᴅᴇꜱᴋʀɪᴘꜱɪ ɢʀᴜᴘ.
 
-• Perintah : <code>gcpic</code> [reply photo or videl]
-• Penjelasan : Untuk mengubah foto grup.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>ɢᴄᴘɪᴄ</ᴄᴏᴅᴇ> [ʀᴇᴘʟʏ ᴘʜᴏᴛᴏ ᴏʀ ᴠɪᴅᴇʟ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ꜰᴏᴛᴏ ɢʀᴜᴘ.
 """
 
 @PY.UBOT("pin|unpin", sudo=True)
