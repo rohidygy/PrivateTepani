@@ -1,9 +1,9 @@
-__MODULE__ = "Grup Log"
+__MODULE__ = "ɢʀᴜᴘ ʟᴏɢ"
 __HELP__ = """
-Bantuan Untuk Sudo
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɢʀᴜᴘʟᴏɢꜱ
 
-• Perintah: <code>{0}logger</code> [on/off]
-• Penjelasan: Aktifkan tag log dan pm log.
+• ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ʟᴏɢɢᴇʀ</ᴄᴏᴅᴇ> [ᴏɴ/ᴏꜰꜰ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴀᴋᴛɪꜰᴋᴀɴ ᴛᴀɢ ʟᴏɢ ᴅᴀɴ ᴘᴍ ʟᴏɢ.
 """
 
 from pyrogram.errors import FloodWait, UserRestricted
