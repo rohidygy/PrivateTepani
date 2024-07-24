@@ -7,12 +7,12 @@ from pyrogram.enums import ChatAction
 from pyrogram.errors import *
 
 
-__MODULE__ = "Gemini"
+__MODULE__ = "ᴏᴘᴇɴ ᴀɪ"
 __HELP__ = """
- Help Command For Gemini
+ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅ ꜰᴏʀ OPEN AꞮ
 
- • Command: `{0}ai` or `{0}ask` [question or reply msg]
- • Description: For answer to Ai  Gemini by Google.
+⌑ ᴄᴏᴍᴍᴀɴᴅ: `{0}ᴀɪ` ᴏʀ `{0}ᴀꜱᴋ` [Qᴜᴇꜱᴛɪᴏɴ ᴏʀ ʀᴇᴘʟʏ ᴍꜱɢ]
+⌑ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ: ꜰᴏʀ ᴀɴꜱᴡᴇʀ ᴛᴏ ᴀɪ  ɢᴇᴍɪɴɪ ʙʏ ɢᴏᴏɢʟᴇ.
 """
 
 def cetbut(query: str, user_id: int):
