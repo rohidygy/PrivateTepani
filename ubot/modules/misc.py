@@ -1,15 +1,15 @@
-__MODULE__ = "Sudo"
+__MODULE__ = "ꜱᴜᴅᴏ"
 __HELP__ = """
 Bantuan Untuk Sudo
 
-• Perintah: <code>{0}addsudo</code> [reply/username/id]
-• Penjelasan: Tambah pengguna sudo.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴀᴅᴅꜱᴜᴅᴏ</ᴄᴏᴅᴇ> [ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ɪᴅ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴛᴀᴍʙᴀʜ ᴘᴇɴɢɢᴜɴᴀ ꜱᴜᴅᴏ.
 
-• Perintah: <code>{0}delsudo</code> [reply/username/id]
-• Penjelasan: Hapus pengguna sudo.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴅᴇʟꜱᴜᴅᴏ</ᴄᴏᴅᴇ> [ʀᴇᴘʟʏ/ᴜꜱᴇʀɴᴀᴍᴇ/ɪᴅ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ʜᴀᴘᴜꜱ ᴘᴇɴɢɢᴜɴᴀ ꜱᴜᴅᴏ.
 
-• Perintah: <code>{0}sudolist</code>
-• Penjelasan: Cek pengguna sudo.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴜᴅᴏʟɪꜱᴛ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴄᴇᴋ ᴘᴇɴɢɢᴜɴᴀ ꜱᴜᴅᴏ.
 """
 
 
