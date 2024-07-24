@@ -1,17 +1,17 @@
 from ubot import *
 
-__MODULE__ = "Global"
+__MODULE__ = "ɢʟᴏʙᴀʟ"
 __HELP__ = """
- Bantuan Untuk Global
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɢʟᴏʙᴀʟ
 
-• Perintah : <code>{0}gban</ᴄᴏᴅᴇ> [user_id/username/bales pesan]
-• Penjelasan : Untuk melakukan global banned.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ɢʙᴀɴ</CODE> [ᴜꜱᴇʀ_ɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ/ʙᴀʟᴇꜱ ᴘᴇꜱᴀɴ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇʟᴀᴋᴜᴋᴀɴ ɢʟᴏʙᴀʟ ʙᴀɴɴᴇᴅ.
 
-• Perintah : <code>{0}ungban</code> [user_id/username/bales pesan]
-• Penjelasan : Untuk melakukan global banned.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴜɴɢʙᴀɴ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀ_ɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ/ʙᴀʟᴇꜱ ᴘᴇꜱᴀɴ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇʟᴀᴋᴜᴋᴀɴ ɢʟᴏʙᴀʟ ʙᴀɴɴᴇᴅ.
 
-• Perintah : <code>{0}listgban</code> [user_id/username/bales pesan]
-• Penjelasan : Untuk melihat daftar pengguna gban.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ʟɪꜱᴛɢʙᴀɴ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀ_ɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ/ʙᴀʟᴇꜱ ᴘᴇꜱᴀɴ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴅᴀꜰᴛᴀʀ ᴘᴇɴɢɢᴜɴᴀ ɢʙᴀɴ.
 """
 
 
