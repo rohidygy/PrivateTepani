@@ -9,30 +9,30 @@ __MODULE__ = "Settings"
 __HELP__ = """
 Bantuan Untuk Settings
 
-• Perintah: <code>{0}setprefix</code> [trigger]
-• Penjelasan: Untuk mengatur handler userbot anda.
+â€¢ Perintah: <code>{0}setprefix</code> [trigger]
+â€¢ Penjelasan: Untuk mengatur handler userbot anda.
 
-• Perintah: <code>{0}setvar</code> [variable] [value]
-• Penjelasan: Untuk mengubah tampilan emoji.
+â€¢ Perintah: <code>{0}setvar</code> [variable] [value]
+â€¢ Penjelasan: Untuk mengubah tampilan emoji.
 
-• Perintah: <code>{0}emoid</code> [reply emoji]
-• Penjelasan: Untuk mengubah tampilan emoji.
+â€¢ Perintah: <code>{0}emoid</code> [reply emoji]
+â€¢ Penjelasan: Untuk mengubah tampilan emoji.
 
-• Perintah: <code>{0}getemo</code>
-• Penjelasan: Untuk melihat tampilan emoji.
+â€¢ Perintah: <code>{0}getemo</code>
+â€¢ Penjelasan: Untuk melihat tampilan emoji.
 
-• Perintah: <code>{0}getvar</code>
-• Penjelasan: Untuk melihat variabel dan value anda.
+â€¢ Perintah: <code>{0}getvar</code>
+â€¢ Penjelasan: Untuk melihat variabel dan value anda.
 
-• Contoh pengunaan set emoji dan setprefix :
+â€¢ Contoh pengunaan set emoji dan setprefix :
 
-<code>{0}setvar ping 🏓</code>
-<code>{0}setvar pong 🥵</code>
-<code>{0}setvar proses 🔄</code>
-<code>{0}setvar sukses ✅</code>
-<code>{0}setvar gagal ❌</code>
-<code>{0}setvar profil 👤</code>
-<code>{0}setvar alive ⭐</code>
+<code>{0}setvar ping ðŸ“</code>
+<code>{0}setvar pong ðŸ¥µ</code>
+<code>{0}setvar proses ðŸ”„</code>
+<code>{0}setvar sukses âœ…</code>
+<code>{0}setvar gagal âŒ</code>
+<code>{0}setvar profil ðŸ‘¤</code>
+<code>{0}setvar alive â­</code>
 
 <code>{0}setprefix 1 - ( + ) none</code>
 
@@ -42,15 +42,15 @@ Untuk akun premium bisa menggunakan emoji premium.
 
 @PY.DEP("Absen")
 async def _(client, message):
-    await message.reply("<b>Mmuuaahh😘</b>")
+    await message.reply("<b>MmuuaahhðŸ˜˜</b>")
 
 @PY.DEP("cekbot")
 async def _(client, message):
-    await message.reply("<b>Aktif Bosque😘</b>")
+    await message.reply("<b>Aktif BosqueðŸ˜˜</b>")
 
 @PY.DEP("batu")
 async def _(client, message):
-    await client.send_reaction(message.chat.id, message.id, "🗿")
+    await client.send_reaction(message.chat.id, message.id, "ðŸ—¿")
 
 
 @PY.UBOT("setprefix", sudo=True)
@@ -176,8 +176,8 @@ async def set_emoji(client, message):
                     if entity.custom_emoji_id:
                         emoji_id = entity.custom_emoji_id
                         break
-                   if emoji_id:
-                   monggo.set_var(client.me.id, "emo_sukses", emoji_id)
+                if emoji_id:
+                    monggo.set_var(client.me.id, "emo_sukses", emoji_id)
                     await jing.edit(
                         f"{emo.sukses} <b>Emoji sukses diset ke :</b> <emoji id={emoji_id}>{value}</emoji>"
                     )
@@ -246,5 +246,5 @@ async def getemoji(client, message):
     emo.initialize()
     xx = await message.reply(f"{emo.proses} <b>Processing...</b>")
     await xx.edit(
-        f"{emo.sukses} <b>๏ Emoji kamu :</b>\n\n PING : {emo.ping}\n PONG : {emo.pong}\n PROSES : {emo.proses}\n SUKSES : {emo.sukses}\n GAGAL : {emo.gagal}\n PROFIL : {emo.profil}\n ALIVE : {emo.alive}"
+        f"{emo.sukses} <b>à¹ Emoji kamu :</b>\n\n PING : {emo.ping}\n PONG : {emo.pong}\n PROSES : {emo.proses}\n SUKSES : {emo.sukses}\n GAGAL : {emo.gagal}\n PROFIL : {emo.profil}\n ALIVE : {emo.alive}"
     )
