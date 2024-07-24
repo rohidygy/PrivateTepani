@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Memify"
+__MODULE__ = "ᴍᴇᴍɪꜰʏ"
 __HELP__ = """
- Bantuan Untuk Memify
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴍᴇᴍɪꜰʏ
 
-• Perintah : <code>{0}mmf</code> [teks]
-• Penjelasan : Untuk membuat gambar menjadi kecil.
+⌑ ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴍᴍꜰ</ᴄᴏᴅᴇ> [ᴛᴇᴋꜱ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢᴀᴍʙᴀʀ ᴍᴇɴᴊᴀᴅɪ ᴋᴇᴄɪʟ.
 """
 
 
