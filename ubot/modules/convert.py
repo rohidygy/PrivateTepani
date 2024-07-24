@@ -1,30 +1,30 @@
 from ubot import *
 
-__MODULE__ = "Convert"
+__MODULE__ = "ᴄᴏɴᴠᴇʀᴛ"
 __HELP__ = """
- Bantuan Untuk Convert
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄᴏɴᴠᴇʀᴛ
 
-• Perintah : <code>{0}toanime</code> [balas foto/sticker]
-• Penjelasan : Merubah gambar ke anime.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴛᴏᴀɴɪᴍᴇ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ꜰᴏᴛᴏ/ꜱᴛɪᴄᴋᴇʀ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇʀᴜʙᴀʜ ɢᴀᴍʙᴀʀ ᴋᴇ ᴀɴɪᴍᴇ.
 
-• Perintah : <code>{0}toimg</code> [balas stiker/gif]
-• Penjelasan : Merubah stiker/gif ke foto.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴛᴏɪᴍɢ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ꜱᴛɪᴋᴇʀ/ɢɪꜰ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇʀᴜʙᴀʜ ꜱᴛɪᴋᴇʀ/ɢɪꜰ ᴋᴇ ꜰᴏᴛᴏ.
 
-• Perintah : <code>{0}tosticker</code> [balas ke foto]
-• Penjelasan : Merubah foto ke stiker.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴛᴏꜱᴛɪᴄᴋᴇʀ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ᴋᴇ ꜰᴏᴛᴏ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇʀᴜʙᴀʜ ꜰᴏᴛᴏ ᴋᴇ ꜱᴛɪᴋᴇʀ.
 
-• Perintah : <code>{0}togif</code> [balas stiker]
-• Penjelasan : Merubah stiker ke gif.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴛᴏɢɪꜰ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ꜱᴛɪᴋᴇʀ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇʀᴜʙᴀʜ ꜱᴛɪᴋᴇʀ ᴋᴇ ɢɪꜰ.
 
-• Perintah : <code>{0}toaudio</code> [balas video]
-• Penjelasan : Merubah video menjadi audio mp3.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴛᴏᴀᴜᴅɪᴏ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ᴠɪᴅᴇᴏ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇʀᴜʙᴀʜ ᴠɪᴅᴇᴏ ᴍᴇɴᴊᴀᴅɪ ᴀᴜᴅɪᴏ ᴍᴘ3.
 
-• Perintah : <code>{0}efek</code> [efek kode - nama efek]
-  <b>• efek kode:</b>  <code>bengek</code> <code>robot</code> <code>jedug</code> <code>fast</code> <code>echo</code>
-• Penjelasan : Merubah suara voice note.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴇꜰᴇᴋ</ᴄᴏᴅᴇ> [ᴇꜰᴇᴋ ᴋᴏᴅᴇ - ɴᴀᴍᴀ ᴇꜰᴇᴋ]  
+   <ʙ>• ᴇꜰᴇᴋ ᴋᴏᴅᴇ:</ʙ>  <ᴄᴏᴅᴇ>ʙᴇɴɢᴇᴋ</ᴄᴏᴅᴇ> <ᴄᴏᴅᴇ>ʀᴏʙᴏᴛ</ᴄᴏᴅᴇ> <ᴄᴏᴅᴇ>ᴊᴇᴅᴜɢ</ᴄᴏᴅᴇ> <ᴄᴏᴅᴇ>ꜰᴀꜱᴛ</ᴄᴏᴅᴇ> <ᴄᴏᴅᴇ>ᴇᴄʜᴏ</ᴄᴏᴅᴇ>
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇʀᴜʙᴀʜ ꜱᴜᴀʀᴀ ᴠᴏɪᴄᴇ ɴᴏᴛᴇ.
   
-• Perintah : <code>{0}curi</code> [balas pesan]
-• Penjelasan : Untuk mencuri media timer, cek pesan tersimpan
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴄᴜʀɪ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ᴘᴇꜱᴀɴ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴜʀɪ ᴍᴇᴅɪᴀ ᴛɪᴍᴇʀ, ᴄᴇᴋ ᴘᴇꜱᴀɴ ᴛᴇʀꜱɪᴍᴘᴀɴ
 """
 
 
