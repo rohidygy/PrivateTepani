@@ -39,33 +39,16 @@ async def diskusi(client, callback_query):
 async def informasi(client, callback_query):
     await callback_query.edit_message_text(
         text="""
-🤖 Tentang <b>Apoco-Userbot</b>
-
-penjelasan tentang <b>userbot</b> bisa [Baca Disini](https://t.me/rawatnokos/61)
-
-<b>Dengan @apocouserbot Anda dapat melakukan hal-hal berikut :</b>
-❐ Mengirim pesan ke semua grup / pengguna secara bersamaan
-❐ Mengelola dan memoderasi grup
-❐ Mengunduh media
-❐ Mengonversi format media
-❐ Balasan pesan otomatis
-❐ Menggunakan Fitur AI
-❐ Membuat Sticker
-❐ Digunakan untuk Promosi
-❐ Melakukan Fake OS / naik ke obrolan suara menggunakan bot
-❐ Menyimpan media dari channel yang dibatasi
-❐ Menanggapi perintah yang diberikan
-
-...Dan masih banyak lagi!""",
+🧰 ᴛᴇɴᴛᴀɴɢ <b>ʀᴇᴢᴀ ᴅᴇᴠs ʟᴠ</b>
+""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="Kembali", callback_data="start0"),
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="start0"),
                 ],
             ]
         ),
     )
-
 async def asdksd(client, callback_query):
     if callback_query.from_user.id in DEVS:
         buttons = [
