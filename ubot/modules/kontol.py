@@ -5,34 +5,34 @@ from pyrogram.types import *
 
 from ubot import FKM, PY, Emo, monggo, ubot
 
-__MODULE__ = "Settings"
+__MODULE__ = "ꜱᴇᴛᴛɪɴɢꜱ"
 __HELP__ = """
-Bantuan Untuk Settings
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴇᴛᴛɪɴɢꜱ
 
-â€¢ Perintah: <code>{0}setprefix</code> [trigger]
-â€¢ Penjelasan: Untuk mengatur handler userbot anda.
+❏ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴇᴛᴘʀᴇꜰɪx</ᴄᴏᴅᴇ> [ᴛʀɪɢɢᴇʀ]
+❏ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴛᴜʀ ʜᴀɴᴅʟᴇʀ ᴜꜱᴇʀʙᴏᴛ ᴀɴᴅᴀ.
 
-â€¢ Perintah: <code>{0}setvar</code> [variable] [value]
-â€¢ Penjelasan: Untuk mengubah tampilan emoji.
+❏ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴇᴛᴠᴀʀ</ᴄᴏᴅᴇ> [ᴠᴀʀɪᴀʙʟᴇ] [ᴠᴀʟᴜᴇ]
+❏ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ᴛᴀᴍᴘɪʟᴀɴ ᴇᴍᴏᴊɪ.
 
-â€¢ Perintah: <code>{0}emoid</code> [reply emoji]
-â€¢ Penjelasan: Untuk mengubah tampilan emoji.
+❏ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴇᴍᴏɪᴅ</ᴄᴏᴅᴇ> [ʀᴇᴘʟʏ ᴇᴍᴏᴊɪ]
+❏ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ᴛᴀᴍᴘɪʟᴀɴ ᴇᴍᴏᴊɪ.
 
-â€¢ Perintah: <code>{0}getemo</code>
-â€¢ Penjelasan: Untuk melihat tampilan emoji.
+❏ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ɢᴇᴛᴇᴍᴏ</ᴄᴏᴅᴇ>
+❏ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴛᴀᴍᴘɪʟᴀɴ ᴇᴍᴏᴊɪ.
 
-â€¢ Perintah: <code>{0}getvar</code>
-â€¢ Penjelasan: Untuk melihat variabel dan value anda.
+❏ Perintah: <code>{0}getvar</code>
+❏ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴠᴀʀɪᴀʙᴇʟ ᴅᴀɴ ᴠᴀʟᴜᴇ ᴀɴᴅᴀ.
 
-â€¢ Contoh pengunaan set emoji dan setprefix :
+❏ ᴄᴏɴᴛᴏʜ ᴘᴇɴɢᴜɴᴀᴀɴ ꜱᴇᴛ ᴇᴍᴏᴊɪ ᴅᴀɴ ꜱᴇᴛᴘʀᴇꜰɪx :
 
-<code>{0}setvar ping ðŸ“</code>
-<code>{0}setvar pong ðŸ¥µ</code>
-<code>{0}setvar proses ðŸ”„</code>
-<code>{0}setvar sukses âœ…</code>
-<code>{0}setvar gagal âŒ</code>
-<code>{0}setvar profil ðŸ‘¤</code>
-<code>{0}setvar alive â­</code>
+<code>{0}setvar ping</code>
+<code>{0}setvar pong</code>
+<code>{0}setvar proses</code>
+<code>{0}setvar sukses</code>
+<code>{0}setvar gagal</code>
+<code>{0}setvar profil</code>
+<code>{0}setvar alive­</code>
 
 <code>{0}setprefix 1 - ( + ) none</code>
 
