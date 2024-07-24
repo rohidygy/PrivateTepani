@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Limit"
+__MODULE__ = "ʟɪᴍɪᴛ"
 __HELP__ = """
- Bantuan Untuk Limit
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʟɪᴍɪᴛ
 
-• Perintah : <code>{0}limit</code>
-• Penjelasan : Untuk mengecek akun anda terbatas atau tidak.
+⌑ ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ʟɪᴍɪᴛ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴄᴇᴋ ᴀᴋᴜɴ ᴀɴᴅᴀ ᴛᴇʀʙᴀᴛᴀꜱ ᴀᴛᴀᴜ ᴛɪᴅᴀᴋ.
 """
 
 
