@@ -1,22 +1,22 @@
 from ubot import *
 
-__MODULE__ = "Gcast"
+__MODULE__ = "ɢᴄᴀꜱᴛ"
 __HELP__ = """
- Bantuan Untuk Gcast
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɢᴄᴀꜱᴛ
 
-• Perintah : <code>{0}ucast</code> [balas pesan/kirim pesan]
-• Penjelasan : Untuk pengirim pesan ke semua pengguna.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴜᴄᴀꜱᴛ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ᴘᴇꜱᴀɴ/ᴋɪʀɪᴍ ᴘᴇꜱᴀɴ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴘᴇɴɢɪʀɪᴍ ᴘᴇꜱᴀɴ ᴋᴇ ꜱᴇᴍᴜᴀ ᴘᴇɴɢɢᴜɴᴀ.
 
-• Perintah : <code>{0}gcast</code> [balas pesan/kirim pesan]
-• Penjelasan : Untuk pengirim pesan ke semua grup.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ɢᴄᴀꜱᴛ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ᴘᴇꜱᴀɴ/ᴋɪʀɪᴍ ᴘᴇꜱᴀɴ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴘᴇɴɢɪʀɪᴍ ᴘᴇꜱᴀɴ ᴋᴇ ꜱᴇᴍᴜᴀ ɢʀᴜᴘ.
 
-• Perintah : <code>{0}sgcast</code>
-• Penjelasan : Untuk membatalkan proses gcast.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ꜱɢᴄᴀꜱᴛ</ᴄᴏᴅᴇ>
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴘʀᴏꜱᴇꜱ ɢᴄᴀꜱᴛ.
 
-• Perintah : <code>{0}send</code> [username/user_id - teks/reply]
-• Penjelasan : Untuk mengirim pesan ke pengguna/grup/channel.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ꜱᴇɴᴅ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀɴᴀᴍᴇ/ᴜꜱᴇʀ_ɪᴅ - ᴛᴇᴋꜱ/ʀᴇᴘʟʏ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴɢɪʀɪᴍ ᴘᴇꜱᴀɴ ᴋᴇ ᴘᴇɴɢɢᴜɴᴀ/ɢʀᴜᴘ/ᴄʜᴀɴɴᴇʟ.
   
-• Untuk Menggunakan Button Gunakan Format : <code> Teks ~ button_teks:button_url</code>
+• ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴜᴛᴛᴏɴ ɢᴜɴᴀᴋᴀɴ ꜰᴏʀᴍᴀᴛ : <ᴄᴏᴅᴇ> ᴛᴇᴋꜱ ~ ʙᴜᴛᴛᴏɴ_ᴛᴇᴋꜱ:ʙᴜᴛᴛᴏɴ_ᴜʀʟ</ᴄᴏᴅᴇ>
 """
 
 
