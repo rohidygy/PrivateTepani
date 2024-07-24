@@ -46,9 +46,9 @@ async def ping_cmd(client, message):
     end = datetime.now()
     delta_ping = round((end - start).microseconds / 100000, 2)
     _ping = f"""
-**{emo.ping} ᴘᴏɴɢ**
+**<blockquote> {emo.ping} ᴘᴏɴɢ**
 **{emo.pong} `{str(delta_ping).replace('.', ',')}ᴍs`**
-**<b>{emo.owner} owner•</b> <a href=tg://user?id={client.me.id}>{client.me.first_name} {client.me.last_name or ''}</a>**
+**<b>{emo.owner} owner•</b> <a href=tg://user?id={client.me.id}>{client.me.first_name} {client.me.last_name or ''}</a> </blockquote>**
 """
     await message.reply(_ping)
 
