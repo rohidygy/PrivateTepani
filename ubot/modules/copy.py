@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Copy"
+__MODULE__ = "ᴄᴏᴘʏ"
 __HELP__ = """
- Bantuan Untuk Copy
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄᴏᴘʏ
 
-• Perintah : <code>{0}copy</code> [link]
-• Penjelasan : Untuk mengambil pesan melalui link telegram.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴄᴏᴘʏ</ᴄᴏᴅᴇ> [ʟɪɴᴋ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴍʙɪʟ ᴘᴇꜱᴀɴ ᴍᴇʟᴀʟᴜɪ ʟɪɴᴋ ᴛᴇʟᴇɢʀᴀᴍ.
   """
 
 
