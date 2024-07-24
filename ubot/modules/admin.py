@@ -1,23 +1,23 @@
 from ubot import *
 
-__MODULE__ = "Admin"
+__MODULE__ = "ᴀᴅᴍɪɴ"
 __HELP__ = """
- Bantuan Untuk Admin
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀᴅᴍɪɴ
 
-• Perintah : <code>{0}kick</code> [user_id/username/reply user]
-• Penjelasan : Untuk menendang anggota dari grup.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴋɪᴄᴋ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀ_ɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ/ʀᴇᴘʟʏ ᴜꜱᴇʀ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴᴇɴᴅᴀɴɢ ᴀɴɢɢᴏᴛᴀ ᴅᴀʀɪ ɢʀᴜᴘ.
 
-• Perintah : <code>{0}ban</code> [user_id/username/reply user]
-• Penjelasan : Untuk memblokir anggota dari grup.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ʙᴀɴ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀ_ɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ/ʀᴇᴘʟʏ ᴜꜱᴇʀ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇᴍʙʟᴏᴋɪʀ ᴀɴɢɢᴏᴛᴀ ᴅᴀʀɪ ɢʀᴜᴘ.
 
-• Perintah : <code>{0}mute</code> [user_id/username/reply user]
-• Penjelasan : Untuk membisukan anggota dari grup.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴍᴜᴛᴇ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀ_ɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ/ʀᴇᴘʟʏ ᴜꜱᴇʀ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇᴍʙɪꜱᴜᴋᴀɴ ᴀɴɢɢᴏᴛᴀ ᴅᴀʀɪ ɢʀᴜᴘ.
 
-• Perintah : <code>{0}unban</code> [user_id/username/reply user]
-• Penjelasan : Untuk melepas pemblokiran anggota dari grup.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴜɴʙᴀɴ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀ_ɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ/ʀᴇᴘʟʏ ᴜꜱᴇʀ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇʟᴇᴘᴀꜱ ᴘᴇᴍʙʟᴏᴋɪʀᴀɴ ᴀɴɢɢᴏᴛᴀ ᴅᴀʀɪ ɢʀᴜᴘ.
 
-• Perintah : <code>{0}unmute</code> [user_id/username/reply user]
-• Penjelasan : Untuk melepas pembisuan anggota dari grup.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴜɴᴍᴜᴛᴇ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀ_ɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ/ʀᴇᴘʟʏ ᴜꜱᴇʀ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇʟᴇᴘᴀꜱ ᴘᴇᴍʙɪꜱᴜᴀɴ ᴀɴɢɢᴏᴛᴀ ᴅᴀʀɪ ɢʀᴜᴘ.
 """
 
 
