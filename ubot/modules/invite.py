@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Invite"
+__MODULE__ = "ɪɴᴠɪᴛᴇ"
 __HELP__ = """
- Bantuan Untuk Invite
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɪɴᴠɪᴛᴇ
 
-• Perintah : <code>{0}invite</code> [username] 
-• Penjelasan : Untuk mengundang anggota ke grup.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ɪɴᴠɪᴛᴇ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀɴᴀᴍᴇ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜɴᴅᴀɴɢ ᴀɴɢɢᴏᴛᴀ ᴋᴇ ɢʀᴜᴘ.
   """
 
 
