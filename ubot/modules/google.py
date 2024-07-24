@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Google"
+__MODULE__ = "ɢᴏᴏɢʟᴇ"
 __HELP__ = """
- Bantuan Untuk Google
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɢᴏᴏɢʟᴇ
 
-• Perintah: <code>{0}google</code> [query]
-• Penjelasan: Untuk mencari something.
+• ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ɢᴏᴏɢʟᴇ</ᴄᴏᴅᴇ> [Qᴜᴇʀʏ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ꜱᴏᴍᴇᴛʜɪɴɢ.
 """
 
 
