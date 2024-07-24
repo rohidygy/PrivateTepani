@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Curi"
+__MODULE__ = "ᴄᴜʀɪ"
 __HELP__ = """
- Bantuan Untuk mencuri konten timer
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴜʀɪ ᴋᴏɴᴛᴇɴ ᴛɪᴍᴇʀ
 
-• Perintah : <code>{0}curi</code> [link]
-• Penjelasan : Untuk mengambil pap timer, cek pesan tersimpan.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴄᴜʀɪ</ᴄᴏᴅᴇ> [ʟɪɴᴋ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴍʙɪʟ ᴘᴀᴘ ᴛɪᴍᴇʀ, ᴄᴇᴋ ᴘᴇꜱᴀɴ ᴛᴇʀꜱɪᴍᴘᴀɴ.
   """
 
 
