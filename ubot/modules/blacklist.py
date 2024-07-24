@@ -7,14 +7,14 @@ __HELP__ = """
 • ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴀᴄᴛɪᴠᴇ</ᴄᴏᴅᴇ>
 • ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇɴɢʜᴀᴘᴜꜱ ꜱᴇᴍᴜᴀ ᴀɴᴛɪ ɢᴄᴀꜱᴛ
 
-• Perintah : <code>{0}addbl</code>
-• Penjelasan : Menambahkan grup kedalam anti Gcast.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴀᴅᴅʙʟ</ᴄᴏᴅᴇ>
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ɢʀᴜᴘ ᴋᴇᴅᴀʟᴀᴍ ᴀɴᴛɪ ɢᴄᴀꜱᴛ.
 
-• Perintah : <code>{0}delbl</code>
-• Penjelasan : Menghapus grup dari daftar anti Gcast.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴅᴇʟʙʟ</ᴄᴏᴅᴇ>
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇɴɢʜᴀᴘᴜꜱ ɢʀᴜᴘ ᴅᴀʀɪ ᴅᴀꜰᴛᴀʀ ᴀɴᴛɪ ɢᴄᴀꜱᴛ.
 
-• Perintah : <code>{0}listbl</code>
-• Penjelasan : Melihat daftar grup anti Gcast.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ʟɪꜱᴛʙʟ</ᴄᴏᴅᴇ>
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇʟɪʜᴀᴛ ᴅᴀꜰᴛᴀʀ ɢʀᴜᴘ ᴀɴᴛɪ ɢᴄᴀꜱᴛ.
 """
 
 
