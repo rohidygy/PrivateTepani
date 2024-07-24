@@ -1,26 +1,26 @@
 from ubot import *
 
-__MODULE__ = "Profile"
+__MODULE__ = "ᴘʀᴏꜰɪʟᴇ"
 __HELP__ = """
-Bantuan Untuk Profile
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴘʀᴏꜰɪʟᴇ
 
-• Perintah: <code>{0}adminlist</code>
-• Penjelasan: Untuk melihat status admin grup anda.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴀᴅᴍɪɴʟɪꜱᴛ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ꜱᴛᴀᴛᴜꜱ ᴀᴅᴍɪɴ ɢʀᴜᴘ ᴀɴᴅᴀ.
 
-• Perintah: <code>{0}setbio</code> [query]
-• Penjelasan: Untuk mengubah bio Anda.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴇᴛʙɪᴏ</ᴄᴏᴅᴇ> [Qᴜᴇʀʏ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ʙɪᴏ ᴀɴᴅᴀ.
 
-• Perintah: <code>{0}setname</code> [query]
-• Penjelasan: Untuk mengubah Nama Anda.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴇᴛɴᴀᴍᴇ</ᴄᴏᴅᴇ> [Qᴜᴇʀʏ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ɴᴀᴍᴀ ᴀɴᴅᴀ.
 
-• Perintah: <code>{0}setpp</code> [balas media]
-• Penjelasan: Untuk mengubah Foto Akun Anda.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴇᴛᴘᴘ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ᴍᴇᴅɪᴀ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ꜰᴏᴛᴏ ᴀᴋᴜɴ ᴀɴᴅᴀ.
 
-• Perintah: <code>{0}block</code> [balas pengguna]
-• Penjelasan: Untuk blokir pengguna.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ʙʟᴏᴄᴋ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ᴘᴇɴɢɢᴜɴᴀ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ʙʟᴏᴋɪʀ ᴘᴇɴɢɢᴜɴᴀ.
 
-• Perintah: <code>{0}unblock</code> [query]
-• Penjelasan: Untuk buka blokir pengguna.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴜɴʙʟᴏᴄᴋ</ᴄᴏᴅᴇ> [Qᴜᴇʀʏ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ʙᴜᴋᴀ ʙʟᴏᴋɪʀ ᴘᴇɴɢɢᴜɴᴀ.
 """
 
 
