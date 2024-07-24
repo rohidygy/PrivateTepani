@@ -1,14 +1,14 @@
 from ubot import *
 
-__MODULE__ = "Logo"
+__MODULE__ = "ʟᴏɢᴏ"
 __HELP__ = """
- Bantuan Untuk Logo
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʟᴏɢᴏ
 
-• Perintah : <code>{0}logo</code> [teks]
-• Penjelasan : Untuk membuat sebuah logo dengan kata random.
+⌑ ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ʟᴏɢᴏ</ᴄᴏᴅᴇ> [ᴛᴇᴋꜱ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ꜱᴇʙᴜᴀʜ ʟᴏɢᴏ ᴅᴇɴɢᴀɴ ᴋᴀᴛᴀ ʀᴀɴᴅᴏᴍ.
 
-• Perintah : <code>{0}blogo</code> [teks]
-• Penjelasan : Untuk membuat background menjadi hitam.  
+⌑ ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ʙʟᴏɢᴏ</ᴄᴏᴅᴇ> [ᴛᴇᴋꜱ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ʙᴀᴄᴋɢʀᴏᴜɴᴅ ᴍᴇɴᴊᴀᴅɪ ʜɪᴛᴀᴍ.
 """
 
 
