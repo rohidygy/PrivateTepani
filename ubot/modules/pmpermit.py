@@ -1,25 +1,25 @@
 from ubot import *
 
-__MODULE__ = "PMPermit"
+__MODULE__ = "ᴘᴍᴘᴇʀᴍɪᴛ"
 __HELP__ = """
-Bantuan Untuk PMPermit
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴘᴍᴘᴇʀᴍɪᴛ
 
-• Perintah: <code>{0}antipm</code> [on atau off]
-• Penjelasan: Untuk menghidupkan atau mematikan antipm
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴀɴᴛɪᴘᴍ</ᴄᴏᴅᴇ> [ᴏɴ ᴀᴛᴀᴜ ᴏꜰꜰ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢʜɪᴅᴜᴘᴋᴀɴ ᴀᴛᴀᴜ ᴍᴇᴍᴀᴛɪᴋᴀɴ ᴀɴᴛɪᴘᴍ
 
-• Perintah: <code>{0}setmsg</code> [balas atau berikan pesan]
-• Penjelasan: Untuk mengatur pesan antipm.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴇᴛᴍꜱɢ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ᴀᴛᴀᴜ ʙᴇʀɪᴋᴀɴ ᴘᴇꜱᴀɴ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴛᴜʀ ᴘᴇꜱᴀɴ ᴀɴᴛɪᴘᴍ.
 
-• Perintah: <code>{0}setlimit</code> [angka]
-• Penjelasan: Untuk mengatur peringatan pesan blokir.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴇᴛʟɪᴍɪᴛ</ᴄᴏᴅᴇ> [ᴀɴɢᴋᴀ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴛᴜʀ ᴘᴇʀɪɴɢᴀᴛᴀɴ ᴘᴇꜱᴀɴ ʙʟᴏᴋɪʀ.
 
-• Perintah: <code>{0}ok</code>
-• Penjelasan: Untuk menyetujui pesan.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴏᴋ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴʏᴇᴛᴜᴊᴜɪ ᴘᴇꜱᴀɴ.
 
-• Perintah: <code>{0}no</code>
-• Penjelasan: Untuk menolak pesan.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ɴᴏ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴᴏʟᴀᴋ ᴘᴇꜱᴀɴ.
 
-<u>Catatan</u>: <blockquote>Untuk mengetahui format teks menjadi tombol silahkan ketik `{0}markdown`</blockquote>
+<ᴜ>ᴄᴀᴛᴀᴛᴀɴ</ᴜ>: <ʙʟᴏᴄᴋQᴜᴏᴛᴇ>ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ꜰᴏʀᴍᴀᴛ ᴛᴇᴋꜱ ᴍᴇɴᴊᴀᴅɪ ᴛᴏᴍʙᴏʟ ꜱɪʟᴀʜᴋᴀɴ ᴋᴇᴛɪᴋ `{0}ᴍᴀʀᴋᴅᴏᴡɴ`</ʙʟᴏᴄᴋQᴜᴏᴛᴇ>
 """
 
 
