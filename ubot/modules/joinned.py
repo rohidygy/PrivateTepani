@@ -1,23 +1,23 @@
 from ubot import *
 
-__MODULE__ = "Join"
+__MODULE__ = "ᴊᴏɪɴ"
 __HELP__ = """
- Bantuan Untuk Join
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴊᴏɪɴ
+ 
+⌑ ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴋɪᴄᴋᴍᴇ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴋᴇʟᴜᴀʀ ᴅᴀʀɪ ɢʀᴜᴘ.
 
-• Perintah : <code>{0}kickme</code>
-• Penjelasan : Untuk keluar dari grup.
+⌑ ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴊᴏɪɴ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀɴᴀᴍᴇ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ʙᴇʀɢᴀʙᴜɴɢ ᴋᴇ ɢʀᴜᴘ ᴅᴇɴɢᴀɴ ᴜꜱᴇʀɴᴀᴍᴇ.
 
-• Perintah : <code>{0}join</code> [username]
-• Penjelasan : Untuk bergabung ke grup dengan username.
+⌑ ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ʟᴇᴀᴠᴇᴀʟʟɢᴄ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴋᴇʟᴜᴀʀ ꜱᴇᴍᴜᴀ ᴅᴀʀɪ ɢʀᴜᴘ ᴀᴋᴜɴ ᴀɴᴅᴀ.
 
-• Perintah : <code>{0}leaveallgc</code>
-• Penjelasan : Untuk keluar semua dari grup akun anda. 
+⌑ ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ʟᴇᴀᴠᴇᴀʟʟᴄʜ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴋᴇʟᴜᴀʀ ꜱᴇᴍᴜᴀ ᴅᴀʀɪ ᴄʜᴀɴɴᴇʟ ᴀᴋᴜɴ ᴀɴᴅᴀ.
 
-• Perintah : <code>{0}leaveallch</code>
-• Penjelasan : Untuk keluar semua dari channel akun anda.
-
-• Perintah : <code>{0}leave</code> [username]
-• Penjelasan : Untuk keluar dari grup dengan username.
+⌑ ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ʟᴇᴀᴠᴇ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀɴᴀᴍᴇ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴋᴇʟᴜᴀʀ ᴅᴀʀɪ ɢʀᴜᴘ ᴅᴇɴɢᴀɴ ᴜꜱᴇʀɴᴀᴍᴇ.
 """
 
 
