@@ -1,14 +1,14 @@
 from ubot import *
 
-__MODULE__ = "Info"
+__MODULE__ = "ɪɴꜰᴏ"
 __HELP__ = """
- Bantuan Untuk Info
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɪɴꜰᴏ
 
-• Perintah : <code>{0}info</code> [user_id/username/balas pesan]
-• Penjelasan : Untuk melihat informasi pengguna.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ɪɴꜰᴏ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀ_ɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ/ʙᴀʟᴀꜱ ᴘᴇꜱᴀɴ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ɪɴꜰᴏʀᴍᴀꜱɪ ᴘᴇɴɢɢᴜɴᴀ.
 
-• Perintah : <code>{0}cinfo</code> [user_id/username/balas pesan]
-• Penjelasan : Untuk melihat informasi obrolan.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴄɪɴꜰᴏ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀ_ɪᴅ/ᴜꜱᴇʀɴᴀᴍᴇ/ʙᴀʟᴀꜱ ᴘᴇꜱᴀɴ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ɪɴꜰᴏʀᴍᴀꜱɪ ᴏʙʀᴏʟᴀɴ.
 """
 
 
