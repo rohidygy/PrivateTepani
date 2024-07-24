@@ -10,23 +10,23 @@ from ubot import (PY, Emo, ReplyCheck, Types, bot, create_tl_btn,
 # TODO: Add buttons support in some types
 # TODO: Add group notes, but whats for? since only you can get notes
 
-__MODULE__ = "Notes"
-__HELP__ = """Bantuan Untuk Notes
+__MODULE__ = "ɴᴏᴛᴇꜱ"
+__HELP__ = """ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɴᴏᴛᴇꜱ
 
 
-• Perintah: <code>{0}save</code> [nama catatan] [balas pesan]
-• Penjelasan: Untuk menyimpan catatan.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴀᴠᴇ</ᴄᴏᴅᴇ> [ɴᴀᴍᴀ ᴄᴀᴛᴀᴛᴀɴ] [ʙᴀʟᴀꜱ ᴘᴇꜱᴀɴ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴʏɪᴍᴘᴀɴ ᴄᴀᴛᴀᴛᴀɴ.
 
-• Perintah: <code>{0}get</code> [nama catatan]
-• Penjelasan: Untuk mengambil catatan.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ɢᴇᴛ</ᴄᴏᴅᴇ> [ɴᴀᴍᴀ ᴄᴀᴛᴀᴛᴀɴ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴍʙɪʟ ᴄᴀᴛᴀᴛᴀɴ.
 
-• Perintah: <code>{0}rm</code> [nama catatan]
-• Penjelasan: Untuk menghapus catatan.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ʀᴍ</ᴄᴏᴅᴇ> [ɴᴀᴍᴀ ᴄᴀᴛᴀᴛᴀɴ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴀᴘᴜꜱ ᴄᴀᴛᴀᴛᴀɴ.
 
-• Perintah: <code>{0}notes</code>
-• Penjelasan: Untuk melihat semua catatan.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ɴᴏᴛᴇꜱ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ꜱᴇᴍᴜᴀ ᴄᴀᴛᴀᴛᴀɴ.
 
-<u>Catatan</u>: <blockquote>Untuk mengetahui format teks menjadi tombol silahkan ketik `{0}markdown`</blockquote>
+<ᴜ>ᴄᴀᴛᴀᴛᴀɴ</ᴜ>: <ʙʟᴏᴄᴋQᴜᴏᴛᴇ>ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ꜰᴏʀᴍᴀᴛ ᴛᴇᴋꜱ ᴍᴇɴᴊᴀᴅɪ ᴛᴏᴍʙᴏʟ ꜱɪʟᴀʜᴋᴀɴ ᴋᴇᴛɪᴋ `{0}ᴍᴀʀᴋᴅᴏᴡɴ`</ʙʟᴏᴄᴋQᴜᴏᴛᴇ>
 """
 
 
