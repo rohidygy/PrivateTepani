@@ -8,24 +8,24 @@ from ubot import BLACKLIST_CHAT, PY, font, gen_font, get_broadcast_id, monggo
 
 spam_gikesan = {}
 
-__MODULE__ = "Auto Gcast"
+__MODULE__ = "ʙᴄ 24ᴊᴀᴍ"
 __HELP__ = """
- Bantuan Untuk Auto Gcast
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙᴄ 24ᴊᴀᴍ
 
-• Perintah : <code>{0}addkata</code> [Balas ke pesan]
-• Penjelasan : Tambah kata gikes .
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴀᴅᴅᴋᴀᴛᴀ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ᴋᴇ ᴘᴇꜱᴀɴ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴛᴀᴍʙᴀʜ ᴋᴀᴛᴀ ɢɪᴋᴇꜱ.
 
-• Perintah : <code>{0}remkata</code> [Kasih Teks]
-• Penjelasan : Apus kata gikes.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ʀᴇᴍᴋᴀᴛᴀ</ᴄᴏᴅᴇ> [ᴋᴀꜱɪʜ ᴛᴇᴋꜱ]
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴀᴘᴜꜱ ᴋᴀᴛᴀ ɢɪᴋᴇꜱ.
 
-• Perintah : <code>{0}bgcdb</code> 
-• Penjelasan : Gas random gikes.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ʙᴄ24ᴊᴀᴍ</ᴄᴏᴅᴇ>
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴇɴᴀᴊᴀʟᴀɴᴋᴀɴ ɢɪᴋᴇꜱ 24ᴊᴀᴍ.
 
-• Perintah : <code>{0}cekkata</code> 
-• Penjelasan : Cek kata gikes
+• • ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴄᴇᴋᴋᴀᴛᴀ</ᴄᴏᴅᴇ>
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴄᴇᴋ ᴋᴀᴛᴀ ɢɪᴋᴇꜱ
 
-• Perintah : <code>{0}sgcdb</code> 
-• Penjelasan : Matiin spam gikes random.
+• ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ꜱʙᴄ24ᴊᴀᴍ</ᴄᴏᴅᴇ>
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴍᴀᴛɪɪɴ ꜱᴘᴀᴍ ɢɪᴋᴇꜱ ʀᴀɴᴅᴏᴍ.
 """
 
 
@@ -55,9 +55,9 @@ async def spam_kontol_gikes_memek(client, gc, kata_list, kirim_kata, index_gikes
             del spam_gikesan[gc]
 
 
-@PY.UBOT("bgcdb", sudo=True)
+@PY.UBOT("bc24jam", sudo=True)
 async def _(client, message):
-    await message.reply(f"<b>Ok Diproses, kalo mo matiin ketik `sgcdb`.</b>")
+    await message.reply(f"<b>Ok Diproses, kalo mo matiin ketik `sbc24jam`.</b>")
     cek_gc = await get_broadcast_id(client, "group")
     blacklist = monggo.get_chat(client.me.id)
     ambil_bang = monggo.ambil_daftar(client.me.id)
@@ -121,7 +121,7 @@ async def _(client, message):
         await message.reply_text(msg)
 
 
-@PY.UBOT("sgcdb", sudo=True)
+@PY.UBOT("sbc24jam", sudo=True)
 async def _(client, message):
     cek_gc = await get_broadcast_id(client, "group")
     for chat_id in cek_gc:
@@ -129,4 +129,4 @@ async def _(client, message):
             task = spam_gikesan[chat_id]
             task.cancel()
             del spam_gikesan[chat_id]
-    await message.reply("<b>Oke jing berenti.</b>")
+    await message.reply("<b>ʙʀᴏᴀᴅᴄᴀꜱᴛ 24 ᴊᴀᴍ ʙᴇʀʜᴇɴᴛɪ.</b>")
