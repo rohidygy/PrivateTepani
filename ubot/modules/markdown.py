@@ -3,12 +3,12 @@ from pyrogram.types import InlineQueryResultArticle, InputTextMessageContent
 
 from ubot import *
 
-__MODULE__ = "Markdown"
+__MODULE__ = "ᴍᴀʀᴋᴅᴏᴡɴ"
 __HELP__ = """
- Bantuan untuk Markdown
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴍᴀʀᴋᴅᴏᴡɴ
 
-• Perintah: <code>{0}markdown</code>
-• Penjelasan: Untuk format tombol.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴍᴀʀᴋᴅᴏᴡɴ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ꜰᴏʀᴍᴀᴛ ᴛᴏᴍʙᴏʟ.
 """
 
 
