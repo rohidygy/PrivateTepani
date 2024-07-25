@@ -68,7 +68,7 @@ async def menu_callback(client, callback_query):
             reply_markup=InlineKeyboardMarkup(button),
             disable_web_page_preview=True,
         )
-    top_text = "<b>Help Modules\n     Prefixes: <code>{}</code>\n     Commands: <code>{}</code></b>".format(
+    top_text = "<b>ʜᴇʟᴘ ᴍᴏᴅᴜʟᴇs\n     ᴘʀᴇғɪxᴇs : <code>{}</code>\n     ᴍᴏᴅᴜʟᴇs: <code>{}</code></b>".format(
         " ".join(prefix), len(HELP_COMMANDS)
     )
 
