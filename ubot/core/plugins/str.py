@@ -45,11 +45,11 @@ async def ping_cmd(client, message):
     await client.invoke(Ping(ping_id=0))
     end = datetime.now()
     delta_ping = round((end - start).microseconds / 100000, 2)
-    _ping = f"""
-**<blockqoute> {emo.ping} ᴘᴏɴɢ</blockqoute>**
-**<blockqoute> {emo.pong} `{str(delta_ping).replace('.', ',')}ᴍs`</blockqoute>**
-**<blockqoute> <b>ᴏᴡɴᴇʀ :</b> <a href=tg://user?id={client.me.id}>{client.me.first_name} {client.me.last_name or ''}</a></blockqoute>**
-"""
+    _ping = f"""<blockqoute>
+**{emo.ping} ᴘᴏɴɢ**
+**{emo.pong} `{str(delta_ping).replace('.', ',')}ᴍs`**
+**<b>ᴏᴡɴᴇʀ :</b> <a href=tg://user?id={client.me.id}>{client.me.first_name} {client.me.last_name or ''}</a>**
+</blockqoute>"""
     await message.reply(_ping)
 
 async def start_cmd(client, message):
