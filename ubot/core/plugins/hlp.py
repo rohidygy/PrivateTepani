@@ -30,7 +30,7 @@ async def help_cmd(client, message):
 async def menu_inline(client, inline_query):
     user_id = inline_query.from_user.id
     emut = ubot.get_prefix(user_id)
-    msg = "<b>Help Modules\n     Prefixes: `{}`\n     Commands: <code>{}</code></b>".format(
+    msg = "<b>ʜᴇʟᴘ ᴍᴏᴅᴜʟᴇs\n     ᴘʀᴇғɪxᴇs : `{}`\n     ᴍᴏᴅᴜʟᴇs : <code>{}</code></b>".format(
         " ".join(emut), len(HELP_COMMANDS)
     )
     await client.answer_inline_query(
