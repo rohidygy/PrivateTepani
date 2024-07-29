@@ -18,7 +18,8 @@ gpytranslate
 gtts
 telegraph[aio]
 openai
-pytgcalls==3.0.0.dev24
+# pytgcalls==3.0.0.dev24
+py-tgcalls
 yt-dlp
 wget
 python-dateutil
