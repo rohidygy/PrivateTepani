@@ -59,10 +59,6 @@ class Ubot(Client):
 
     def __init__(self, **kwargs):
         super().__init__(device_model = "Kagepler", **kwargs)
-        self.api_id = API_ID
-        self.api_hash = API_HASH
-        self.session_string = None
-        self.call_py = PyTgCalls(self._ubot)
         
     def on_message(self, filters=None, group=-1):
         def decorator(func):
@@ -116,8 +112,6 @@ class Ubot(Client):
         )
         return await locals()["__aexec"](c, m)
     
-    async def group_call(self):
-        await self.call_py.start()
 
     def set_prefix(self, user_id, prefix):
         self._prefix[self.me.id] = prefix
@@ -169,7 +163,6 @@ class Ubot(Client):
 
     async def start(self):
         await super().start()
-        await self.call_py.start()
         handler = monggo.get_pref(self.me.id)
         if handler:
             self._prefix[self.me.id] = handler
@@ -183,7 +176,7 @@ class Ubot(Client):
         )
 
 
-ubot = Ubot(name="ubot", api_id=API_ID, api_hash=API_HASH)
+ubot = Ubot(name="ubot")
 
 
 class Bot(Client):
