@@ -56,7 +56,7 @@ class Ubot(Client):
     _get_my_peer = {}
 
     def __init__(self, **kwargs):
-        super().__init__(device_model = "Apoco-Userbot", **kwargs)
+        super().__init__(device_model = "Kagepler", **kwargs)
 
     def on_message(self, filters=None, group=-1):
         def decorator(func):
@@ -178,7 +178,7 @@ ubot = Ubot(name="ubot")
 
 class Bot(Client):
     def __init__(self, **kwargs):
-        super().__init__(**kwargs, device_model="Apoco-Userbot")
+        super().__init__(**kwargs, device_model="Kagepler")
 
     def on_message(self, filters=None, group=-1):
         def decorator(func):
