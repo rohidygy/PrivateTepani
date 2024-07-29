@@ -56,11 +56,11 @@ async def mari_kirim(m, query):
         pass
 
 
-@PY.UBOT("ai|ask", sudo=True)
+@PY.UBOT("Embah|dukun", sudo=True)
 async def _(c: ubot, m):
     em = Emo(c.me.id)
     em.initialize()
-    pros = await m.reply(f"{em.proses} Sebentar tolol...")
+    pros = await m.reply(f"Saya paranormal bisa Saya bantu...")
     reply_text = c.get_text(m)
     if not reply_text:
         return pros.edit(f"{em.gagal} Kasih query or balas text lah dongok!!")
