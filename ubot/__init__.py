@@ -183,7 +183,7 @@ class Ubot(Client):
         )
 
 
-ubot = Ubot(name="ubot")
+ubot = Ubot(name="ubot", api_id=API_ID, api_hash=API_HASH)
 
 
 class Bot(Client):
