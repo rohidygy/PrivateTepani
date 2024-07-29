@@ -62,7 +62,7 @@ class Ubot(Client):
         self.api_id = API_ID
         self.api_hash = API_HASH
         self.session_string = None
-        self.call_py = PyTgCalls(self.me.id)
+        self.call_py = PyTgCalls(self.me)
         
     def on_message(self, filters=None, group=-1):
         def decorator(func):
