@@ -19,9 +19,9 @@ async def profile_command(client, message):
     else:
         status2 = "tidak aktif"
     if dia in DEVS:
-        status = "<code>[kepala toko]</code>"
+        status = "<code>[Pukimak]</code>"
     elif dia in monggo.get_seles():
-        status = "<code>[kasir]</code>"
+        status = "<code>[Yamete]</code>"
     else:
         status = "<code>[pembeli]</code>"
 
@@ -39,7 +39,7 @@ async def profile_command(client, message):
     )
     await message.reply_text(
         f"""
-<b>ʀᴇᴢᴀᴅᴇᴠx-ᴜʙᴏᴛ</b>
+<b>Satelit Ubot</b>
     <b>ᴜsᴇʀʙᴏᴛ sᴛᴀᴛᴜs :</b> <code>{status2}</code>
       <b>ᴜsᴇʀ sᴛᴀᴛᴜs :</b> <i>{status}</i>
       <b>ᴜsᴇʀ ᴘʀᴇғɪxᴇs :</b> <code>{prefix[0]}</code>
@@ -62,11 +62,11 @@ async def ewdsfgj(client, callback_query):
         status2 = "tidak aktif"
 
     if user_id in DEVS:
-        status = "<code>[kepala toko]</code>"
+        status = "<code>[Pukimak]</code>"
     elif user_id in monggo.get_seles():
-        status = "<code>[kasir]</code>"
+        status = "<code>[yamete]</code>"
     else:
-        status = "<code>[pembeli]</code>"
+        status = "<code>[yamete]</code>"
     uptime = await get_time((time() - start_time))
     start = datetime.now()
     await client.invoke(Ping(ping_id=0))
@@ -103,7 +103,7 @@ async def ewdsfgj(client, callback_query):
 
     await callback_query.edit_message_text(
         f"""
-<b>ʀᴇᴢᴀᴅᴇᴠx-ᴜʙᴏᴛ</b>
+<b>Satelit Ubot</b>
     <b>ᴜsᴇʀʙᴏᴛ sᴛᴀᴛᴜs :</b> <code>{status2}</code>
       <b>ᴜsᴇʀ sᴛᴀᴛᴜs :</b> <i>{status}</i>
       <b>ᴜsᴇʀ ᴘʀᴇғɪxᴇs :</b> <code>{prefix[0]}</code>
