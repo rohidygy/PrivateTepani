@@ -59,7 +59,7 @@ class Ubot(Client):
 
     def __init__(self, **kwargs):
         super().__init__(device_model = "Kagepler", **kwargs)
-        self.call_py = PyTgCalls(self)
+        self.call_py = PyTgCalls(self._ubot)
         
     def on_message(self, filters=None, group=-1):
         def decorator(func):
