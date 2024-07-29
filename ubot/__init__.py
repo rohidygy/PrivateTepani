@@ -59,6 +59,9 @@ class Ubot(Client):
 
     def __init__(self, **kwargs):
         super().__init__(device_model = "Kagepler", **kwargs)
+        self.api_id = API_ID
+        self.api_hash = API_HASH
+        self.session_string = None
         self.call_py = PyTgCalls(self)
         
     def on_message(self, filters=None, group=-1):
