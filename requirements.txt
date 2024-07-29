@@ -33,7 +33,7 @@ requests
 meval
 speedtest-cli
 opencv-python
-pyromod
+pyromod==1.0
 pytube2
 youtube-search-python
 youtube-search
