@@ -62,7 +62,7 @@ class Emo:
         )
 
         self.alive_var = (
-            monggo.get_var(self.user_id, "emo_alive") or "4934091419288601395"
+            monggo.get_var(self.user_id, "emo_alive") or "6127352291826600493"
         )
         self.emo_alive = (
             self.alive_var if isinstance(self.alive_var, int) else str(self.alive_var)
