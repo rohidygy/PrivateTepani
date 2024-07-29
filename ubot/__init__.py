@@ -113,7 +113,7 @@ class Ubot(Client):
         )
         return await locals()["__aexec"](c, m)
     
-    async def group_call(self)
+    async def group_call(self):
         self.call_py.start()
 
     def set_prefix(self, user_id, prefix):
