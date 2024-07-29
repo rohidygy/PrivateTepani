@@ -55,7 +55,7 @@ async def joinvc(client, message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     with suppress(ValueError):
         chat_id = int(chat_id)
-    naek = await client.group_call.start(message.chat.id)
+    naek = (group_call := await get_group_call(client, message, err_msg=", Error..."))
     if naek:
         await message.reply(f"<b>ᴀᴋᴜɴ ᴀɴᴅᴀ sᴜᴅᴀʜ ʙᴇʀᴀᴅᴀ ᴅɪᴀᴛᴀs</b>")
     else:
