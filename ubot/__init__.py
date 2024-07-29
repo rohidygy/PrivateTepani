@@ -14,7 +14,7 @@ from pyrogram.types import *
 from ubot.config import *
 from pyromod import listen
 from telegraph.aio import Telegraph
-from pytgcalls import GroupCallFactory
+from pytgcalls import PyTgCalls
 
 aiosession = ClientSession()
 
@@ -55,10 +55,12 @@ class Ubot(Client):
     _get_my_id = []
     _translate = {}
     _get_my_peer = {}
+    
 
     def __init__(self, **kwargs):
         super().__init__(device_model = "Kagepler", **kwargs)
-
+        self.call_py = PyTgCalls(self)
+        
     def on_message(self, filters=None, group=-1):
         def decorator(func):
             for ub in self._ubot:
@@ -110,6 +112,9 @@ class Ubot(Client):
             "async def __aexec(c, m): " + "".join(f"\n {l_}" for l_ in code.split("\n"))
         )
         return await locals()["__aexec"](c, m)
+    
+    async def group_call(self)
+        self.call_py.start()
 
     def set_prefix(self, user_id, prefix):
         self._prefix[self.me.id] = prefix
