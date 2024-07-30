@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Sosmed"
+__MODULE__ = "ꜱᴏꜱᴍᴇᴅ"
 __HELP__ = """
-Bantuan Untuk Sosmed
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴏꜱᴍᴇᴅ
 
-• Perintah: <code>{0}sosmed</code> [link]
-• Penjelasan: Untuk Mendownload Media Dari Facebook/Tiktok/Instagram/Twitter/YouTube.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴏꜱᴍᴇᴅ</ᴄᴏᴅᴇ> [ʟɪɴᴋ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇᴅɪᴀ ᴅᴀʀɪ ꜰᴀᴄᴇʙᴏᴏᴋ/ᴛɪᴋᴛᴏᴋ/ɪɴꜱᴛᴀɢʀᴀᴍ/ᴛᴡɪᴛᴛᴇʀ/ʏᴏᴜᴛᴜʙᴇ.
 """
 
 
