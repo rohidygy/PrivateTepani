@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Sangmata"
+__MODULE__ = "ꜱᴀɴɢᴍᴀᴛᴀ"
 __HELP__ = """
-Bantuan Untuk Sangmata
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴀɴɢᴍᴀᴛᴀ
 
-• Perintah: <code>{cobadah}sg</code> [user_id/reply user]
-• Penjelasan: Untuk memeriksa histori nama/username.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{ᴄᴏʙᴀᴅᴀʜ}ꜱɢ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀ_ɪᴅ/ʀᴇᴘʟʏ ᴜꜱᴇʀ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍᴇʀɪᴋꜱᴀ ʜɪꜱᴛᴏʀɪ ɴᴀᴍᴀ/ᴜꜱᴇʀɴᴀᴍᴇ.
 """
 
 
