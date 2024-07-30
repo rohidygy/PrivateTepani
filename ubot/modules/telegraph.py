@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Telegraph"
+__MODULE__ = "ᴛᴇʟᴇɢʀᴀᴘʜ"
 __HELP__ = """
-Bantuan Untuk Telegraph
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛᴇʟᴇɢʀᴀᴘʜ
 
-• Perintah: <code>{0}tg</code> [reply media/text]
-• Penjelasan: Untuk mengapload media/text ke telegra.ph.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴛɢ</ᴄᴏᴅᴇ> [ʀᴇᴘʟʏ ᴍᴇᴅɪᴀ/ᴛᴇxᴛ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴘʟᴏᴀᴅ ᴍᴇᴅɪᴀ/ᴛᴇxᴛ ᴋᴇ ᴛᴇʟᴇɢʀᴀ.ᴘʜ.
 """
 
 
