@@ -1,17 +1,17 @@
 from ubot import *
 
-__MODULE__ = "ShowID"
+__MODULE__ = "ꜱʜᴏᴡɪᴅ"
 __HELP__ = """
-Bantuan Untuk Show ID
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱʜᴏᴡ ɪᴅ
 
-• Perintah: <code>{0}id</code>
-• Penjelasan: Untuk mengetahui ID dari user/grup/channel.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ɪᴅ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ɪᴅ ᴅᴀʀɪ ᴜꜱᴇʀ/ɢʀᴜᴘ/ᴄʜᴀɴɴᴇʟ.
 
-• Perintah: <code>{0}id</code> [reply to user/media]
-• Penjelasan: Untuk mengetahui ID dari user/media.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ɪᴅ</ᴄᴏᴅᴇ> [ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ/ᴍᴇᴅɪᴀ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ɪᴅ ᴅᴀʀɪ ᴜꜱᴇʀ/ᴍᴇᴅɪᴀ.
 
-• Perintah: <code>{0}getid</code> [username user/grup/channel].
-• Penjelasan: Untuk mengetahui ID user/grup/channel melalui username dengan simbol @.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ɢᴇᴛɪᴅ</ᴄᴏᴅᴇ> [ᴜꜱᴇʀɴᴀᴍᴇ ᴜꜱᴇʀ/ɢʀᴜᴘ/ᴄʜᴀɴɴᴇʟ].
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ɪᴅ ᴜꜱᴇʀ/ɢʀᴜᴘ/ᴄʜᴀɴɴᴇʟ ᴍᴇʟᴀʟᴜɪ ᴜꜱᴇʀɴᴀᴍᴇ ᴅᴇɴɢᴀɴ ꜱɪᴍʙᴏʟ @.
 """
 
 
