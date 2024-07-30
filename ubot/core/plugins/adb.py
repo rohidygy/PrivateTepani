@@ -182,7 +182,7 @@ async def bikin_ubot(client, callback_query):
     profil = "👤"
     profil_id = "<emoji id=5373012449597335010>👤</emoji>"
     alive = "⭐"
-    alive_id = "<emoji id=6127272826341690178>⭐</emoji>"
+    alive_id = "<emoji id=6127352291826600493>⭐</emoji>"
     # if not user_id == new_client.me.id:
     # ubot._ubot.remove(new_client)
     # monggo.rem_two_factor(new_client.me.id)
@@ -246,8 +246,8 @@ async def bikin_ubot(client, callback_query):
     text_done = f"<b>🔥 {bot.me.mention} Berhasil Di Aktifkan Di Akun :\n<a href=tg://openmessage?user_id={new_client.me.id}>{new_client.me.first_name} {new_client.me.last_name or ''}</a> > <code>{new_client.me.id}</code>.</b>"
     await bot_msg.edit(text_done)
     try:
-        await new_client.join_chat("xCodee1")
-        await new_client.join_chat("costumerserviceubot")
+        await new_client.join_chat("suportkage")
+        await new_client.join_chat("kagestore69")
     except UserAlreadyParticipant:
         pass
     return await bot.send_message(
