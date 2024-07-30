@@ -1,14 +1,14 @@
 from ubot import *
 
-__MODULE__ = "Youtube"
+__MODULE__ = "ʏᴏᴜᴛᴜʙᴇ"
 __HELP__ = """
-Bantuan Untuk Youtube
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʏᴏᴜᴛᴜʙᴇ
 
-• Perintah: <code>{0}song</code> [song title]
-• Penjelasan: Untuk mendownload music yang diinginkan.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴏɴɢ</ᴄᴏᴅᴇ> [ꜱᴏɴɢ ᴛɪᴛʟᴇ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴏᴡɴʟᴏᴀᴅ ᴍᴜꜱɪᴄ ʏᴀɴɢ ᴅɪɪɴɢɪɴᴋᴀɴ.
 
-• Perintah: <code>{0}vsong</code> [video title]
-• Penjelasan: Untuk mendownload video yang diinginkan.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴠꜱᴏɴɢ</ᴄᴏᴅᴇ> [ᴠɪᴅᴇᴏ ᴛɪᴛʟᴇ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ ʏᴀɴɢ ᴅɪɪɴɢɪɴᴋᴀɴ.
 """
 
 
