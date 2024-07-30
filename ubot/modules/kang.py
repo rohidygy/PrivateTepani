@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Kang"
+__MODULE__ = "ᴋᴀɴɢ"
 __HELP__ = """
- Bantuan Untuk Kang
+ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴋᴀɴɢ
 
-• Perintah : <code>{0}kang</code> [balas ke stiker]
-• Penjelasan : Untuk membuat kosum stiker pak.
+⌑ ᴘᴇʀɪɴᴛᴀʜ : <ᴄᴏᴅᴇ>{0}ᴋᴀɴɢ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ᴋᴇ ꜱᴛɪᴋᴇʀ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ : ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴋᴏꜱᴜᴍ ꜱᴛɪᴋᴇʀ ᴘᴀᴋ
 """
 
 
