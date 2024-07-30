@@ -36,11 +36,11 @@ async def alive_query(client, inline_query):
             get_exp = monggo.get_expired_date(my.me.id)
             exp = get_exp.strftime("%d-%m-%Y")
             if my.me.id in DEVS:
-                status = "<b>ultra violet</b> <code>[kanger]</code>"
+                status = "<b>plergede</b> <code>[araara]</code>"
             elif my.me.id in monggo.get_seles():
-                status = "<b>ultra violet</b> <code>[tester]</code>"
+                status = "<b>plergede</b> <code>[bujang]</code>"
             else:
-                status = "<b>ultra violet</b> <code>[iciper]</code>"
+                status = "<b>plergede</b> <code>[pler]</code>"
             button = Button.alive(get_id)
             start = datetime.now()
             await my.invoke(Ping(ping_id=0))
