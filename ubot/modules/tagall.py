@@ -1,14 +1,14 @@
 from ubot import *
 
-__MODULE__ = "Mention"
+__MODULE__ = "ᴍᴇɴᴛɪᴏɴ"
 __HELP__ = """
-Bantuan Untuk Mention
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴍᴇɴᴛɪᴏɴ
 
-• Perintah: <code>{0}all</code> [type message/reply message]
-• Penjelasan: Untuk memention semua anggota grup dengan pesan yang anda inginkan.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴀʟʟ</ᴄᴏᴅᴇ> [ᴛʏᴘᴇ ᴍᴇꜱꜱᴀɢᴇ/ʀᴇᴘʟʏ ᴍᴇꜱꜱᴀɢᴇ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍᴇɴᴛɪᴏɴ ꜱᴇᴍᴜᴀ ᴀɴɢɢᴏᴛᴀ ɢʀᴜᴘ ᴅᴇɴɢᴀɴ ᴘᴇꜱᴀɴ ʏᴀɴɢ ᴀɴᴅᴀ ɪɴɢɪɴᴋᴀɴ.
 
-• Perintah: <code>{0}batal</code>
-• Penjelasan: Untuk membatalkan memention anggota grup.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ʙᴀᴛᴀʟ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴍᴇᴍᴇɴᴛɪᴏɴ ᴀɴɢɢᴏᴛᴀ ɢʀᴜᴘ.
 """
 
 
