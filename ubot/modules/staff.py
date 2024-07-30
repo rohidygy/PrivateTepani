@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Staff"
+__MODULE__ = "ꜱᴛᴀꜰꜰ"
 __HELP__ = """
-Bantuan Untuk Staff
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴛᴀꜰꜰ
 
-• Perintah: <code>{0}staff</code>
-• Penjelasan: Untuk mengetahui daftar semua admin didalam grup.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴛᴀꜰꜰ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴅᴀꜰᴛᴀʀ ꜱᴇᴍᴜᴀ ᴀᴅᴍɪɴ ᴅɪᴅᴀʟᴀᴍ ɢʀᴜᴘ.
 """
 
 
