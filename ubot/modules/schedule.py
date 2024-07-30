@@ -12,39 +12,39 @@ from .notes import kontol_siapa
 scheduled_tasks = {}
 
 
-__MODULE__ = "Schedule"
+__MODULE__ = "ꜱᴄʜᴇᴅᴜʟᴇ"
 __HELP__ = """
- Help Command For Schedule
+ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅ ꜰᴏʀ ꜱᴄʜᴇᴅᴜʟᴇ
 
-• Command : <code>{0}sdspm</code> [Balas ke pesan]
-• Description : Memulai schedule message ke list sch.
+⌑ ᴄᴏᴍᴍᴀɴᴅ : <ᴄᴏᴅᴇ>{0}ꜱᴅꜱᴘᴍ</ᴄᴏᴅᴇ> [ʙᴀʟᴀꜱ ᴋᴇ ᴘᴇꜱᴀɴ]
+⌑ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ : ᴍᴇᴍᴜʟᴀɪ ꜱᴄʜᴇᴅᴜʟᴇ ᴍᴇꜱꜱᴀɢᴇ ᴋᴇ ʟɪꜱᴛ ꜱᴄʜ.
 
-• Command : <code>{0}stdspm</code>
-• Description : Mematikan schedule message.
+⌑ ᴄᴏᴍᴍᴀɴᴅ : <ᴄᴏᴅᴇ>{0}ꜱᴛᴅꜱᴘᴍ</ᴄᴏᴅᴇ>
+⌑ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ : ᴍᴇᴍᴀᴛɪᴋᴀɴ ꜱᴄʜᴇᴅᴜʟᴇ ᴍᴇꜱꜱᴀɢᴇ.
 
-• Command : <code>{0}listspm</code> 
-• Description : Melihat List group yang ada di listsch.
+⌑ ᴄᴏᴍᴍᴀɴᴅ : <ᴄᴏᴅᴇ>{0}ʟɪꜱᴛꜱᴘᴍ</ᴄᴏᴅᴇ>
+⌑ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ : ᴍᴇʟɪʜᴀᴛ ʟɪꜱᴛ ɢʀᴏᴜᴘ ʏᴀɴɢ ᴀᴅᴀ ᴅɪ ʟɪꜱᴛꜱᴄʜ.
 
-• Command : <code>{0}addspm</code> 
-• Description : Menambahkan group ke list sch.
+⌑ ᴄᴏᴍᴍᴀɴᴅ : <ᴄᴏᴅᴇ>{0}ᴀᴅᴅꜱᴘᴍ</ᴄᴏᴅᴇ>
+⌑ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ : ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ɢʀᴏᴜᴘ ᴋᴇ ʟɪꜱᴛ ꜱᴄʜ.
 
-• Command : <code>{0}delspm</code> 
-• Description : Menghapus group dari list sch.
+⌑ ᴄᴏᴍᴍᴀɴᴅ : <ᴄᴏᴅᴇ>{0}ᴅᴇʟꜱᴘᴍ</ᴄᴏᴅᴇ>
+⌑ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ : ᴍᴇɴɢʜᴀᴘᴜꜱ ɢʀᴏᴜᴘ ᴅᴀʀɪ ʟɪꜱᴛ ꜱᴄʜ.
 
-• Command : <code>{0}delaysch</code> 
-• Description : Mengatur waktu delay sch default nya adalah 10 detik.
+⌑ ᴄᴏᴍᴍᴀɴᴅ : <ᴄᴏᴅᴇ>{0}ᴅᴇʟᴀʏꜱᴄʜ</ᴄᴏᴅᴇ> 
+⌑ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ : ᴍᴇɴɢᴀᴛᴜʀ ᴡᴀᴋᴛᴜ ᴅᴇʟᴀʏ ꜱᴄʜ ᴅᴇꜰᴀᴜʟᴛ ɴʏᴀ ᴀᴅᴀʟᴀʜ 10 ᴅᴇᴛɪᴋ.
 
-• Command : <code>{0}savesch</code> [nama catatan sch]
-• Description : Simpan teks schedule message ke database sch.
+⌑ ᴄᴏᴍᴍᴀɴᴅ : <ᴄᴏᴅᴇ>{0}ꜱᴀᴠᴇꜱᴄʜ</ᴄᴏᴅᴇ> [ɴᴀᴍᴀ ᴄᴀᴛᴀᴛᴀɴ ꜱᴄʜ]
+⌑ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ : ꜱɪᴍᴘᴀɴ ᴛᴇᴋꜱ ꜱᴄʜᴇᴅᴜʟᴇ ᴍᴇꜱꜱᴀɢᴇ ᴋᴇ ᴅᴀᴛᴀʙᴀꜱᴇ ꜱᴄʜ.
 
-• Command : <code>{0}getsch</code> [nama catatan sch]
-• Description : Mengambil teks schedule message dari database.
+⌑ ᴄᴏᴍᴍᴀɴᴅ : <ᴄᴏᴅᴇ>{0}ɢᴇᴛꜱᴄʜ</ᴄᴏᴅᴇ> [ɴᴀᴍᴀ ᴄᴀᴛᴀᴛᴀɴ ꜱᴄʜ]
+⌑ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ : ᴍᴇɴɢᴀᴍʙɪʟ ᴛᴇᴋꜱ ꜱᴄʜᴇᴅᴜʟᴇ ᴍᴇꜱꜱᴀɢᴇ ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀꜱᴇ.
 
-• Command : <code>{0}listsch</code> 
-• Description : Melihat list catatan sch dari database.
+⌑ ᴄᴏᴍᴍᴀɴᴅ : <ᴄᴏᴅᴇ>{0}ʟɪꜱᴛꜱᴄʜ</ᴄᴏᴅᴇ>
+⌑ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ : ᴍᴇʟɪʜᴀᴛ ʟɪꜱᴛ ᴄᴀᴛᴀᴛᴀɴ ꜱᴄʜ ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀꜱᴇ.
 
-• Command : <code>{0}clearsch</code> 
-• Description : Menghapus catatan sch dari list database.
+⌑ ᴄᴏᴍᴍᴀɴᴅ : <ᴄᴏᴅᴇ>{0}ᴄʟᴇᴀʀꜱᴄʜ</ᴄᴏᴅᴇ>
+⌑ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ : ᴍᴇɴɢʜᴀᴘᴜꜱ ᴄᴀᴛᴀᴛᴀɴ ꜱᴄʜ ᴅᴀʀɪ ʟɪꜱᴛ ᴅᴀᴛᴀʙᴀꜱᴇ.
 """
 
 async def send_cmd(c: ubot, msgtype: int):
