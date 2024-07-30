@@ -98,7 +98,7 @@ async def broadcast_group_cmd(client, message):
     return await msg.edit(
         # message.chat.id,
         f"""
-<b> {emo.alive} Broadcast Message Sent :
+<b>Broadcast Message Sent :
  {emo.sukses} Success in <code>{done}</code> Group.
  {emo.gagal} Failed at <code>{failed}</code> Group.
  </b>""",
@@ -157,7 +157,7 @@ async def broadcast_users_cmd(client, message):
     return await msg.edit(
         # message.chat.id,
         f"""
-<b> {emo.alive} Broadcast Message Sent :
+<b>Broadcast Message Sent :
  {emo.sukses} Success in <code>{done}</code> User.
  {emo.gagal} Failed at <code>{failed}</code> User.
  </b>""",
