@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Tiny"
+__MODULE__ = "ᴛɪɴʏ"
 __HELP__ = """
-Bantuan Untuk Tiny
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛɪɴʏ
 
-• Perintah: <code>{0}tiny</code> [reply to sticker]
-• Penjelasan: Untuk merubah sticker menjadi kecil.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴛɪɴʏ</ᴄᴏᴅᴇ> [ʀᴇᴘʟʏ ᴛᴏ ꜱᴛɪᴄᴋᴇʀ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇʀᴜʙᴀʜ ꜱᴛɪᴄᴋᴇʀ ᴍᴇɴᴊᴀᴅɪ ᴋᴇᴄɪʟ.
 """
 
 
