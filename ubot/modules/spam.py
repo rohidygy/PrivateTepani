@@ -1,20 +1,20 @@
 from ubot import *
 
-__MODULE__ = "Spam"
+__MODULE__ = "ꜱᴘᴀᴍ"
 __HELP__ = """
-Bantuan Untuk Spam
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴘᴀᴍ
 
-• Perintah: <code>{0}dspam</code> [jumlah] [waktu delay] [balas pesan]
-• Penjelasan: Untuk melakukan delay spam.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴅꜱᴘᴀᴍ</ᴄᴏᴅᴇ> [ᴊᴜᴍʟᴀʜ] [ᴡᴀᴋᴛᴜ ᴅᴇʟᴀʏ] [ʙᴀʟᴀꜱ ᴘᴇꜱᴀɴ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴅᴇʟᴀʏ ꜱᴘᴀᴍ.
 
-• Perintah: <code>{0}spam</code> [jumlah] [kata]
-• Penjelasan: Untuk melakukan spam.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴘᴀᴍ</ᴄᴏᴅᴇ> [ᴊᴜᴍʟᴀʜ] [ᴋᴀᴛᴀ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇʟᴀᴋᴜᴋᴀɴ ꜱᴘᴀᴍ.
 
-• Perintah: <code>{0}dspamfw</code> [jumlah] [waktu] [link channel publik]
-• Penjelasan: Untuk melakukan delay spam forward link channel.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴅꜱᴘᴀᴍꜰᴡ</ᴄᴏᴅᴇ> [ᴊᴜᴍʟᴀʜ] [ᴡᴀᴋᴛᴜ] [ʟɪɴᴋ ᴄʜᴀɴɴᴇʟ ᴘᴜʙʟɪᴋ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴅᴇʟᴀʏ ꜱᴘᴀᴍ ꜰᴏʀᴡᴀʀᴅ ʟɪɴᴋ ᴄʜᴀɴɴᴇʟ.
 
-• Perintah: <code>{0}cspam</code>
-• Penjelasan: Untuk stop spam.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴄꜱᴘᴀᴍ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ꜱᴛᴏᴘ ꜱᴘᴀᴍ.
 """
 
 
