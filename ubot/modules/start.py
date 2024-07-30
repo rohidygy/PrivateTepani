@@ -1,14 +1,14 @@
 from ubot import *
 
-__MODULE__ = "Emoji"
+__MODULE__ = "ᴇᴍᴏᴊɪ"
 __HELP__ = """
-Bantuan Untuk Emoji
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴇᴍᴏᴊɪ
 
-• Perintah: <code>{0}setemo</code>
-• Penjelasan: Untuk mengubah tampilan emoji ping.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴇᴛᴇᴍᴏ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ᴛᴀᴍᴘɪʟᴀɴ ᴇᴍᴏᴊɪ ᴘɪɴɢ.
 
-• Perintah: <code>{0}setemo2</code>
-• Penjelasan: Untuk mengubah tampilan emoji ping.
+⌑ ​🇵​​🇪​​🇷​​🇮​​🇳​​🇹​​🇦​​🇭​⦂ <​🇨​​🇴​​🇩​​🇪​>{0️⃣}​🇸​​🇪​​🇹​​🇪​​🇲​​🇴​2️⃣</​🇨​​🇴​​🇩​​🇪​>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ᴛᴀᴍᴘɪʟᴀɴ ᴇᴍᴏᴊɪ ᴘɪɴɢ.
 """
 
 
