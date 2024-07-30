@@ -1,14 +1,14 @@
 from ubot import *
 
-__MODULE__ = "Create"
+__MODULE__ = "ᴄʀᴇᴀᴛᴇ"
 __HELP__ = """
- Bantuan Untuk Create
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄʀᴇᴀᴛᴇ
 
-• Perintah: <code>{0}create</code> gc
-• Penjelasan: Untuk membuat grup telegram.
+• ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴄʀᴇᴀᴛᴇ</ᴄᴏᴅᴇ> ɢᴄ
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ɢʀᴜᴘ ᴛᴇʟᴇɢʀᴀᴍ.
 
-• Perintah: <code>{0}create</code> ch
-• Penjelasan: Untuk membuat channel telegram.
+• ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴄʀᴇᴀᴛᴇ</ᴄᴏᴅᴇ> ᴄʜ
+• ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴄʜᴀɴɴᴇʟ ᴛᴇʟᴇɢʀᴀᴍ.
 """
 
 
