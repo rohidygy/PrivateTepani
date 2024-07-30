@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Secret"
+__MODULE__ = "ꜱᴇᴄʀᴇᴛ"
 __HELP__ = """
-Bantuan Untuk Secret
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴇᴄʀᴇᴛ
 
-• Perintah: <code>{0}msg</code> [reply to user - text]
-• Penjelasan: Untuk mengirim pesan secara rahasia.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴍꜱɢ</ᴄᴏᴅᴇ> [ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ - ᴛᴇxᴛ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢɪʀɪᴍ ᴘᴇꜱᴀɴ ꜱᴇᴄᴀʀᴀ ʀᴀʜᴀꜱɪᴀ.
 """
 
 
