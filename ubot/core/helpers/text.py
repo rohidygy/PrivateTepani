@@ -34,7 +34,7 @@ class MSG:
 <b>Harga Perbulan: {harga}.000</b>
 
 <b>💳 Metode Pembayaran:</b>
- ├─• Channel Pembayaran : [Klik Disini](https://t.me/paymentf)
+ ├─• Channel Pembayaran : [Klik Disini](https://t.me/kagestore69)
 
 <b>🔖 Total Harga: ʀᴘ {total}.000</b>
 <b>🗓️ Total Bulan: {bulan}</b> 
@@ -51,16 +51,16 @@ class MSG:
 """
     def POLICY():
         return """
-<b>🤖 Apoco Userbot </b>
+<b> ⌑ Satelit Bot ⌑ </b>
 
-<b>↪️ Kebijakan Pengembalian</b>
-Setelah melakukan pembayaran, jika Anda belum memperoleh/menerima manfaat dari pembelian, Anda dapat menggunakan hak penggantian dalam waktu 2 hari setelah pembelian. Namun, jika Anda telah menggunakan/menerima salah satu manfaat dari pembelian, termasuk akses ke fitur pembuatan userbot, maka Anda tidak lagi berhak atas pengembalian dana.
+<b>Kebijakan Pengembalian</b>
+Minimal Baca Tod Biar Gak Koar Koar
 
 🆘 Dukungan
 Untuk mendapatkan dukungan, Anda dapat:
-❍ Mengikuti prosedur pembelian dibot ini
-❍ Resiko userbot bisa [Baca Disini](https://t.me/rawatnokos/63)
-❍ Beli Userbot = SETUJU DAN PAHAM RESIKO
+❏ Mengikuti prosedur pembelian dibot ini
+❏ Resiko userbot bisa [Baca Disini](https://t.me/rawatnokos/63)
+❏ Beli Userbot = SETUJU DAN PAHAM RESIKO
 
 👉🏻 Tekan tombol Lanjutkan untuk menyatakan bahwa Anda telah
 membaca dan menerima ketentuan ini dan melanjutkan
