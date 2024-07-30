@@ -1,14 +1,14 @@
 from ubot import *
 
-__MODULE__ = "Quotly"
+__MODULE__ = "Qᴜᴏᴛʟʏ"
 __HELP__ = """
-Bantuan Untuk Quotly
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ Qᴜᴏᴛʟʏ
 
-• Perintah: <code>{0}q</code> [text/reply to text/media]
-• Penjelasan: Untuk merubah text menjadi sticker.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}Q</ᴄᴏᴅᴇ> [ᴛᴇxᴛ/ʀᴇᴘʟʏ ᴛᴏ ᴛᴇxᴛ/ᴍᴇᴅɪᴀ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇʀᴜʙᴀʜ ᴛᴇxᴛ ᴍᴇɴᴊᴀᴅɪ ꜱᴛɪᴄᴋᴇʀ.
 
-• Perintah: <code>{0}q</code> [white/black/red/pink]
-• Penjelasan: Untuk merubah latar belakang quote.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}Q</ᴄᴏᴅᴇ> [ᴡʜɪᴛᴇ/ʙʟᴀᴄᴋ/ʀᴇᴅ/ᴘɪɴᴋ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇʀᴜʙᴀʜ ʟᴀᴛᴀʀ ʙᴇʟᴀᴋᴀɴɢ Qᴜᴏᴛᴇ.
 """
 
 
