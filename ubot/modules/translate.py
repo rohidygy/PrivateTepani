@@ -1,17 +1,17 @@
 from ubot import *
 
-__MODULE__ = "Translate"
+__MODULE__ = "ᴛʀᴀɴꜱʟᴀᴛᴇ"
 __HELP__ = """
-Bantuan Untuk Translate
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛʀᴀɴꜱʟᴀᴛᴇ
 
-• Perintah: <code>{0}tr</code> [reply/text]
-• Penjelasan: Untuk menerjemahkan text dengan kode negara yang diinginkan.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴛʀ</ᴄᴏᴅᴇ> [ʀᴇᴘʟʏ/ᴛᴇxᴛ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴᴇʀᴊᴇᴍᴀʜᴋᴀɴ ᴛᴇxᴛ ᴅᴇɴɢᴀɴ ᴋᴏᴅᴇ ɴᴇɢᴀʀᴀ ʏᴀɴɢ ᴅɪɪɴɢɪɴᴋᴀɴ.
 
-• Perintah: <code>{0}set_lang</code>
-• Penjelasan: Untuk mengubah bahasa.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴇᴛ_ʟᴀɴɢ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ʙᴀʜᴀꜱᴀ.
 
-• Perintah: <code>{0}tts</code> [reply/text]
-• Penjelasan: Untuk menerjemahkan text dengan kode negara yang diinginkan serta merubahnya menjadi pesan suara.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴛᴛꜱ</ᴄᴏᴅᴇ> [ʀᴇᴘʟʏ/ᴛᴇxᴛ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴᴇʀᴊᴇᴍᴀʜᴋᴀɴ ᴛᴇxᴛ ᴅᴇɴɢᴀɴ ᴋᴏᴅᴇ ɴᴇɢᴀʀᴀ ʏᴀɴɢ ᴅɪɪɴɢɪɴᴋᴀɴ ꜱᴇʀᴛᴀ ᴍᴇʀᴜʙᴀʜɴʏᴀ ᴍᴇɴᴊᴀᴅɪ ᴘᴇꜱᴀɴ ꜱᴜᴀʀᴀ.
 """
 
 
