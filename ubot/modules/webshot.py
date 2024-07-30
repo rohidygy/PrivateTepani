@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Webshot"
+__MODULE__ = "ᴡᴇʙꜱʜᴏᴛ"
 __HELP__ = """
-Bantuan Untuk Webshot
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴡᴇʙꜱʜᴏᴛ
 
-• Perintah: <code>{0}ss</code> [link]
-• Penjelasan: Untuk mendapatkan screenshot dari link tersebut.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱꜱ</ᴄᴏᴅᴇ> [ʟɪɴᴋ]
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴅᴀʀɪ ʟɪɴᴋ ᴛᴇʀꜱᴇʙᴜᴛ.
 """
 
 
