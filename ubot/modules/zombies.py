@@ -1,11 +1,11 @@
 from ubot import *
 
-__MODULE__ = "Zombies"
+__MODULE__ = "ᴢᴏᴍʙɪᴇꜱ"
 __HELP__ = """
-Bantuan Untuk Zombies
+ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴢᴏᴍʙɪᴇꜱ
 
-• Perintah: <code>{0}zombies</code>
-• Penjelasan: Untuk mengeluarkan akun depresi digrup anda.
+⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ᴢᴏᴍʙɪᴇꜱ</ᴄᴏᴅᴇ>
+⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴜᴀʀᴋᴀɴ ᴀᴋᴜɴ ᴅᴇᴘʀᴇꜱɪ ᴅɪɢʀᴜᴘ ᴀɴᴅᴀ.
 """
 
 
