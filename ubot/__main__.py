@@ -46,6 +46,7 @@ async def main():
     except KeyboardInterrupt:
         logger.warning("BOT STOP....")
     finally:
+        await setup.stop()
         await bot.stop()
 
 
