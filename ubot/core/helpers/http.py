@@ -1,10 +1,14 @@
 from asyncio import gather
 
 import httpx
+from aiohttp import ClientSession
 
-from ubot import aiosession as session
 
-# HTTPx Async Client
+async def setup():
+    global aiosession
+    aiosession = ClientSession()
+
+
 http = httpx.AsyncClient(
     http2=True,
     verify=False,
@@ -13,7 +17,7 @@ http = httpx.AsyncClient(
 
 
 async def get(url: str, *args, **kwargs):
-    async with session.get(url, *args, **kwargs) as resp:
+    async with aiosession.get(url, *args, **kwargs) as resp:
         try:
             data = await resp.json()
         except Exception:
@@ -22,7 +26,7 @@ async def get(url: str, *args, **kwargs):
 
 
 async def head(url: str, *args, **kwargs):
-    async with session.head(url, *args, **kwargs) as resp:
+    async with aiosession.head(url, *args, **kwargs) as resp:
         try:
             data = await resp.json()
         except Exception:
@@ -31,7 +35,7 @@ async def head(url: str, *args, **kwargs):
 
 
 async def post(url: str, *args, **kwargs):
-    async with session.post(url, *args, **kwargs) as resp:
+    async with aiosession.post(url, *args, **kwargs) as resp:
         try:
             data = await resp.json()
         except Exception:
@@ -52,8 +56,8 @@ async def multipost(url: str, times: int, *args, **kwargs):
 
 
 async def resp_get(url: str, *args, **kwargs):
-    return await session.get(url, *args, **kwargs)
+    return await aiosession.get(url, *args, **kwargs)
 
 
 async def resp_post(url: str, *args, **kwargs):
-    return await session.post(url, *args, **kwargs)
+    return await aiosession.post(url, *args, **kwargs)
