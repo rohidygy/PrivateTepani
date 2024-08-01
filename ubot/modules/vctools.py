@@ -60,7 +60,7 @@ async def joinvc(client, message):
         await message.reply(f"<b>ᴀᴋᴜɴ ᴀɴᴅᴀ sᴜᴅᴀʜ ʙᴇʀᴀᴅᴀ ᴅɪᴀᴛᴀs</b>")
     else:
         try:
-            await client.group_call.start(message.chat.id)
+            await client.call_py.play(message.chat.id)
         except Exception as e:
             return await message.reply(f"ERROR: {e}")
         await message.reply(
@@ -80,7 +80,7 @@ async def leavevc(client, message):
         await message.reply(f"<emoji id =5974045315391556490>📝</emoji> **anda sedang tidak berada di dalam obrolan suara manapun**.")
     else:
         try:
-            await client.group_call.stop()
+            await client.call_py.leave_call(message.chat.id)
         except Exception as e:
             return await message.reply(f"ERROR: {e}")
         msg = f"**❏ Berhasil Meninggalkan Voice Chat <emoji id=5798623990436074786>✅</emoji>**\n"
