@@ -37,6 +37,7 @@ async def test():
 async def main():
     await test()
     try:
+        await setup()
         await loadPlugins()
         await expiredUserbots()
         await installPeer()
