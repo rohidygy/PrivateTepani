@@ -49,6 +49,7 @@ def LOGGER(name: str) -> logging.Logger:
 
 
 class Ubot(Client):
+    __module__ = "pyrogram.client"
     _ubot = []
     _prefix = {}
     _get_my_id = []
