@@ -5,7 +5,7 @@ import re
 from os import execvp
 from sys import executable
 import shlex
-from aiohttp import ClientSession
+
 from pyrogram import *
 from pyrogram.helpers import *
 from pyrogram.enums import *
@@ -16,7 +16,6 @@ from pyromod import listen
 from telegraph.aio import Telegraph
 from pytgcalls import PyTgCalls
 
-aiosession = ClientSession()
 
 
 def gas():
