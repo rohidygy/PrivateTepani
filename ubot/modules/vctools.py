@@ -55,19 +55,20 @@ async def joinvc(client, message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     with suppress(ValueError):
         chat_id = int(chat_id)
-    naek = (group_call := await get_group_call(client, message, err_msg=", Error..."))
-    if naek:
-        await message.reply(f"<b>ᴀᴋᴜɴ ᴀɴᴅᴀ sᴜᴅᴀʜ ʙᴇʀᴀᴅᴀ ᴅɪᴀᴛᴀs</b>")
-    else:
-        try:
-            await client.call_py.play(message.chat.id)
-        except Exception as e:
-            return await message.reply(f"ERROR: {e}")
-        await message.reply(
-            "**❏ Berhasil Join Voice <emoji id=5798623990436074786>✅</emoji>**\n**╰ Chat** : {}".format(message.chat.title)
-        )
-        await sleep(1)
-        await client.group_call.set_is_mute(True)
+    # naek = (group_call := await get_group_call(client, message, err_msg=", Error..."))
+    # if naek:
+    #     await message.reply(f"<b>ᴀᴋᴜɴ ᴀɴᴅᴀ sᴜᴅᴀʜ ʙᴇʀᴀᴅᴀ ᴅɪᴀᴛᴀs</b>")
+    
+    try:
+        await client.call_py.play(message.chat.id)
+        await client.call_py.mute_stream(message.chat.id)
+    except Exception as e:
+        return await message.reply(f"ERROR: {e}")
+    await message.reply(
+        "**❏ Berhasil Join Voice <emoji id=5798623990436074786>✅</emoji>**\n**╰ Chat** : {}".format(message.chat.title)
+    )
+    await sleep(1)
+    # await client.group_call.set_is_mute(True)
 
 
 @PY.UBOT("lvc")
