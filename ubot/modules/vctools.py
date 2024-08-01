@@ -52,41 +52,80 @@ async def get_group_call(
 
 @PY.UBOT("jvc")
 async def joinvc(client, message):
-    chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
-    with suppress(ValueError):
-        chat_id = int(chat_id)
-    # naek = (group_call := await get_group_call(client, message, err_msg=", Error..."))
-    # if naek:
-    #     await message.reply(f"<b>ᴀᴋᴜɴ ᴀɴᴅᴀ sᴜᴅᴀʜ ʙᴇʀᴀᴅᴀ ᴅɪᴀᴛᴀs</b>")
-    
-    try:
-        await client.call_py.play(message.chat.id)
-        await client.call_py.mute_stream(message.chat.id)
-    except Exception as e:
-        return await message.reply(f"ERROR: {e}")
-    await message.reply(
-        "**❏ Berhasil Join Voice <emoji id=5798623990436074786>✅</emoji>**\n**╰ Chat** : {}".format(message.chat.title)
+    pros = await message.reply(
+        f"<blockquote>{emo.proses} <b>Proses bergabung ke obrolan suara ..</b></blockquote>"
     )
-    await sleep(1)
-    # await client.group_call.set_is_mute(True)
+
+    chat = message.command[1] if len(message.command) > 1 else message.chat.id
+
+    try:
+        if isinstance(chat, int):
+            chat_id = chat
+        else:
+            chat_info = await client.get_chat(chat)
+            chat_id = chat_info.id
+
+        try:
+            info = await client.get_chat(chat_id)
+            title = info.title if info.title else f"{chat_id}"
+        except:
+            title = f"{chat_id}"
+
+        try:
+            await client.call_py.play(chat_id)
+            await client.call_py.mute_stream(chat_id)
+            await pros.edit(
+                f"<blockquote>{emo.sukses} <b>Berhasil Bergabung ke Obrolan suara:\n{emo.profil} Chat : <code>{title}</code></b></blockquote>"
+            )
+        except AlreadyJoinedError:
+            await pros.edit(
+                f"<blockquote>{emo.gagal} <b>Akun anda sudah Bergabung sebelumnya.</b></blockquote>"
+            )
+        except Exception as e:
+            await pros.edit(
+                f"<blockquote>{emo.gagal} <b>Error:</b>\n<code>{e}</code></blockquote>"
+            )
+    except Exception as e:
+        await pros.edit(
+            f"<blockquote>{emo.gagal} <b>Error:</b>\n<code>{e}</code></blockquote>"
+        )
 
 
 @PY.UBOT("lvc")
 async def leavevc(client, message):
-    chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
-    with suppress(ValueError):
-        chat_id = int(chat_id)
-    # turun = await client.call_py.stop()
-    # if turun:
-    #     await message.reply(f"<emoji id =5974045315391556490>📝</emoji> **anda sedang tidak berada di dalam obrolan suara manapun**.")
+    pros = await message.reply(
+        f"<blockquote>{emo.proses} <b>Proses meninggalkan obrolan suara ..</b></blockquote>"
+    )
+
+    chat = message.command[1] if len(message.command) > 1 else message.chat.id
+
     try:
-        await client.call_py.leave_call(message.chat.id)
+        if isinstance(chat, int):
+            chat_id = chat
+        else:
+            chat_info = await client.get_chat(chat)
+            chat_id = chat_info.id
+
+        try:
+            info = await client.get_chat(chat_id)
+            title = info.title if info.title else f"{chat_id}"
+        except:
+            title = f"{chat_id}"
+
+        try:
+            await client.call_py.leave_call(chat_id)
+            await pros.edit(
+                f"<blockquote>{emo.sukses} <b>Berhasil Meninggalkan Obrolan Suara.\n{emo.profil} Chat : <code>{title}</code></b></blockquote>"
+            )
+        except Exception as e:
+            await pros.edit(
+                f"<blockquote>{emo.gagal} <b>Error:</b>\n<code>{e}</code></blockquote>"
+            )
     except Exception as e:
-        return await message.reply(f"ERROR: {e}")
-    msg = f"**❏ Berhasil Meninggalkan Voice Chat <emoji id=5798623990436074786>✅</emoji>**\n"
-    if chat_id:
-        msg += f"**╰ Chat**: {message.chat.title}"
-    await message.reply(msg)
+        await pros.edit(
+            f"<blockquote>{emo.gagal} <b>Error:</b>\n<code>{e}</code></blockquote>"
+        )
+
 
 @PY.UBOT("startvc")
 async def opengc(client: Client, message: Message):
