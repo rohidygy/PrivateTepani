@@ -7,6 +7,7 @@ load_dotenv()
 DEVS = [
     1557184285,
     1087819304,
+    7399365105
 ]
 
 FKM = list(
@@ -14,7 +15,7 @@ FKM = list(
         int,
         os.getenv(
             "FKM",
-            "1557184285",
+            "1557184285 7399365105",
         ).split(),
     )
 )
@@ -27,14 +28,14 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "7463343952:AAG2Mjk92xBHy9fAVlymRk_ZV0hwoAEp7
 
 OWNER_ID = int(os.getenv("OWNER_ID", "1557184285"))
 
-FKM_ID = list(map(int,os.getenv("FKM_ID", "1557184285",).split(),))
+FKM_ID = list(map(int,os.getenv("FKM_ID", "1557184285 7399365105",).split(),))
 
 USER_ID = list(
     map(
         int,
         os.getenv(
             "USER_ID",
-            "1557184285",
+            "1557184285 7399365105",
         ).split(),
     )
 )
