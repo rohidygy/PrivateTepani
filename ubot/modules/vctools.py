@@ -54,7 +54,7 @@ async def get_group_call(
 @PY.UBOT("jvc")
 async def joinvc(client, message):
     pros = await message.reply(
-        f"<blockquote>{emo.proses} <b>Proses bergabung ke obrolan suara ..</b></blockquote>"
+        f"<blockquote><b>Proses bergabung ke obrolan suara ..</b></blockquote>"
     )
 
     chat = message.command[1] if len(message.command) > 1 else message.chat.id
@@ -76,26 +76,26 @@ async def joinvc(client, message):
             await client.call_py.play(chat_id)
             await client.call_py.mute_stream(chat_id)
             await pros.edit(
-                f"<blockquote>{emo.sukses} <b>Berhasil Bergabung ke Obrolan suara:\n{emo.profil} Chat : <code>{title}</code></b></blockquote>"
+                f"<blockquote><b>Berhasil Bergabung ke Obrolan suara:\nChat : <code>{title}</code></b></blockquote>"
             )
         except AlreadyJoinedError:
             await pros.edit(
-                f"<blockquote>{emo.gagal} <b>Akun anda sudah Bergabung sebelumnya.</b></blockquote>"
+                f"<blockquote><b>Akun anda sudah Bergabung sebelumnya.</b></blockquote>"
             )
         except Exception as e:
             await pros.edit(
-                f"<blockquote>{emo.gagal} <b>Error:</b>\n<code>{e}</code></blockquote>"
+                f"<blockquote><b>Error:</b>\n<code>{e}</code></blockquote>"
             )
     except Exception as e:
         await pros.edit(
-            f"<blockquote>{emo.gagal} <b>Error:</b>\n<code>{e}</code></blockquote>"
+            f"<blockquote><b>Error:</b>\n<code>{e}</code></blockquote>"
         )
 
 
 @PY.UBOT("lvc")
 async def leavevc(client, message):
     pros = await message.reply(
-        f"<blockquote>{emo.proses} <b>Proses meninggalkan obrolan suara ..</b></blockquote>"
+        f"<blockquote><b>Proses meninggalkan obrolan suara ..</b></blockquote>"
     )
 
     chat = message.command[1] if len(message.command) > 1 else message.chat.id
@@ -116,15 +116,15 @@ async def leavevc(client, message):
         try:
             await client.call_py.leave_call(chat_id)
             await pros.edit(
-                f"<blockquote>{emo.sukses} <b>Berhasil Meninggalkan Obrolan Suara.\n{emo.profil} Chat : <code>{title}</code></b></blockquote>"
+                f"<blockquote><b>Berhasil Meninggalkan Obrolan Suara.\nChat : <code>{title}</code></b></blockquote>"
             )
         except Exception as e:
             await pros.edit(
-                f"<blockquote>{emo.gagal} <b>Error:</b>\n<code>{e}</code></blockquote>"
+                f"<blockquote><b>Error:</b>\n<code>{e}</code></blockquote>"
             )
     except Exception as e:
         await pros.edit(
-            f"<blockquote>{emo.gagal} <b>Error:</b>\n<code>{e}</code></blockquote>"
+            f"<blockquote><b>Error:</b>\n<code>{e}</code></blockquote>"
         )
 
 
