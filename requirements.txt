@@ -21,7 +21,7 @@ telegraph[aio]
 openai
 # pytgcalls==3.0.0.dev24
 py-tgcalls
-yt-dlp
+git+https://github.com/yt-dlp/yt-dlp.git@master
 wget
 python-dateutil
 emoji
@@ -36,7 +36,7 @@ meval
 speedtest-cli
 opencv-python
 # pyromod==1.0
-pytube2
+# pytube2
 youtube-search-python
 youtube-search
 google-generativeai
