@@ -145,10 +145,9 @@ async def song_cmd(client, message):
             "❌ Masukkan judul dengan benar.",
         )
     infomsg = await message.reply_text("<b>🔍 Searching...</b>")
+    kueri = get_text(message)
     try:
-        search = VideosSearch(message.text.split(None, 1)[1], limit=1).result()[
-            "result"
-        ][0]
+        search = VideosSearch(kueri, limit=1).result()["result"][0]
         link = f"https://youtu.be/{search['id']}"
     except Exception as error:
         return await infomsg.edit(f"<b>🔍 Searching...\n\n{error}</b>")
