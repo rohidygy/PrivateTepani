@@ -63,7 +63,7 @@ async def progress(current, total, message, start, type_of_ps, file_name=None):
                     f"""
 <b>{type_of_ps}</b>
 
-<b>ID Berkas:</b> <code>{file_name}</code>
+<b>ғɪʟᴇ_ɪᴅ:</b> <code>{file_name}</code>
 
 <b>{tmp}</b>
 """
@@ -84,16 +84,16 @@ async def progress(current, total, message, start, type_of_ps, file_name=None):
 async def vsong_cmd(client, message):
     if len(message.command) < 2:
         return await message.reply_text(
-            "❌ Masukkan judul dengan benar.",
+            "❌ <b>ᴠɪᴅᴇᴏ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ,</b>\nᴍᴏʜᴏɴ ᴍᴀsᴜᴋᴀɴ ᴊᴜᴅᴜʟ ᴠɪᴅᴇᴏ ᴅᴇɴɢᴀɴ ʙᴇɴᴀʀ.",
         )
-    infomsg = await message.reply_text("<b>🔍 Searching...</b>")
+    infomsg = await message.reply_text("<b>🔍 ᴘᴇɴᴄᴀʀɪᴀɴ...</b>", quote=False)
     try:
         search = VideosSearch(message.text.split(None, 1)[1], limit=1).result()[
             "result"
         ][0]
         link = f"https://youtu.be/{search['id']}"
     except Exception as error:
-        return await infomsg.edit(f"<b>🔍 Searching...\n\n{error}</b>")
+        return await infomsg.edit(f"<b>🔍 ᴘᴇɴᴄᴀʀɪᴀɴ...\n\n{error}</b>")
     try:
         (
             file_name,
@@ -106,7 +106,7 @@ async def vsong_cmd(client, message):
             data_ytp,
         ) = await YoutubeDownload(link, as_video=True)
     except Exception as error:
-        return await infomsg.edit(f"<b>📥 Downloading...\n\n{error}</b>")
+        return await infomsg.edit(f"<b>📥 ᴅᴏᴡɴʟᴏᴀᴅᴇʀ...\n\n{error}</b>")
     thumbnail = wget.download(thumb)
     await client.send_video(
         message.chat.id,
@@ -128,7 +128,7 @@ async def vsong_cmd(client, message):
         progress_args=(
             infomsg,
             time(),
-            "<b>📥 Downloading...</b>",
+            "<b>📥 ᴅᴏᴡɴʟᴏᴀᴅᴇʀ...</b>",
             f"{search['id']}.mp4",
         ),
         reply_to_message_id=message.id,
@@ -142,15 +142,16 @@ async def vsong_cmd(client, message):
 async def song_cmd(client, message):
     if len(message.command) < 2:
         return await message.reply_text(
-            "❌ Masukkan judul dengan benar.",
+            "❌ <b>ᴀᴜᴅɪᴏ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ,</b>\nᴍᴏʜᴏɴ ᴍᴀsᴜᴋᴀɴ ᴊᴜᴅᴜʟ ᴠɪᴅᴇᴏ ᴅᴇɴɢᴀɴ ʙᴇɴᴀʀ.",
         )
-    infomsg = await message.reply_text("<b>🔍 Searching...</b>")
-    kueri = get_text(message)
+    infomsg = await message.reply_text("<b>🔍 ᴘᴇɴᴄᴀʀɪᴀɴ...</b>", quote=False)
     try:
-        search = VideosSearch(kueri, limit=1).result()["result"][0]
+        search = VideosSearch(message.text.split(None, 1)[1], limit=1).result()[
+            "result"
+        ][0]
         link = f"https://youtu.be/{search['id']}"
     except Exception as error:
-        return await infomsg.edit(f"<b>🔍 Searching...\n\n{error}</b>")
+        return await infomsg.edit(f"<b>🔍 ᴘᴇɴᴄᴀʀɪᴀɴ...\n\n{error}</b>")
     try:
         (
             file_name,
@@ -163,7 +164,7 @@ async def song_cmd(client, message):
             data_ytp,
         ) = await YoutubeDownload(link, as_video=False)
     except Exception as error:
-        return await infomsg.edit(f"<b>📥 Downloading...\n\n{error}</b>")
+        return await infomsg.edit(f"<b>📥 ᴅᴏᴡɴʟᴏᴀᴅᴇʀ...\n\n{error}</b>")
     thumbnail = wget.download(thumb)
     await client.send_audio(
         message.chat.id,
@@ -185,7 +186,7 @@ async def song_cmd(client, message):
         progress_args=(
             infomsg,
             time(),
-            "<b>📥 Downloading...</b>",
+            "<b>📥 ᴅᴏᴡɴʟᴏᴀᴅᴇʀ...</b>",
             f"{search['id']}.mp3",
         ),
         reply_to_message_id=message.id,
