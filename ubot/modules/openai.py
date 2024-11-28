@@ -16,7 +16,7 @@ __HELP__ = """
 """
 
 def cetbut(query: str, user_id: int):
-    genai.configure(api_key="AIzaSyC28dJ5wTyjm44ng1WCuz4uTppelgRcLuU")
+    genai.configure(api_key="AIzaSyD61_aONk_M5o7xzPazWEbrcuXDNXMzydA")
     model = genai.GenerativeModel(model_name="gemini-1.0-pro-latest")
     convo = model.start_chat(history=[])
     try:
