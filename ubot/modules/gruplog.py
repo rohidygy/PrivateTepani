@@ -43,6 +43,9 @@ async def _(client, message):
         try:
             await client.send_message(int(log),text,disable_web_page_preview=True)
             await asyncio.sleep(0.5)
+        except ChannelInvalid:
+            monggo.remove_var(client.me.id, "TAG_LOG")
+            return
         except FloodWait as e:
             await asyncio.sleep(e.value)
             await client.send_message(int(log),text,disable_web_page_preview=True)
@@ -59,6 +62,8 @@ async def _(client, message):
             await client.send_message(int(log), text,   disable_web_page_preview=True)
             await asyncio.sleep(0.5)
             await message.forward(int(log))
+        except Exception:
+            return
         except ChannelInvalid:
             monggo.remove_var(client.me.id, "TAG_LOG")
             return
