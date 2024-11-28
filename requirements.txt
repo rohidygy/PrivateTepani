@@ -19,7 +19,6 @@ gpytranslate
 gtts
 telegraph[aio]
 openai
-# pytgcalls==3.0.0.dev24
 py-tgcalls
 git+https://github.com/yt-dlp/yt-dlp.git@master
 wget
@@ -35,8 +34,33 @@ requests
 meval
 speedtest-cli
 opencv-python
-# pyromod==1.0
-# pytube2
 youtube-search-python
-youtube-search
 google-generativeai
+aiocron
+aiosignal==1.3.1
+bing-image-downloader
+gen-bing==0.0.6
+blinker
+brotli
+cryptography
+dnspython
+fake-useragent
+ffmpeg-python
+flask
+gitdb
+gitpython
+git+https://github.com/google-gemini/generative-ai-python.git@main
+git+https://github.com/pytgcalls/pytgcalls.git@master
+gTTS
+gpytranslate
+git+https://github.com/sarag5/multi_search_engine.git@main
+ntgcalls
+numpy==1.26.4
+opencv-python-headless
+playwright
+pysocks
+pytimeparse2
+pyyaml
+search-engine-parser
+tornado
+regex
