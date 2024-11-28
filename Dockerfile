@@ -14,6 +14,7 @@ WORKDIR /app/
 
 RUN pip3 install -U pip
 RUN pip3 install --no-cache-dir -r requirements.txt
-#RUN chmod +x /app/start
 
-CMD bash start
+RUN ["playwright", "install-deps"]
+
+CMD ["bash", "start"]
