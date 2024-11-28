@@ -63,6 +63,6 @@ async def _(c: ubot, m):
     pros = await m.reply(f"Saya paranormal bisa Saya bantu...")
     reply_text = c.get_text(m)
     if not reply_text:
-        return pros.edit(f"{em.gagal} Kasih query or balas text lah dongok!!")
+        return await pros.edit(f"{em.gagal} Kasih query or balas text lah dongok!!")
     await mari_kirim(m, reply_text)
     await pros.delete()
