@@ -11,8 +11,8 @@ async def cb_tutor(client, callback_query):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🥷 ᴏᴡɴᴇʀ", url="https://t.me/rezadevx"),
-                    InlineKeyboardButton("📬 ᴋᴏᴛᴀᴋ ᴘᴇsᴀɴ", callback_data="support"),
+                    InlineKeyboardButton("🥷 ᴏᴡɴᴇʀ", url="https://t.me/kagebunshiiin"),
+                    InlineKeyboardButton("📬 ᴋᴏᴛᴀᴋ ᴘᴇsᴀɴ", callback_data="suportkage"),
                 ],
                 [
                     InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="start0"),
@@ -27,7 +27,7 @@ async def diskusi(client, callback_query):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="🖲 ᴏᴡɴᴇʀ ᴄʜᴀɴᴇʟ", url="https://t.me/xCodee1"),
+                    InlineKeyboardButton(text="🖲 ᴏᴡɴᴇʀ ᴄʜᴀɴᴇʟ", url="https://t.me/kagestore69"),
                 ],
                 [
                     InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="start0"),
@@ -39,7 +39,7 @@ async def diskusi(client, callback_query):
 async def informasi(client, callback_query):
     await callback_query.edit_message_text(
         text="""
-🧰 ᴛᴇɴᴛᴀɴɢ <b>ʀᴇᴢᴀ ᴅᴇᴠs ʟᴠ</b>
+🧰 ᴛᴇɴᴛᴀɴɢ <b>kage ᴅᴇᴠs ʟᴠ</b>
 """,
         reply_markup=InlineKeyboardMarkup(
             [
