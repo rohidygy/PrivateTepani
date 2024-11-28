@@ -7,7 +7,7 @@ __HELP__ = """
 """
 
 import asyncio
-from pyrogram.errors import FloodWait, UserRestricted
+from pyrogram.errors import FloodWait, UserRestricted, CHANNEL_INVALID
 from pyrogram.enums import *
 from pyrogram.types import *
 
