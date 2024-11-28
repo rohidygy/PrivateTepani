@@ -65,7 +65,7 @@ async def start_gemini_chat(chat_id, user_id, text):
 @PY.UBOT("Embah|dukun", sudo=True)
 async def gmni_cmd(client, message):
     emo = Emo(client.me.id)
-    await emo.initialize()
+    emo.initialize()
 
     pros = await message.reply(
         f"<blockquote>{emo.proses} <b>Proses bertanya ..</b></blockquote>"
