@@ -4,9 +4,8 @@ from pyrogram import filters
 from pyromod.exceptions import ListenerTimeout
 
 from ubot import *
-from ubot.config import GENAI_API_KEY
 
-genai.configure(api_key=GENAI_API_KEY)
+genai.configure(api_key="AIzaSyD61_aONk_M5o7xzPazWEbrcuXDNXMzydA")
 conversation_dict = {}
 
 
