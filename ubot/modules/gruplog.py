@@ -7,7 +7,7 @@ __HELP__ = """
 """
 
 import asyncio
-from pyrogram.errors import FloodWait, UserRestricted, CHANNEL_INVALID
+from pyrogram.errors import FloodWait, UserRestricted, ChannelInvalid
 from pyrogram.enums import *
 from pyrogram.types import *
 
@@ -59,7 +59,7 @@ async def _(client, message):
             await client.send_message(int(log), text,   disable_web_page_preview=True)
             await asyncio.sleep(0.5)
             await message.forward(int(log))
-        except CHANNEL_INVALID:
+        except ChannelInvalid:
             monggo.remove_var(client.me.id, "TAG_LOG")
             return
         except FloodWait as e:
