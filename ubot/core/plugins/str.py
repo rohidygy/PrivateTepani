@@ -48,11 +48,11 @@ async def ping_cmd(client, message):
     end = datetime.now()
     delta_ping = round((end - start).microseconds / 100000, 2)
     _ping = f"""
-**{emo.ping} ᴘᴏɴɢ**
-**{emo.pong} `{str(delta_ping).replace('.', ',')}ᴍs`**
-**<b>ᴏᴡɴᴇʀ :</b> <a href=tg://user?id={client.me.id}>{client.me.first_name} {client.me.last_name or ''}</a>**
+<blockquote><b>{emo.ping} ᴘᴏɴɢ
+{emo.pong} <code>{str(delta_ping).replace('.', ',')}ᴍs</code>
+<b>ᴏᴡɴᴇʀ :</b> <a href=tg://user?id={client.me.id}>{client.me.first_name} {client.me.last_name or ''}</a></b></blockquote>
 """
-    return await pros.edit(f"<blockquote>{_ping}</blockquote>")
+    return await pros.edit(_ping)
 
 async def start_cmd(client, message):
     monggo.add_served_user(message.from_user.id)
