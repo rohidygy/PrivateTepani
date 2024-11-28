@@ -6,6 +6,7 @@ __HELP__ = """
 ⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴀᴋᴛɪꜰᴋᴀɴ ᴛᴀɢ ʟᴏɢ ᴅᴀɴ ᴘᴍ ʟᴏɢ.
 """
 
+import asyncio
 from pyrogram.errors import FloodWait, UserRestricted
 from pyrogram.enums import *
 from pyrogram.types import *
@@ -55,9 +56,12 @@ async def _(client, message):
 • <b>Tautan Pesan: [Disini]({message_link}) </b>
 """
         try:
-            await client.send_message(int(log),text,disable_web_page_preview=True)
+            await client.send_message(int(log), text,   disable_web_page_preview=True)
             await asyncio.sleep(0.5)
             await message.forward(int(log))
+        except CHANNEL_INVALID:
+            monggo.remove_var(client.me.id, "TAG_LOG")
+            return
         except FloodWait as e:
             await asyncio.sleep(e.value)
             await client.send_message(int(log),text,disable_web_page_preview=True)
