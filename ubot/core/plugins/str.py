@@ -48,8 +48,8 @@ async def ping_cmd(client, message):
     end = datetime.now()
     delta_ping = round((end - start).microseconds / 100000, 2)
     _ping = f"""
-<blockquote><b>{emo.ping} ᴘᴏɴɢ
-{emo.pong} <code>{str(delta_ping).replace('.', ',')}ᴍs</code>
+<blockquote><b>{emo.ping} ᴘɪɴɢ
+{emo.pong} ꜱᴘᴇᴇᴅ <code>{str(delta_ping).replace('.', ',')}ᴍs</code>
 <b>ᴏᴡɴᴇʀ :</b> <a href=tg://user?id={client.me.id}>{client.me.first_name} {client.me.last_name or ''}</a></b></blockquote>
 """
     return await pros.edit(_ping)
