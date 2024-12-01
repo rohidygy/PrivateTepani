@@ -65,7 +65,7 @@ async def broadcast_group_cmd(client, message):
     emo = Emo(client.me.id)
 
     emo.initialize()
-    msg = await message.reply("Processing...")
+    msg = await message.reply("<blockquote>Processing...</blockquote>")
 
     send = get_message(message)
     if not send:
@@ -98,10 +98,10 @@ async def broadcast_group_cmd(client, message):
     return await msg.edit(
         # message.chat.id,
         f"""
-<b>Broadcast Message Sent :
+<blockquote><b>Broadcast Message Sent :
  {emo.sukses} Success in <code>{done}</code> Group.
  {emo.gagal} Failed at <code>{failed}</code> Group.
- </b>""",
+ </b></blockquote>""",
     )
 
 
