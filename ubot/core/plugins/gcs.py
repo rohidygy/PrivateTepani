@@ -65,11 +65,11 @@ async def broadcast_group_cmd(client, message):
     emo = Emo(client.me.id)
 
     emo.initialize()
-    msg = await message.reply("<blockquote>Processing...</blockquote>")
+    msg = await message.reply("<blockquote>sᴇᴅᴀɴɢ ᴘʀᴏsᴇs...</blockquote>")
 
     send = get_message(message)
     if not send:
-        return await msg.edit("<blockquote>Silakan balas ke pesan atau berikan pesan.</blockquote>")
+        return await msg.edit("<blockquote>sɪʟᴀᴋᴀɴ ʙᴀʟᴀs ᴋᴇ ᴘᴇsᴀɴ ᴀᴛᴀᴜ ʙᴇʀɪᴋᴀɴ ᴘᴇsᴀɴ</blockquote>")
 
     chats = await get_broadcast_id(client, "group")
     blacklist = monggo.get_chat(client.me.id)
