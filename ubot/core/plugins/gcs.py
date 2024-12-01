@@ -69,7 +69,7 @@ async def broadcast_group_cmd(client, message):
 
     send = get_message(message)
     if not send:
-        return await msg.edit("Silakan balas ke pesan atau berikan pesan.")
+        return await msg.edit("<blockquote>Silakan balas ke pesan atau berikan pesan.</blockquote>")
 
     chats = await get_broadcast_id(client, "group")
     blacklist = monggo.get_chat(client.me.id)
