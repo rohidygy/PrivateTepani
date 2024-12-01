@@ -14,20 +14,21 @@ pySmartDL
 html2text
 removebg
 aiofiles
-aiohttp
+aiohttp==3.10.0
 gpytranslate
 gtts
 telegraph[aio]
 openai
 py-tgcalls
-git+https://github.com/yt-dlp/yt-dlp.git@master
+# git+https://github.com/yt-dlp/yt-dlp.git@master
 wget
 python-dateutil
 emoji
 search_engine_parser
-httpx[http2]
+httpx[http2]==0.27.2
 pytimeparse
 uvloop
+yt-dlp==2024.11.18
 Pillow==8.3.2
 requests
 meval
