@@ -1,7 +1,7 @@
 
 from pyrogram.types import InlineQueryResultArticle, InputTextMessageContent, InlineQueryResultVideo, InlineQueryResultPhoto
 from ubot import PY, Emo, monggo, get_msg_button, create_tl_btn, INLINE, bot, ubot, get_text, get_arg
-from .notes import kontol_siapa
+#from .notes import kontol_siapa
 from telegraph import upload_file
 
 
