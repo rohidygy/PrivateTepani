@@ -27,7 +27,6 @@ async def _(client, message):
 
 
 @PY.UBOT("get", sudo=True)
-@PY.TOP_CMD
 async def _(client, message):
     await get_cmd(client, message)
 
@@ -39,12 +38,10 @@ async def _(client, inline_query):
 
 
 @PY.UBOT("rm", sudo=True)
-@PY.TOP_CMD
 async def _(client, message):
     await delnote_cmd(client, message)
 
 
 @PY.UBOT("notes", sudo=True)
-@PY.TOP_CMD
 async def _(client, message):
     await notes_cmd(client, message)
