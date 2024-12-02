@@ -22,7 +22,6 @@ __HELP__ = f"""
 
 
 @PY.UBOT("save", sudo=True)
-@PY.TOP_CMD
 async def _(client, message):
     await addnote_cmd(client, message)
 
