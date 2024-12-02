@@ -1,6 +1,6 @@
 import requests
 
-from PyroUbot import *
+from ubot import *
 
 __MODULE__ = "Base64"
 __HELP__ = """
