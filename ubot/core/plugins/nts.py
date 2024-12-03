@@ -13,7 +13,7 @@ from ubot.core.helpers import (Emo, ReplyCheck, cb_nts_btn, cek_tautan,
 
 async def save_note(client: ubot, message):
     emo = Emo(client.me.id)
-    await emo.initialize()
+    emo.initialize()
     pref = monggo.get_pref(client.me.id)
     x = next(iter(pref))
     cek = message.reply_to_message
@@ -72,7 +72,7 @@ async def save_note(client: ubot, message):
 
 async def get_note(client: ubot, message):
     emo = Emo(client.me.id)
-    await emo.initialize()
+    emo.initialize()
     pros = await message.reply(
         f"<blockquote>{emo.proses} <b>Proses ambil catatan ..</b></blockquote>"
     )
@@ -140,7 +140,7 @@ async def get_raw_note(c, m, xx, note, data, msg_id):
 
 async def local_notes(client: ubot, message):
     emo = Emo(client.me.id)
-    await emo.initialize()
+    emo.initialize()
     pros = await message.reply(
         f"<blockquote>{emo.proses} <b>Proses mengambil Daftar Catatan ..</b></blockquote>"
     )
@@ -166,7 +166,7 @@ async def local_notes(client: ubot, message):
 
 async def clear_note(client: ubot, message):
     emo = Emo(client.me.id)
-    await emo.initialize()
+    emo.initialize()
     pros = await message.reply(
         f"<blockquote>{emo.proses} <b>Proses hapus catatan ..</b></blockquote>"
     )
