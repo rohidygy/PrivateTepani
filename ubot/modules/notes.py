@@ -1,261 +1,231 @@
-import os
-
-from pyrogram import errors
 from pyrogram.types import *
-#from telegraph import upload_file
-import requests
-from ubot import (PY, Emo, ReplyCheck, Types, bot, create_tl_btn,
-                  get_note_type, monggo, get_msg_button, ubot)
 
-# TODO: Add buttons support in some types
-# TODO: Add group notes, but whats for? since only you can get notes
+from PyroUbot import *
 
-__MODULE__ = "ɴᴏᴛᴇꜱ"
-__HELP__ = """ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɴᴏᴛᴇꜱ
+__MODULE__ = "notes"
+__HELP__ = """
+<b>『 ʙᴀɴᴛᴜᴀɴ ɴᴏᴛᴇs 』</b>
 
+<b>ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}addnote</code>
+   <i>menyimpan sebuah catatan</i>
 
-⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ꜱᴀᴠᴇ</ᴄᴏᴅᴇ> [ɴᴀᴍᴀ ᴄᴀᴛᴀᴛᴀɴ] [ʙᴀʟᴀꜱ ᴘᴇꜱᴀɴ]
-⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴʏɪᴍᴘᴀɴ ᴄᴀᴛᴀᴛᴀɴ.
+<b>ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}get</code>
+   <i>mendapatkan catatan yang di simpan</i>
 
-⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ɢᴇᴛ</ᴄᴏᴅᴇ> [ɴᴀᴍᴀ ᴄᴀᴛᴀᴛᴀɴ]
-⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴍʙɪʟ ᴄᴀᴛᴀᴛᴀɴ.
+<b>ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}delnote</code>
+   <i>menghapus catatan yang di simpan</i>
 
-⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ʀᴍ</ᴄᴏᴅᴇ> [ɴᴀᴍᴀ ᴄᴀᴛᴀᴛᴀɴ]
-⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴀᴘᴜꜱ ᴄᴀᴛᴀᴛᴀɴ.
+<b>ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}listnote</code>
+  <i>melihat daftar catatan yang di simpan</i>
 
-⌑ ᴘᴇʀɪɴᴛᴀʜ: <ᴄᴏᴅᴇ>{0}ɴᴏᴛᴇꜱ</ᴄᴏᴅᴇ>
-⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ꜱᴇᴍᴜᴀ ᴄᴀᴛᴀᴛᴀɴ.
+<b>ꜰᴏʀᴍᴀᴛ: <code>| ɴᴀᴍᴀ ᴛᴏᴍʙᴏʟ - ᴜʀʟ/ᴄᴀʟʟʙᴀᴄᴋ |</code>
+   <i>untuk membuat button pada catatan</i>
 
-<ᴜ>ᴄᴀᴛᴀᴛᴀɴ</ᴜ>: <ʙʟᴏᴄᴋQᴜᴏᴛᴇ>ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ꜰᴏʀᴍᴀᴛ ᴛᴇᴋꜱ ᴍᴇɴᴊᴀᴅɪ ᴛᴏᴍʙᴏʟ ꜱɪʟᴀʜᴋᴀɴ ᴋᴇᴛɪᴋ `{0}ᴍᴀʀᴋᴅᴏᴡɴ`</ʙʟᴏᴄᴋQᴜᴏᴛᴇ>
 """
 
 
-def kontol_siapa(xi, tipe):
-    return f"ubot/resources/{xi}.{tipe}"
+def detect_url_links(text):
+    link_pattern = r"(?:https?://)?(?:www\.)?[a-zA-Z0-9.-]+(?:\.[a-zA-Z]{2,})+(?:[/?]\S+)?"
+    link_found = re.findall(link_pattern, text)
+    return link_found
 
 
-@PY.UBOT("save", sudo=True)
-async def save_note(client, message):
-    emo = Emo(client.me.id)
-    emo.initialize()
+def detect_button_and_text(text):
+    button_matches = re.findall(r"\| ([^|]+) - ([^|]+) \|", text)
+    text_matches = re.search(r"(.*?) \|", text, re.DOTALL).group(1) if "|" in text else text
+    return button_matches, text_matches
+
+
+def create_inline_keyboard(text, user_id=False, is_back=False):
+    keyboard = []
+    button_matches, text_matches = detect_button_and_text(text)
+
+    prev_button_data = None
+    for button_text, button_data in button_matches:
+        data = (
+            button_data.split(";same")[0]
+            if detect_url_links(button_data.split(";same")[0])
+            else f"_gtnote {int(user_id.split('_')[0])}_{user_id.split('_')[1]} {button_data.split(';same')[0]}"
+        )
+        cb_data = data if user_id else button_data.split(";same")[0]
+        if ";same" in button_data:
+            if prev_button_data:
+                if detect_url_links(cb_data):
+                    keyboard[-1].append(InlineKeyboardButton(button_text, url=cb_data))
+                else:
+                    keyboard[-1].append(InlineKeyboardButton(button_text, callback_data=cb_data))
+            else:
+                if detect_url_links(cb_data):
+                    button_row = [InlineKeyboardButton(button_text, url=cb_data)]
+                else:
+                    button_row = [InlineKeyboardButton(button_text, callback_data=cb_data)]
+                keyboard.append(button_row)
+        else:
+            if button_data.startswith("http"):
+                button_row = [InlineKeyboardButton(button_text, url=cb_data)]
+            else:
+                button_row = [InlineKeyboardButton(button_text, callback_data=cb_data)]
+            keyboard.append(button_row)
+
+        prev_button_data = button_data
+
+    markup = InlineKeyboardMarkup(inline_keyboard=keyboard)
+
+    if user_id and is_back:
+        markup.inline_keyboard.append(
+            [
+                InlineKeyboardButton(
+                    "ᴋᴇᴍʙᴀʟɪ",
+                    f"_gtnote {int(user_id.split('_')[0])}_{user_id.split('_')[1]}",
+                )
+            ]
+        )
+
+    return markup, text_matches
+
+
+@PY.UBOT("addnote|addcb")
+@PY.TOP_CMD
+async def _(client, message):
+    args = get_arg(message)
     reply = message.reply_to_message
-    if not reply:
-        await message.reply(f"{emo.gagal} <b>You need to reply to a message to save it!</b>")
-        return
-    xx = await message.reply(f"{emo.proses} <b>Processing...</b>")
-    getnotes = monggo.get_all_notes(client.me.id)
-    notes_data = getnotes if getnotes else {}
-    note_id = f"note_{len(notes_data) + 1}" 
-    note_content = {
-        "text": reply.text or reply.caption or None,
-        "media": None
+    query = "notes_cb" if message.command[0] == "addcb" else "notes"
+
+    if not args or not reply:
+        return await message.reply(f"<code>{message.text.split()[0]}</code> <b>[ɴᴀᴍᴇ] [ᴛᴇxᴛ/ʀᴇᴘʟʏ]</b>")
+
+    vars = await get_vars(client.me.id, args, query)
+
+    if vars:
+        return await message.reply(f"<b>ᴄᴀᴛᴀᴛᴀɴ {args} ꜱᴜᴅᴀʜ ᴀᴅᴀ</n>")
+
+    value = None
+    type_mapping = {
+        "text": reply.text,
+        "photo": reply.photo,
+        "voice": reply.voice,
+        "audio": reply.audio,
+        "video": reply.video,
+        "animation": reply.animation,
+        "sticker": reply.sticker,
     }
-    if reply.photo:
-        file_id = await reply.download(file_name=f"photo_{note_id}.jpg")
-        note_content["media"] = {"type": "photo", "file_id": file_id}
-    elif reply.video:
-        file_id = await reply.download(file_name=f"video_{note_id}.mp4")
-        note_content["media"] = {"type": "video", "file_id": file_id}
-    elif reply.document:
-        file_id = await reply.download(file_name=f"document_{note_id}")
-        note_content["media"] = {"type": "document", "file_id": file_id}
-    elif reply.audio:
-        file_id = await reply.download(file_name=f"audio_{note_id}.mp3")
-        note_content["media"] = {"type": "audio", "file_id": file_id}
-    notes_data[note_id] = note_content
-    monggo.save_notes(client.me.id, notes_data)
-    
-    await xx.edit(f"{emo.sukses} <b>saved successfully!</b>")
 
-@PY.UBOT("get", sudo=True)
-async def get_note(client, message):
-    emo = Emo(client.me.id)
-    emo.initialize()
-    xx = await message.reply(f"{emo.proses} <b>Processing...</b>")
-    note = None
-    if len(message.text.split()) >= 2:
-        note = message.text.split()[1]
+    for media_type, media in type_mapping.items():
+        if media:
+            send = await reply.copy(client.me.id)
+            value = {
+                "type": media_type,
+                "message_id": send.id,
+            }
+            break
+
+    if value:
+        await set_vars(client.me.id, args, value, query)
+        return await message.reply(f"<b>ᴄᴀᴛᴀᴛᴀɴ <code>{args}</code> ʙᴇʀʜᴀsɪʟ ᴛᴇʀsɪᴍᴘᴀɴ</b>")
     else:
-        await xx.edit(f"{emo.gagal} <b>Give me a note tag!</b>")
+        return await message.reply(f"<code>{message.text.split()[0]}</code> <b>[ɴᴀᴍᴇ] [ᴛᴇxᴛ/ʀᴇᴘʟʏ]</b>")
 
-    getnotes = monggo.get_note(client.me.id, note)
-    teks = None
-    if not getnotes:
-        return await xx.edit(f"{emo.gagal} <b>This note does not exist!</b>")
 
-    if getnotes["type"] == Types.TEXT:
-        teks, button = get_msg_button(getnotes.get("value"))
-        if button:
-            try:
-                inlineresult = await client.get_inline_bot_results(
-                    bot.me.username, f"get_note_ {note}"
-                )
-                await message.delete()
-                await client.send_inline_bot_result(
-                    message.chat.id,
-                    inlineresult.query_id,
-                    inlineresult.results[0].id,
-                    reply_to_message_id=ReplyCheck(message),
-                )
-            except Exception as e:
-                return await xx.edit(f"Error {e}")
-        else:
-            await message.reply(teks)
+@PY.UBOT("delnote|delcb")
+@PY.TOP_CMD
+async def _(client, message):
+    args = get_arg(message)
 
-    elif getnotes["type"] == Types.PHOTO:
-        teks, button = get_msg_button(getnotes.get("value"))
-        if button:
+    if not args:
+        return await message.reply(f"<code>{message.text.split()[0]}</code> <b>[ɴᴀᴍᴇ]</b>")
+
+    query = "notes_cb" if message.command[0] == "delcb" else "notes"
+    vars = await get_vars(client.me.id, args, query)
+
+    if not vars:
+        return await message.reply(f"<b>ᴄᴀᴛᴀᴛᴀɴ {args} ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ</b>")
+
+    await remove_vars(client.me.id, args, query)
+    await client.delete_messages(client.me.id, int(vars["message_id"]))
+    return await message.reply(f"<b>ᴄᴀᴛᴀɴ {args} ʙᴇʀʜᴀsɪʟ ᴅɪʜᴀᴘᴜs</b>")
+
+
+@PY.UBOT("get")
+@PY.TOP_CMD
+async def _(client, message):
+    msg = message.reply_to_message or message
+    args = get_arg(message)
+
+    if not args:
+        return await message.reply(f"<code>{message.text.split()[0]}</code> <b>[ɴᴀᴍᴇ]</b>")
+
+    data = await get_vars(client.me.id, args, "notes")
+
+    if not data:
+        return await message.reply(f"<b>ᴄᴀᴛᴀᴛᴀɴ {args} ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ</b>")
+
+    m = await client.get_messages(client.me.id, int(data["message_id"]))
+
+    if data["type"] == "text":
+        if matches := re.findall(r"\| ([^|]+) - ([^|]+) \|", m.text):
             try:
-                inlineresult = await client.get_inline_bot_results(
-                    bot.me.username, f"get_note_ {note}"
-                )
-                await message.delete()
-                await client.send_inline_bot_result(
+                x = await client.get_inline_bot_results(bot.me.username, f"get_notes {client.me.id} {args}")
+                return await client.send_inline_bot_result(
                     message.chat.id,
-                    inlineresult.query_id,
-                    inlineresult.results[0].id,
-                    reply_to_message_id=ReplyCheck(message),
+                    x.query_id,
+                    x.results[0].id,
+                    reply_to_message_id=msg.id,
                 )
-            except Exception as e:
-                return await xx.edit(f"Error {e}")
+            except Exception as error:
+                await message.reply(error)
         else:
-            await client.send_photo(
-                message.chat.id,
-                getnotes["file"],
-                caption=getnotes["value"],
-                reply_to_message_id=ReplyCheck(message),
-            )
-    elif getnotes["type"] == Types.VIDEO:
-        teks, button = get_msg_button(getnotes.get("value"))
-        if button:
-            try:
-                inlineresult = await client.get_inline_bot_results(
-                    bot.me.username, f"get_note_ {note}"
-                )
-                await message.delete()
-                await client.send_inline_bot_result(
-                    message.chat.id,
-                    inlineresult.query_id,
-                    inlineresult.results[0].id,
-                    reply_to_message_id=ReplyCheck(message),
-                )
-            except Exception as e:
-                return await xx.edit(f"Error {e}")
-        else:
-            await client.send_video(
-                message.chat.id,
-                getnotes["file"],
-                caption=getnotes["value"],
-                reply_to_message_id=ReplyCheck(message),
-            )
-    elif getnotes["type"] == Types.STICKER:
-        await client.send_sticker(
-            message.chat.id, getnotes["file"], reply_to_message_id=ReplyCheck(message)
-        )
-    elif getnotes["type"] == Types.VOICE:
-        await client.send_voice(
-            message.chat.id,
-            getnotes["file"],
-            caption=getnotes["value"],
-            reply_to_message_id=ReplyCheck(message),
-        )
-    elif getnotes["type"] == Types.VIDEO_NOTE:
-        await client.send_video_note(
-            message.chat.id,
-            getnotes["file"],
-            # caption=getnotes["value"],
-            reply_to_message_id=ReplyCheck(message),
-        )
-    elif getnotes["type"] == Types.ANIMATED_STICKER:
-        await client.send_sticker(
-            message.chat.id,
-            getnotes["file"],
-            # caption=getnotes["value"],
-            reply_to_message_id=ReplyCheck(message),
-        )
+            return await m.copy(message.chat.id, reply_to_message_id=msg.id)
     else:
-        teks, button = get_msg_button(getnotes.get("value"))
-        if button:
-            try:
-                inlineresult = await client.get_inline_bot_results(
-                    bot.me.username, f"get_note_ {note}"
-                )
-                await client.send_inline_bot_result(
-                    message.chat.id,
-                    inlineresult.query_id,
-                    inlineresult.results[0].id,
-                    reply_to_message_id=ReplyCheck(message),
-                )
-            except Exception as e:
-                await message.reply(f"Error {e}")
-        else:
-            await client.send_media_group(
-                message.chat.id,
-                getnotes["file"],
-                reply_to_message_id=ReplyCheck(message),
-            )
-    await xx.delete()
+        return await m.copy(message.chat.id, reply_to_message_id=msg.id)
 
 
-@PY.UBOT("notes", sudo=True)
-async def local_notes(client, message):
-    emo = Emo(client.me.id)
-    emo.initialize()
-    xx = await message.reply(f"{emo.proses} <b>Processing...</b>")
-    getnotes = monggo.get_all_notes(client.me.id)
-    if not getnotes:
-        await xx.edit(f"{emo.gagal} <b>There are no notes in local notes!</b>")
-        return
-    rply = f"{emo.alive} <b>Local notes:</b>\n"
-    for x in getnotes:
-        if len(rply) >= 1800:
-            await xx.edit(rply)
-            rply = f"{emo.alive} <b>Local notes:</b>\n"
-        rply += f"{emo.sukses} <code>{x}</code>\n"
-
-    await xx.edit(rply)
-
-
-@PY.UBOT("rm", sudo=True)
-async def clear_note(client, message):
-    emo = Emo(client.me.id)
-    emo.initialize()
-    xx = await message.reply(f"{emo.proses} <b>Processing...</b>")
-    if len(message.text.split()) <= 1:
-        return await xx.edit(f"{emo.gagal} <b>What do you want to clear?</b>")
-
-    note = message.text.split()[1]
-    getnote = monggo.rm_note(client.me.id, note)
-    if not getnote:
-        return await xx.edit(f"{emo.gagal} <b>This note does not exist!</b>")
+@PY.UBOT("listnote|listcb")
+@PY.TOP_CMD
+async def _(client, message):
+    query = "notes_cb" if message.command[0] == "listcb" else "notes"
+    vars = await all_vars(client.me.id, query)
+    if vars:
+        msg = "<b>❏ ᴅᴀғᴛᴀʀ ᴄᴀᴛᴀᴛᴀɴ</b>\n\n"
+        for x, data in vars.items():
+            msg += f" {x} |({data['type']})\n"
+        msg += f"<b>\n❏ ᴛᴏᴛᴀʟ ᴄᴀᴛᴀᴛᴀɴ: {len(vars)}</b>"
     else:
-        return await xx.edit(f"{emo.sukses} <b>Deleted note <code>{note}</code>!</b>")
+        msg = "<b>ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴄᴀᴛᴀᴛᴀɴ</b>"
+
+    return await message.reply(msg, quote=True)
 
 
-@PY.INLINE("^get_note_")
-async def catet(client, inline_query):
-    q = inline_query.query.split(None, 1)
-    notetag = q[1]
-    gw = inline_query.from_user.id
-    noteval = monggo.get_note(gw, notetag)
-    if not noteval:
-        return
-    note, button = get_msg_button(noteval.get("value"))
-    button = create_tl_btn(button)
-    biji = noteval.get("file")
-    if noteval["type"] == Types.PHOTO:
-      await client.answer_inline_query(inline_query.id,cache_time=0,results=[InlineQueryResultPhoto(title="Note Photo",photo_url=biji,caption=note,reply_markup=(button))])
-    elif noteval["type"] == Types.VIDEO:
-      await client.answer_inline_query(inline_query.id,cache_time=0,results=[InlineQueryResultVideo(title="Note Video",video_url=biji,caption=note,reply_markup=(button))])
-    elif noteval["type"] == Types.TEXT:
-        await client.answer_inline_query(
+@PY.INLINE("^get_notes")
+async def _(client, inline_query):
+    query = inline_query.query.split()
+    data = await get_vars(int(query[1]), query[2], "notes")
+    item = [x for x in ubot._ubot if int(query[1]) == x.me.id]
+    for me in item:
+        m = await me.get_messages(int(me.me.id), int(data["message_id"]))
+        buttons, text = create_inline_keyboard(m.text, f"{int(query[1])}_{query[2]}")
+        return await client.answer_inline_query(
             inline_query.id,
             cache_time=0,
             results=[
-                InlineQueryResultArticle(
-                    title="Tombol Notes!",
-                    input_message_content=InputTextMessageContent(note, disable_web_page_preview=True),
-                    reply_markup=(button),
+                (
+                    InlineQueryResultArticle(
+                        title="get notes!",
+                        reply_markup=buttons,
+                        input_message_content=InputTextMessageContent(text),
+                    )
                 )
             ],
         )
+
+
+@PY.CALLBACK("_gtnote")
+async def _(client, callback_query):
+    _, user_id, *query = callback_query.data.split()
+    data_key = "notes_cb" if bool(query) else "notes"
+    query_eplit = query[0] if bool(query) else user_id.split("_")[1]
+    data = await get_vars(int(user_id.split("_")[0]), query_eplit, data_key)
+    item = [x for x in ubot._ubot if int(user_id.split("_")[0]) == x.me.id]
+    for me in item:
+        m = await me.get_messages(int(me.me.id), int(data["message_id"]))
+        buttons, text = create_inline_keyboard(m.text, f"{int(user_id.split('_')[0])}_{user_id.split('_')[1]}", bool(query))
+        return await callback_query.edit_message_text(text, reply_markup=buttons)
