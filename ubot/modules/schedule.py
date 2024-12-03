@@ -7,7 +7,6 @@ from pyrogram.types import *
 
 from ubot import *
 
-from .notes import kontol_siapa
 
 scheduled_tasks = {}
 
