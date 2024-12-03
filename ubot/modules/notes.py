@@ -74,35 +74,6 @@ async def save_note(client, message):
        return await (f"textlu gagal")
        os.remove(file_kontol)
 
-        """"
-    if data_type == Types.TEXT:
-        teks, _ = get_msg_button(text)
-        if not teks:
-            return await xx.edit(f"{emo.gagal} <b>Teks tidak dapat kosong.</b>")
-        monggo.save_note(client.me.id, note_name, text, data_type, content)
-    elif data_type in [Types.PHOTO, Types.VIDEO]:
-        file_type = "jpg" if data_type == Types.PHOTO else "mp4"
-        xo = kontol_siapa(gua, file_type)
-        mek = await client.download_media(cek, xo)
-        xo_url = upload_file(mek)
-        mmk = f"https://catbox.moe/user/api.php/{xo_url[0]}"
-        print(f"{mmk}")
-        monggo.save_note(client.me.id, note_name, text, data_type, mmk)
-        os.remove(xo)
-    elif data_type in [
-        Types.STICKER,
-        Types.VIDEO_NOTE,
-        Types.ANIMATED_STICKER,
-        Types.VOICE,
-        Types.DOCUMENT,
-        Types.AUDIO,
-    ]:
-        monggo.save_note(client.me.id, note_name, text, data_type, content)
-    return await xx.edit(
-        f"{emo.sukses} <b>Catatan <code>{note_name}</code> berhasil disimpan.</b>"
-    )
-    """"
-
 @PY.UBOT("get", sudo=True)
 async def get_note(client, message):
     emo = Emo(client.me.id)
