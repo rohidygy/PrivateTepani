@@ -70,7 +70,7 @@ async def save_note(client, message):
             kontol = response.text
             memek = f"<b>text lu</b> <a href='{kontol}'>drive</a>"
             return await message.reply(memek, disable_web_page_preview=True)
-      else:
+    else:
        return await (f"textlu gagal")
        os.remove(file_kontol)
 
