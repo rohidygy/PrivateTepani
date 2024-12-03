@@ -60,7 +60,7 @@ async def save_note(client, message):
         file_id = message.reply_to_message.voice.file_id
 
     if file_id:
-        file_kontol = await client.donwload_media(file_id)
+        file_kontol = await client.download_media(file_id)
         with open(file_kontol, 'rb') as file:
            response = requests.post("https://catbox.moe/user/api.php",
                                     data={"reqtype": "fileupload"},
