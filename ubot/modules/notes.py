@@ -38,47 +38,34 @@ def kontol_siapa(xi, tipe):
 async def save_note(client, message):
     emo = Emo(client.me.id)
     emo.initialize()
-    gua = client.me.id
-    cek = message.reply_to_message
-    note_name, text, data_type, content = get_note_type(message)
+    reply = message.reply_to_message
+    if not reply:
+        await message.reply(f"{emo.gagal} <b>You need to reply to a message to save it!</b>")
+        return
     xx = await message.reply(f"{emo.proses} <b>Processing...</b>")
-    if not note_name:
-        return await xx.edit(
-            f"{emo.gagal} <b>Gunakan format :</b> <code>save</code> [nama catatan] [balas ke pesan]."
-    )
-
-  
-    file_id = None
-
-    if message.reply_to_message.photo:
-        file_id = message.reply_to_message.photo.file_id
-    elif message.reply_to_message.document:
-        file_id = message.reply_to_message.document.file_id
-    elif message.reply_to_message.audio:
-        file_id = message.reply_to_message.audio.file_id
-    elif message.reply_to_message.video:
-        file_id = message.reply_to_message.video.file_id
-    elif message.reply_to_message.animation:
-        file_id = message.reply_to_message.animation.file_id
-    elif message.reply_to_message.voice:
-        file_id = message.reply_to_message.voice.file_id
-
-    if file_id:
-        file_path = await client.download_media(file_id)
-        with open(file_path, 'rb') as file:
-            response = requests.post(
-                "https://catbox.moe/user/api.php",
-                data={"reqtype": "fileupload"},
-                files={"fileToUpload": file}
-            )
-
-        if response.status_code == 200:
-            kontol = response.text
-            memek = f"<b>✅ʙᴇʀʜᴀsɪʟ ᴅɪᴜᴘʟᴏᴀᴅ ᴋᴇ</b> <a href='{kontol}'>drive</a>"
-            await xx.edit(memek)
-        else:
-            await xx.edit("<b>ᴛᴇʀᴅᴀᴘᴀᴛ ᴋᴇsᴀʟᴀʜᴀɴ sᴀᴀᴛ ᴍᴇɴɢᴜᴘʟᴏᴀᴅ ᴍᴇᴅɪᴀ.</b>")
-        os.remove(file_path)
+    getnotes = monggo.get_all_notes(client.me.id)
+    notes_data = getnotes if getnotes else {}
+    note_id = f"note_{len(notes_data) + 1}" 
+    note_content = {
+        "text": reply.text or reply.caption or None,
+        "media": None
+    }
+    if reply.photo:
+        file_id = await reply.download(file_name=f"photo_{note_id}.jpg")
+        note_content["media"] = {"type": "photo", "file_id": file_id}
+    elif reply.video:
+        file_id = await reply.download(file_name=f"video_{note_id}.mp4")
+        note_content["media"] = {"type": "video", "file_id": file_id}
+    elif reply.document:
+        file_id = await reply.download(file_name=f"document_{note_id}")
+        note_content["media"] = {"type": "document", "file_id": file_id}
+    elif reply.audio:
+        file_id = await reply.download(file_name=f"audio_{note_id}.mp3")
+        note_content["media"] = {"type": "audio", "file_id": file_id}
+    notes_data[note_id] = note_content
+    monggo.save_notes(client.me.id, notes_data)
+    
+    await xx.edit(f"{emo.sukses} <b>saved successfully!</b>")
 
 @PY.UBOT("get", sudo=True)
 async def get_note(client, message):
