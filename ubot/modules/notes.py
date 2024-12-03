@@ -1,6 +1,6 @@
 from pyrogram.types import *
 
-from PyroUbot import *
+from ubot import *
 
 __MODULE__ = "notes"
 __HELP__ = """
