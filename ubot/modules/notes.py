@@ -75,9 +75,9 @@ async def save_note(client, message):
         if response.status_code == 200:
             kontol = response.text
             memek = f"<b>✅ʙᴇʀʜᴀsɪʟ ᴅɪᴜᴘʟᴏᴀᴅ ᴋᴇ</b> <a href='{kontol}'>drive</a>"
-            await CHL.edit(memek, disable_web_page_preview=True)
+            await xx.edit(memek, disable_web_page_preview=True)
         else:
-            await CHL.edit("<b>ᴛᴇʀᴅᴀᴘᴀᴛ ᴋᴇsᴀʟᴀʜᴀɴ sᴀᴀᴛ ᴍᴇɴɢᴜᴘʟᴏᴀᴅ ᴍᴇᴅɪᴀ.</b>")
+            await xx.edit("<b>ᴛᴇʀᴅᴀᴘᴀᴛ ᴋᴇsᴀʟᴀʜᴀɴ sᴀᴀᴛ ᴍᴇɴɢᴜᴘʟᴏᴀᴅ ᴍᴇᴅɪᴀ.</b>")
         os.remove(file_path)
 
 @PY.UBOT("get", sudo=True)
