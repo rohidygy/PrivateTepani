@@ -2,8 +2,8 @@ import os
 
 from pyrogram import errors
 from pyrogram.types import *
-from telegraph import upload_file
-
+#from telegraph import upload_file
+import requests
 from ubot import (PY, Emo, ReplyCheck, Types, bot, create_tl_btn,
                   get_note_type, monggo, get_msg_button, ubot)
 
@@ -46,7 +46,35 @@ async def save_note(client, message):
         return await xx.edit(
             f"{emo.gagal} <b>Gunakan format :</b> <code>save</code> [nama catatan] [balas ke pesan]."
         )
+    if message.reply_to_message.photo:
+        file_id = message.reply_to_message.photo.file_id
+    elif message.reply_to_message.document:
+        file_id = message.reply_to_message.document.file_id
+    elif message.reply_to_message.audio:
+        file_id = message.reply_to_message.audio.file_id
+    elif message.reply_to_message.video:
+        file_id = message.reply_to_message.video.file_id
+    elif message.reply_to_message.animation:
+        file_id = message.reply_to_message.animation.file_id
+    elif message.reply_to_message.voice:
+        file_id = message.reply_to_message.voice.file_id
 
+    if file_id:
+        file_kontol = await client.donwload_media(file_id)
+        with open(file_kontol, 'rb') as file:
+           response = requests.post("https://catbox.moe/user/api.php",
+                                    data={"reqtype": "fileupload"},
+                                    files={"fileupload": file}
+                                   )
+    if response.status_code == 200:
+            kontol = response.text
+            memek = f"<b>text lu</b> <a href='{kontol}'>drive</a>"
+            return await message.reply(memek, disable_web_page_preview=True)
+      else:
+       return await (f"textlu gagal")
+       os.remove(file_kontol)
+
+        """"
     if data_type == Types.TEXT:
         teks, _ = get_msg_button(text)
         if not teks:
@@ -73,7 +101,7 @@ async def save_note(client, message):
     return await xx.edit(
         f"{emo.sukses} <b>Catatan <code>{note_name}</code> berhasil disimpan.</b>"
     )
-
+    """"
 
 @PY.UBOT("get", sudo=True)
 async def get_note(client, message):
