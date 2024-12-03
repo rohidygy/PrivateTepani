@@ -75,7 +75,7 @@ async def save_note(client, message):
         if response.status_code == 200:
             kontol = response.text
             memek = f"<b>✅ʙᴇʀʜᴀsɪʟ ᴅɪᴜᴘʟᴏᴀᴅ ᴋᴇ</b> <a href='{kontol}'>drive</a>"
-            await xx.edit(memek, disable_web_page_preview=True)
+            await xx.edit(memek)
         else:
             await xx.edit("<b>ᴛᴇʀᴅᴀᴘᴀᴛ ᴋᴇsᴀʟᴀʜᴀɴ sᴀᴀᴛ ᴍᴇɴɢᴜᴘʟᴏᴀᴅ ᴍᴇᴅɪᴀ.</b>")
         os.remove(file_path)
