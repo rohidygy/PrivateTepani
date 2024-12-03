@@ -65,7 +65,7 @@ async def broadcast_group_cmd(client, message):
     emo = Emo(client.me.id)
 
     emo.initialize()
-    msg = await message.reply("<blockquote>sᴇᴅᴀɴɢ ᴘʀᴏsᴇs...</blockquote>")
+    msg = await message.reply("<blockquote>{emo.proses} sᴇᴅᴀɴɢ ᴘʀᴏsᴇs...</blockquote>")
 
     send = get_message(message)
     if not send:
