@@ -85,7 +85,6 @@ def create_inline_keyboard(text, user_id=False, is_back=False):
 
 
 @PY.UBOT("addnote|addcb")
-@PY.TOP_CMD
 async def _(client, message):
     args = get_arg(message)
     reply = message.reply_to_message
@@ -127,7 +126,6 @@ async def _(client, message):
 
 
 @PY.UBOT("delnote|delcb")
-@PY.TOP_CMD
 async def _(client, message):
     args = get_arg(message)
 
@@ -146,7 +144,6 @@ async def _(client, message):
 
 
 @PY.UBOT("get")
-@PY.TOP_CMD
 async def _(client, message):
     msg = message.reply_to_message or message
     args = get_arg(message)
@@ -180,7 +177,6 @@ async def _(client, message):
 
 
 @PY.UBOT("listnote|listcb")
-@PY.TOP_CMD
 async def _(client, message):
     query = "notes_cb" if message.command[0] == "listcb" else "notes"
     vars = await all_vars(client.me.id, query)
