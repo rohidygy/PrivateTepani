@@ -23,6 +23,8 @@ __HELP__ = """
 
 """
 
+def kontol_siapa(xi, tipe):
+    return f"ubot/resources/{xi}.{tipe}"
 
 def detect_url_links(text):
     link_pattern = r"(?:https?://)?(?:www\.)?[a-zA-Z0-9.-]+(?:\.[a-zA-Z]{2,})+(?:[/?]\S+)?"
