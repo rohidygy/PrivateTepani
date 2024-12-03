@@ -12,8 +12,8 @@ from ubot.core.helpers import (Emo, ReplyCheck, cb_nts_btn, cek_tautan,
 
 
 async def save_note(client: ubot, message):
-    emo = Emo(client)
-    await emo.init()
+    emo = Emo(client.me.id)
+    await emo.initialize()
     pref = monggo.get_pref(client.me.id)
     x = next(iter(pref))
     cek = message.reply_to_message
@@ -71,8 +71,8 @@ async def save_note(client: ubot, message):
 
 
 async def get_note(client: ubot, message):
-    emo = Emo(client)
-    await emo.init()
+    emo = Emo(client.me.id)
+    await emo.initialize()
     pros = await message.reply(
         f"<blockquote>{emo.proses} <b>Proses ambil catatan ..</b></blockquote>"
     )
@@ -107,7 +107,7 @@ async def get_note(client: ubot, message):
 
 async def getnotes_(c, m, xx, note, data, msg_id):
     em = Emo(c)
-    await em.init()
+    await em.initialize()
     thetext = msg_id.text if msg_id.text else msg_id.caption or ""
     teks, button = get_msg_button(thetext)
     if button:
@@ -129,7 +129,7 @@ async def getnotes_(c, m, xx, note, data, msg_id):
 
 async def get_raw_note(c, m, xx, note, data, msg_id):
     em = Emo(c)
-    await em.init()
+    await em.initialize()
     await msg_id.copy(
         m.chat.id,
         reply_to_message_id=ReplyCheck(m),
@@ -139,8 +139,8 @@ async def get_raw_note(c, m, xx, note, data, msg_id):
 
 
 async def local_notes(client: ubot, message):
-    emo = Emo(client)
-    await emo.init()
+    emo = Emo(client.me.id)
+    await emo.initialize()
     pros = await message.reply(
         f"<blockquote>{emo.proses} <b>Proses mengambil Daftar Catatan ..</b></blockquote>"
     )
@@ -165,8 +165,8 @@ async def local_notes(client: ubot, message):
 
 
 async def clear_note(client: ubot, message):
-    emo = Emo(client)
-    await emo.init()
+    emo = Emo(client.me.id)
+    await emo.initialize()
     pros = await message.reply(
         f"<blockquote>{emo.proses} <b>Proses hapus catatan ..</b></blockquote>"
     )
