@@ -45,7 +45,11 @@ async def save_note(client, message):
     if not note_name:
         return await xx.edit(
             f"{emo.gagal} <b>Gunakan format :</b> <code>save</code> [nama catatan] [balas ke pesan]."
-        )
+    )
+
+  
+    file_id = None
+
     if message.reply_to_message.photo:
         file_id = message.reply_to_message.photo.file_id
     elif message.reply_to_message.document:
@@ -60,19 +64,21 @@ async def save_note(client, message):
         file_id = message.reply_to_message.voice.file_id
 
     if file_id:
-        file_kontol = await client.download_media(file_id)
-        with open(file_kontol, 'rb') as file:
-           response = requests.post("https://catbox.moe/user/api.php",
-                                    data={"reqtype": "fileupload"},
-                                    files={"fileupload": file}
-                                   )
-    if response.status_code == 200:
+        file_path = await client.download_media(file_id)
+        with open(file_path, 'rb') as file:
+            response = requests.post(
+                "https://catbox.moe/user/api.php",
+                data={"reqtype": "fileupload"},
+                files={"fileToUpload": file}
+            )
+
+        if response.status_code == 200:
             kontol = response.text
-            memek = f"<b>text lu</b> <a href='{kontol}'>drive</a>"
-            return await message.reply(memek, disable_web_page_preview=True)
-    else:
-       return await (f"textlu gagal")
-       os.remove(file_kontol)
+            memek = f"<b>✅ʙᴇʀʜᴀsɪʟ ᴅɪᴜᴘʟᴏᴀᴅ ᴋᴇ</b> <a href='{kontol}'>drive</a>"
+            await CHL.edit(memek, disable_web_page_preview=True)
+        else:
+            await CHL.edit("<b>ᴛᴇʀᴅᴀᴘᴀᴛ ᴋᴇsᴀʟᴀʜᴀɴ sᴀᴀᴛ ᴍᴇɴɢᴜᴘʟᴏᴀᴅ ᴍᴇᴅɪᴀ.</b>")
+        os.remove(file_path)
 
 @PY.UBOT("get", sudo=True)
 async def get_note(client, message):
