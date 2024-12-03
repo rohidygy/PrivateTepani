@@ -22,7 +22,7 @@ async def save_note(client: ubot, message):
         return await message.reply(
             f"<blockquote>{emo.gagal} <b>Berikan nama cataran</b></blockquote>"
         )
-    gclog = monggo.get_log_group_id(client.me.id)
+    gclog = monggo.get_log_group(client.me.id)
     logs = gclog if gclog else "me"
     pros = await message.reply(
         f"<blockquote>{emo.proses} <b>Proses simpan catatan ..</b></blockquote>"
@@ -76,7 +76,7 @@ async def get_note(client: ubot, message):
     pros = await message.reply(
         f"<blockquote>{emo.proses} <b>Proses ambil catatan ..</b></blockquote>"
     )
-    gclog = monggo.get_log_group_id(client.me.id)
+    gclog = monggo.get_log_group(client.me.id)
     logs = gclog if gclog else "me"
     if len(message.text.split()) == 2:
         note = message.text.split()[1]
@@ -171,7 +171,7 @@ async def clear_note(client: ubot, message):
         f"<blockquote>{emo.proses} <b>Proses hapus catatan ..</b></blockquote>"
     )
     args = client.get_arg(message).split(",")
-    gclog = monggo.get_log_group_id(client.me.id)
+    gclog = monggo.get_log_group(client.me.id)
     logs = gclog if gclog else "me"
     if len(args) == 0 or (len(args) == 1 and args[0].strip() == ""):
         return await pros.edit(
@@ -213,7 +213,7 @@ async def inline_notes(client, iq):
             return
 
         item = [x for x in ubot._ubot if gw == x.me.id]
-        gclog = monggo.get_log_group_id(gw)
+        gclog = monggo.get_log_group(gw)
         logs = gclog if gclog else "me"
         duar = []
 
@@ -310,7 +310,7 @@ async def cb_notes(c: bot, cq):
         notetag = ii[-2].replace("#", "")
         gw = ii[-1]
         item = [x for x in ubot._ubot if int(gw) == x.me.id]
-        gclog = monggo.get_log_group_id(int(gw))
+        gclog = monggo.get_log_group(int(gw))
         logs = gclog if gclog else "me"
         noteval = monggo.get_var(int(gw), notetag, "notes")
         cekpic = monggo.get_var(int(gw), "PMPIC")
