@@ -106,8 +106,8 @@ async def get_note(client: ubot, message):
 
 
 async def getnotes_(c, m, xx, note, data, msg_id):
-    em = Emo(c)
-    await em.initialize()
+    em = Emo(c.me.id)
+    em.initialize()
     thetext = msg_id.text if msg_id.text else msg_id.caption or ""
     teks, button = get_msg_button(thetext)
     if button:
@@ -128,8 +128,8 @@ async def getnotes_(c, m, xx, note, data, msg_id):
 
 
 async def get_raw_note(c, m, xx, note, data, msg_id):
-    em = Emo(c)
-    await em.initialize()
+    em = Emo(c.me.id)
+    em.initialize()
     await msg_id.copy(
         m.chat.id,
         reply_to_message_id=ReplyCheck(m),
