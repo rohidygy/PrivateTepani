@@ -191,8 +191,8 @@ class MongoDB:
         self._db.vardb.update_one({"_id": bot_id}, hapus_data)
 
     def all_var(self, user_id, query="vars"):
-        documents = self._db.vardb.find({"_id": user_id})
-        return [json.loads(doc["value"]) for doc in documents] if documents else None
+        result = self._db.vardb.find_one({"_id": user_id})
+        return result.get(query) if result else None
 
     def remove_all_var(self, bot_id):
         self._db.vardb.delete_many({"bot_id": bot_id})
