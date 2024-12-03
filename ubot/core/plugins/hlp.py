@@ -49,7 +49,12 @@ async def menu_inline(client, inline_query):
         ],
     )
 
-
+def to_smallcaps(text):
+    normal = "abcdefghijklmnopqrstuvwxyz"
+    smallcaps = "ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀꜱᴛᴜᴠᴡxʏᴢ"
+    translation_table = {ord(n): s for n, s in zip(normal, smallcaps)}
+    return text.lower().translate(translation_table)
+    
 async def menu_callback(client, callback_query):
     mod_match = re.match(r"help_module\((.+?)\)", callback_query.data)
     prev_match = re.match(r"help_prev\((.+?)\)", callback_query.data)
@@ -59,7 +64,9 @@ async def menu_callback(client, callback_query):
     prefix = ubot.get_prefix(user_id)
     if mod_match:
         module = (mod_match.group(1)).replace(" ", "_")
-        text = f"<blockquote><b>{HELP_COMMANDS[module].__HELP__}</b></blockquote>".format(
+        kage = f"{HELP_COMMANDS[module].__HELP__}"
+        kage_text = to_smallcaps(kage)
+        text = f"<blockquote><b>{kage_text}</b></blockquote>".format(
             next((p) for p in prefix)
         )
         button = [[InlineKeyboardButton("Kembali", callback_data="help_back")]]
