@@ -57,7 +57,7 @@ async def save_note(client, message):
         xo = kontol_siapa(gua, file_type)
         mek = await client.download_media(cek, xo)
         xo_url = upload_file(mek)
-        mmk = f"https://telegra.ph/{xo_url[0]}"
+        mmk = f"https://catbox.moe/user/api.php/{xo_url[0]}"
         print(f"{mmk}")
         monggo.save_note(client.me.id, note_name, text, data_type, mmk)
         os.remove(xo)
