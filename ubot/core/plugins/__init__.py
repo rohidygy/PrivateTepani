@@ -21,6 +21,7 @@ from ubot.core.plugins.lgo import *
 from ubot.core.plugins.lmt import *
 from ubot.core.plugins.mmf import *
 from ubot.core.plugins.mms import *
+from ubot.core.plugins.nts import *
 from ubot.core.plugins.ocr import *
 from ubot.core.plugins.pgr import *
 from ubot.core.plugins.pmper import *
