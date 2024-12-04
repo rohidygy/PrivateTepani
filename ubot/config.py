@@ -54,7 +54,7 @@ BLACKLIST_CHAT = list(
     )
 )
 
-MAX_BOT = int(os.getenv("MAX_BOT", "40"))
+MAX_BOT = int(os.getenv("MAX_BOT", "50"))
 
 RMBG_API = os.getenv("RMBG_API", "a6qxsmMJ3CsNo7HyxuKGsP1o")
 
