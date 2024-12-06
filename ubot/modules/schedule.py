@@ -11,7 +11,7 @@ from ubot import *
 scheduled_tasks = {}
 
 
-__MODULE__ = "ꜱᴄʜᴇᴅᴜʟᴇ"
+__MODULE__ = "Schedule"
 __HELP__ = """
 ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅ ꜰᴏʀ ꜱᴄʜᴇᴅᴜʟᴇ
 
