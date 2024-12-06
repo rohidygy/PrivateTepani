@@ -8,7 +8,7 @@ from ubot import BLACKLIST_CHAT, PY, font, gen_font, get_broadcast_id, monggo
 
 spam_gikesan = {}
 
-__MODULE__ = "ʙᴄ 24ᴊᴀᴍ"
+__MODULE__ = "BC24JAM"
 __HELP__ = """
  ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙᴄ 24ᴊᴀᴍ
 
