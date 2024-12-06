@@ -5,7 +5,7 @@ from pyrogram.types import *
 
 from ubot import FKM, PY, Emo, monggo, ubot
 
-__MODULE__ = "ꜱᴇᴛᴛɪɴɢꜱ"
+__MODULE__ = "Settings"
 __HELP__ = """
 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴇᴛᴛɪɴɢꜱ
 
