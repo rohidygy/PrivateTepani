@@ -1,6 +1,6 @@
 from ubot import *
 
-__MODULE__ = "ᴀɴᴛɪɢᴄᴀꜱᴛ"
+__MODULE__ = "Anti Gcast"
 __HELP__ = """
  ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀɴᴛɪɢᴄᴀꜱᴛ
 
