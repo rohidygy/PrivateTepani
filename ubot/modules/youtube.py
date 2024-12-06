@@ -1,6 +1,6 @@
 from ubot import *
 
-__MODULE__ = "ʏᴏᴜᴛᴜʙᴇ"
+__MODULE__ = "Youtube"
 __HELP__ = """
 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʏᴏᴜᴛᴜʙᴇ
 
