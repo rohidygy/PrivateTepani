@@ -1,6 +1,6 @@
 from ubot import *
 
-__MODULE__ = "ᴘᴍᴘᴇʀᴍɪᴛ"
+__MODULE__ = "Pmpermit"
 __HELP__ = """
 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴘᴍᴘᴇʀᴍɪᴛ
 
