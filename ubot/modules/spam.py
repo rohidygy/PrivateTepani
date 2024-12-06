@@ -1,6 +1,6 @@
 from ubot import *
 
-__MODULE__ = "ꜱᴘᴀᴍ"
+__MODULE__ = "Spam"
 __HELP__ = """
 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ꜱᴘᴀᴍ
 
