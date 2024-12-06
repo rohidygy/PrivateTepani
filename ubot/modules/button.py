@@ -4,7 +4,7 @@ from ubot import PY, Emo, monggo, get_msg_button, create_tl_btn, INLINE, bot, ub
 from telegraph import upload_file
 
 
-__MODULE__ = "ʙᴜᴛᴛᴏɴ"
+__MODULE__ = "Button"
 __HELP__ = """
  ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙᴜᴛᴛᴏɴ
 
