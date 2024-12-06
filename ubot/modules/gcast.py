@@ -1,6 +1,6 @@
 from ubot import *
 
-__MODULE__ = "ɢᴄᴀꜱᴛ"
+__MODULE__ = "Gcast"
 __HELP__ = """
  ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɢᴄᴀꜱᴛ
 
