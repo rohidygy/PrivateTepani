@@ -3,7 +3,7 @@ from pyrogram.types import InlineQueryResultArticle, InputTextMessageContent
 
 from ubot import *
 
-__MODULE__ = "ᴍᴀʀᴋᴅᴏᴡɴ"
+__MODULE__ = "Markdonw"
 __HELP__ = """
  ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴍᴀʀᴋᴅᴏᴡɴ
 
