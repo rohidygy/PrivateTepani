@@ -1,4 +1,4 @@
-__MODULE__ = "ꜱᴜᴅᴏ"
+__MODULE__ = "Sudo"
 __HELP__ = """
 Bantuan Untuk Sudo
 
