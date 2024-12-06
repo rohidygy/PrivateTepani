@@ -1,6 +1,6 @@
 from ubot import *
 
-__MODULE__ = "ᴘʀᴏꜰɪʟᴇ"
+__MODULE__ = "Profile"
 __HELP__ = """
 ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴘʀᴏꜰɪʟᴇ
 
