@@ -7,7 +7,7 @@ HAPUS CREDIT?, WAH KEBANGETAN SIH.
 
 from ubot import *
 
-__MODULE__ = "​🇷​​🇪​​🇲​​🇮​​🇳​​🇩​​🇪​​🇷​​🇸​"
+__MODULE__ = "​Reminders​"
 __HELP__ = """
 ᴍᴏᴅᴜʟ ɪɴɪ ᴍᴇᴍᴜɴɢᴋɪɴᴋᴀɴ ᴘᴇɴɢɢᴜɴᴀ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴛᴜʀ ᴘᴇɴɢɪɴɢᴀᴛ.
 
