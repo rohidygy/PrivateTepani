@@ -25,10 +25,10 @@ wget
 python-dateutil
 emoji
 search_engine_parser
-httpx[http2]==0.27.2
+httpx==0.28.0
 pytimeparse
 uvloop
-yt-dlp==2024.11.18
+yt-dlp
 Pillow==8.3.2
 requests
 meval
