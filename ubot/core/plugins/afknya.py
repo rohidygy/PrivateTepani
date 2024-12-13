@@ -1,5 +1,5 @@
 from time import time
-form ubot.core.database import monggo
+from ubot.core.database import monggo
 
 
 class awayFromKeyboard:
