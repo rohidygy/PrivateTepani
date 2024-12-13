@@ -11,9 +11,9 @@ class awayFromKeyboard:
     async def set_afk(self):
         db_afk = {"time": time(), "reason": self.reason}
         msg_afk = (
-            f"<b>❏ sedang afk\n ╰ alasan: {self.reason}</b>"
+            f"<blockquote><b>❏ sedang afk\n ╰ alasan: {self.reason}</b></blockquote>"
             if self.reason
-            else "<b>❏ sedang afk</b>"
+            else "<blockquote><b>❏ sedang afk</b><blockquote>/"
         )
         monggo.set_var(self.client.me.id, "AFK", db_afk)
         await self.message.reply(msg_afk, disable_web_page_preview=True)
