@@ -1,6 +1,6 @@
 from time import time
 from ubot.core.database import monggo
-
+from ubot.core.helpers import get_time
 
 class awayFromKeyboard:
     def __init__(self, client, message, reason=""):
