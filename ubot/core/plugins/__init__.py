@@ -50,6 +50,6 @@ from ubot.core.plugins.wbs import *
 from ubot.core.plugins.whs import *
 from ubot.core.plugins.ytp import *
 from ubot.core.plugins.zbs import *
-from ubot.core.plugins.afk import *
+from ubot.core.plugins.afknya import *
 
 # from ubot.core.plugins.afknya import *
