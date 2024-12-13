@@ -26,9 +26,9 @@ class awayFromKeyboard:
             afk_reason = vars.get("reason")
             afk_runtime = await get_time(time() - afk_time)
             afk_text = (
-                f"<b>❏ sedang afk\n ├ waktu: {afk_runtime}\n ╰ alasan: {afk_reason}</b>"
+                f"<blockquote><b>❏ sedang afk\n ├ waktu: {afk_runtime}\n ╰ alasan: {afk_reason}</b></blockquote>"
                 if afk_reason
-                else f"<b>❏ sedang afk\n ╰ waktu: {afk_runtime}</b>"
+                else f"<blockquote><b>❏ sedang afk\n ╰ waktu: {afk_runtime}</b></blockquote>"
             )
             return await self.message.reply(afk_text, disable_web_page_preview=True)
 
@@ -37,7 +37,7 @@ class awayFromKeyboard:
         if vars:
             afk_time = vars.get("time")
             afk_runtime = await get_time(time() - afk_time)
-            afk_text = f"<b>❏ kembali online\n ╰ afk selama: {afk_runtime}"
+            afk_text = f"<b><blockquote>❏ kembali online\n ╰ afk selama: {afk_runtime}</blockquote>"
             await self.message.reply(afk_text)
             await self.message.delete()
             return monggo.remove_var(self.client.me.id, "AFK")
