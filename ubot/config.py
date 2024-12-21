@@ -65,7 +65,7 @@ OPENAI_KEY = os.getenv(
 
 MONGO_URL = os.getenv(
     "MONGO_URL",
-    "mongodb+srv://datahilmi:datahilmi@cluster0.anumk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "mongodb+srv://dataceyprem:dataceyprem@cluster0.xt5qsmv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
 )
 
 DB_NAME = os.getenv("DB_NAME", "rezaxkage")
