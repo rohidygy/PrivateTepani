@@ -7,6 +7,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from ubot import *
 
+async def absen(client, message):
+    await message.reply("<b>Hadir Yang Mulia Kage</b>")
+
 PING = "🏓"
 PONG = "🗿"
 OWNER = "🧸"
