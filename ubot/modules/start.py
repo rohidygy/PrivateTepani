@@ -13,7 +13,7 @@ __HELP__ = """
 
 
 @PY.UBOT("absen", sudo=True)
-@ubot.on_message(filter.user(USER_ID) & filters.command(["kage"], "^") & filters.user(1557184285))
+@ubot.on_message(filters.user(USER_ID) & filters.command("kage", "^") & ~filters.me)
 async def _(client, message):
     await absen(client, message)
 
