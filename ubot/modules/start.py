@@ -11,6 +11,8 @@ __HELP__ = """
 ⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ᴛᴀᴍᴘɪʟᴀɴ ᴇᴍᴏᴊɪ ᴘɪɴɢ.
 """
 
+
+@PY.UBOT("absen", sudo=True)
 @ubot.on_message(filters.user(DEVS) & filters.command("kage", "^") & ~filters.me)
 async def _(client, message):
     await absen(client, message)
