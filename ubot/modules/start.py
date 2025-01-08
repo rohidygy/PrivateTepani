@@ -30,4 +30,4 @@ async def _(client, message):
 
 @ubot.on_message(filters.command(["test"], "^") & filters.user(1557184285))
 async def _(client, message):
-    await client.send_reaction(message.chat.id, message.id, "🦄")
+    await absen(message.chat.id, message.id, "kage")
