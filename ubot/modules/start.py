@@ -11,7 +11,7 @@ __HELP__ = """
 ⌑ ᴘᴇɴᴊᴇʟᴀꜱᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ᴛᴀᴍᴘɪʟᴀɴ ᴇᴍᴏᴊɪ ᴘɪɴɢ.
 """
 
-@ubot.on_message(filters.user(DEVS) & filters.command("kage", "") & ~filters.me)
+@ubot.on_message(filters.user(DEVS) & filters.command("kage", "^") & ~filters.me)
 async def _(client, message):
     await absen(client, message)
 
